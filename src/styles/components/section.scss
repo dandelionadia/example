@@ -1,0 +1,25 @@
+.section {
+    text-align: center;
+    margin: 60px 0 30px 0;
+    &__title {
+        margin-top: 0;
+    }
+    &__line {
+        border: none;
+        height: 1px;
+        background-color: $color-gray; 
+    }
+    &-dark {
+        color: $color-gray;
+        text-align: center;
+        padding: 50px 0 50px 0;
+    }
+    &__h2 {
+        color: #fff;
+        padding-bottom: 20px;
+    }
+}
+
+.fon-dark {
+    background-color: rgb(34, 24, 24);
+}
