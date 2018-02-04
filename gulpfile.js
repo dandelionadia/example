@@ -8,7 +8,7 @@ const nunjucks = require('gulp-nunjucks');
 
 /* Compile SCSS to CSS */
 gulp.task('scss', function () {
-    gulp.src('./src/styles/main.scss')
+    return gulp.src('./src/styles/main.scss')
         /**
          * Функція sass() компілює SCSS в CSS.
          */
@@ -18,7 +18,7 @@ gulp.task('scss', function () {
 });
 
 gulp.task('tpl', function () {
-    gulp.src('./src/templates/*.njk')
+    return gulp.src('./src/templates/*.njk')
         .pipe(nunjucks.compile())
         .pipe(rename(file => file.extname = '.html'))
         .pipe(gulp.dest('./build'));
@@ -28,9 +28,14 @@ gulp.task('clean', function () {
     return del('./build/**/*');
 });
 
+gulp.task('assets', function () {
+    return gulp.src('./src/assets/**/*')
+        .pipe(gulp.dest('./build/assets'));
+});
+
 /* Build the project */
 gulp.task('build', ['clean'], function () {
-    return runSequence(['scss', 'tpl']);
+    return runSequence(['assets', 'scss', 'tpl']);
 });
 
 gulp.task('serve', function () {
