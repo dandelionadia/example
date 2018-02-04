@@ -17,10 +17,6 @@ gulp.task('scss', function () {
         .pipe(browserSync.stream());
 });
 
-gulp.task('scss/clean', function () {
-    return del('./build/css');
-});
-
 gulp.task('tpl', function () {
     gulp.src('./src/templates/*.njk')
         .pipe(nunjucks.compile())
@@ -29,11 +25,7 @@ gulp.task('tpl', function () {
 });
 
 gulp.task('clean', function () {
-    return runSequence(['scss/clean', 'tpl/clean']);
-});
-
-gulp.task('tpl/clean', function () {
-    return del('./build/*.html');
+    return del('./build/**/*');
 });
 
 /* Build the project */
@@ -44,7 +36,7 @@ gulp.task('build', ['clean'], function () {
 gulp.task('serve', function () {
     browserSync.init({
         server: {
-            baseDir: './build'
+            baseDir: ['./', './build']
         },
         open: false
     });
