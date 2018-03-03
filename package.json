@@ -1,18 +1,13 @@
 {
-  "name": "gulp-intro",
+  "name": "gulp-starter",
   "version": "1.0.0",
-  "description": "Learning gulp",
+  "description": "Minimal Gulp starter kit",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.23.2",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
-    "gulp-nunjucks": "^3.1.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "run-sequence": "^2.2.1"

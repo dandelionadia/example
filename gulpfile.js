@@ -4,28 +4,18 @@ const rename = require('gulp-rename');
 const runSequence = require('run-sequence');
 const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
-const nunjucks = require('gulp-nunjucks');
+
+gulp.task('clean', function () {
+    return del('./build/**/*');
+});
 
 /* Compile SCSS to CSS */
 gulp.task('scss', function () {
     return gulp.src('./src/styles/main.scss')
-        /**
-         * Функція sass() компілює SCSS в CSS.
-         */
+        /* Функція sass() компілює SCSS в CSS */
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./build/css'))
         .pipe(browserSync.stream());
-});
-
-gulp.task('tpl', function () {
-    return gulp.src('./src/templates/*.njk')
-        .pipe(nunjucks.compile())
-        .pipe(rename(file => file.extname = '.html'))
-        .pipe(gulp.dest('./build'));
-});
-
-gulp.task('clean', function () {
-    return del('./build/**/*');
 });
 
 gulp.task('assets', function () {
@@ -33,9 +23,14 @@ gulp.task('assets', function () {
         .pipe(gulp.dest('./build/assets'));
 });
 
+gulp.task('pages', function () {
+    return gulp.src('./src/pages/**/*')
+        .pipe(gulp.dest('./build'));
+});
+
 /* Build the project */
 gulp.task('build', ['clean'], function () {
-    return runSequence(['assets', 'scss', 'tpl']);
+    return runSequence(['scss', 'pages', 'assets']);
 });
 
 gulp.task('serve', function () {
@@ -43,7 +38,7 @@ gulp.task('serve', function () {
         server: {
             baseDir: ['./', './build']
         },
-        open: false
+        open: true
     });
 });
 
@@ -55,5 +50,5 @@ gulp.task('reload', function (done) {
 /* Default task */
 gulp.task('default', ['build', 'serve'], function () {
     gulp.watch('./src/styles/**/*.scss', ['scss']);
-    gulp.watch('./src/templates/**/*.njk', ['tpl', 'reload']);
+    gulp.watch('./src/pages/**/*', ['pages', 'reload']);
 });
