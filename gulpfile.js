@@ -18,6 +18,11 @@ gulp.task('scss', function () {
         .pipe(browserSync.stream());
 });
 
+gulp.task('js', function () {
+    return gulp.src('./src/js/**/*.js')
+        .pipe(gulp.dest('./build/js'));
+});
+
 gulp.task('assets', function () {
     return gulp.src('./src/assets/**/*')
         .pipe(gulp.dest('./build/assets'));
@@ -30,7 +35,7 @@ gulp.task('pages', function () {
 
 /* Build the project */
 gulp.task('build', ['clean'], function () {
-    return runSequence(['scss', 'pages', 'assets']);
+    return runSequence(['js', 'scss', 'pages', 'assets']);
 });
 
 gulp.task('serve', function () {
@@ -50,6 +55,7 @@ gulp.task('reload', function (done) {
 /* Default task */
 gulp.task('default', ['build', 'serve'], function () {
     gulp.watch('./src/styles/**/*.scss', ['scss']);
+    gulp.watch('./src/js/**/*.js', ['js', 'reload']);
     gulp.watch('./src/assets/**/*', ['assets', 'reload']);
     gulp.watch('./src/pages/**/*', ['pages', 'reload']);
 });
