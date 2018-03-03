@@ -50,5 +50,6 @@ gulp.task('reload', function (done) {
 /* Default task */
 gulp.task('default', ['build', 'serve'], function () {
     gulp.watch('./src/styles/**/*.scss', ['scss']);
+    gulp.watch('./src/assets/**/*', ['assets', 'reload']);
     gulp.watch('./src/pages/**/*', ['pages', 'reload']);
 });
