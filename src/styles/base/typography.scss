@@ -2,7 +2,7 @@ body {
     background-color: $color-gray-light;
     color: $color-gray;
     font-size: $font-size-base;
-    font-family: $font-family, Arial, Helvetica, sans-serif;
+    font-family: $font-family, Ubuntu, Helvetica, Arial, sans-serif;
 }
 
 h1,
@@ -10,10 +10,6 @@ h2,
 h3,
 h4 {
     color: $color-black;
-}
-
-h1, h3, menu {
-    text-transform: uppercase;
 }
 
 h2, h4 {
