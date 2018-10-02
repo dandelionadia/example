@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Minimal Gulp starter kit",
   "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build"
+  },
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.23.2",
