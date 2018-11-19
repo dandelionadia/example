@@ -54,7 +54,7 @@ gulp.task('serve', function () {
             baseDir: ['./build/']
         },
         files: ['./build/**/*'],
-        open: false
+        open: true
     });
 });
 
