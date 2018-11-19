@@ -3,8 +3,9 @@ const gulp = require('gulp');
 const rename = require('gulp-rename');
 const runSequence = require('run-sequence');
 const sass = require('gulp-sass');
-const nunj = require('gulp-nunjucks')
+const nunj = require('gulp-nunjucks-render')
 const gwatch = require('gulp-watch')
+const plumber = require('gulp-plumber')
 const browserSync = require('browser-sync').create();
 
 gulp.task('clean', function () {
@@ -33,21 +34,18 @@ gulp.task('assets', function () {
 
 gulp.task('nunj', function () {
     return gulp
-        .src('./src/pages/*.nunj')
-        .pipe(nunj.compile())
+        .src('./src/templates/pages/**/*.nunj')
+        .pipe(plumber({ onError: console.log }))
+        .pipe(nunj({
+            path: ['src/templates']
+        }))
         .pipe(rename((file) => file.extname = '.html'))
         .pipe(gulp.dest('./build'))
 })
 
-gulp.task('pages', function () {
-    return gulp
-        .src('./src/pages/**/*.html')
-        .pipe(gulp.dest('./build'));
-});
-
 /* Build the project */
 gulp.task('build', ['clean'], function () {
-    return runSequence(['js', 'scss', 'pages', 'nunj', 'assets']);
+    return runSequence(['js', 'scss', 'nunj', 'assets']);
 });
 
 gulp.task('serve', function () {
@@ -56,13 +54,13 @@ gulp.task('serve', function () {
             baseDir: ['./build/']
         },
         files: ['./build/**/*'],
-        open: true
+        open: false
     });
 });
 
 gulp.task('reload', function (done) {
     browserSync.reload()
-    done();
+    done()
 });
 
 const watch = (pattern, tasks) => gwatch(pattern, () => runSequence(...tasks))
@@ -72,6 +70,5 @@ gulp.task('default', ['build', 'serve'], function () {
     watch('./src/styles/**/*.scss', ['scss']);
     watch('./src/js/**/*.js', ['js']);
     watch('./src/assets/**/*', ['assets']);
-    watch('./src/pages/**/*.html', ['pages']);
-    watch('./src/pages/*.nunj', ['nunj']);
+    watch('./src/templates/**/*.nunj', ['nunj']);
 });
