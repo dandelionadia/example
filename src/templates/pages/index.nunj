@@ -1,0 +1,14 @@
+{% extends "layouts/default.nunj" %}
+{% import "atoms/button.nunj" as buttons %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1>Index page</h1>
+      <p>Edit <code>src/templates/pages/index.nunj</code> to see the changes.</p>
+      {{ buttons.button('Foo') }}
+    </div>
+  </div>
+</div>
+{% endblock %}
