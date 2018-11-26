@@ -1,0 +1,11 @@
+{% macro card(title, content, img, text) %}
+    <div class="box">
+        <h3>{{title}}</h3>
+        <p>{{content}}</p>
+        <img class="box__img" src="{{img}}"></img>
+        <div class="box__btn">
+          <p>{{text}}</p>
+          <i data-feather="arrow-right"></i>
+        </div>
+      </div>
+{% endmacro %}

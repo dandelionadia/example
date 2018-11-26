@@ -1,14 +1,39 @@
 {% extends "layouts/default.nunj" %}
 {% import "atoms/button.nunj" as buttons %}
+{% import "atoms/card.nunj" as cards %}
+
 
 {% block content %}
 <div class="container">
   <div class="row">
     <div class="col-12">
-      <h1>Index page</h1>
-      <p>Edit <code>src/templates/pages/index.nunj</code> to see the changes.</p>
+
+      <h1>h1 Why do we use it?
+It is a long established fact that.</h1>
+      <h2>h2 Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years</h2>
+      <h3>h3 Why do we use it?
+The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years</h3>
+      <span>text Why do we use it?
+It is a long normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</span>
       {{ buttons.button('Foo') }}
+
     </div>
+
+  </div>
+  <div class="row">
+
+    <div class="col-4">
+      {{cards.card('1 title h3', 'content text conten text content text', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9JCmwLK1X-B4aoRT7mETb4ABZdiICueWOdcj50sRI2NQ5D4bk', 'btn 1')}}
+    </div>
+
+    <div class="col-4">
+      {{cards.card('2 title h3', 'content text conten text content text', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9JCmwLK1X-B4aoRT7mETb4ABZdiICueWOdcj50sRI2NQ5D4bk', 'btn 2')}}
+    </div>
+
+    <div class="col-4">
+      {{cards.card('3 title h3', 'content text conten text content text', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9JCmwLK1X-B4aoRT7mETb4ABZdiICueWOdcj50sRI2NQ5D4bk', 'btn 3')}}
+    </div>
+
   </div>
 </div>
 {% endblock %}
