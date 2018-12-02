@@ -1,4 +1,4 @@
-.box {
+.card {
     background-color: $color-gray-light;
     padding: 30px;
     border-radius: 5px;
@@ -10,7 +10,7 @@
         margin: 20px 0;
     }
 
-    &__btn{
+    &__btn {
         display: flex;
         justify-content: center;
     }

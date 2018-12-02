@@ -4,6 +4,26 @@
 
 
 {% block content %}
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+
+      <div class="header-box">
+        <img class="header-box__logo" src="./assets/img/logo.jpg"></img>
+
+        <div class="menu-btn">
+          <div class="menu-btn__line"></div>
+          <div class="menu-btn__line"></div>
+          <div class="menu-btn__line"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
 <div class="container">
   <div class="row">
     <div class="col-12">
@@ -35,5 +55,7 @@ It is a long normal distribution of letters, as opposed to using 'Content here, 
     </div>
 
   </div>
+
 </div>
+
 {% endblock %}
