@@ -1,0 +1,16 @@
+.card-carousel {
+    padding: 40px;
+    box-shadow: 0px 3px 15px #CFD2D1;
+    border: 0;
+    border-top-width: 3px;
+    border-style: solid;
+    border-radius: 5px;
+
+    & img {
+        width: 80px;
+    }
+
+    &__text {
+        margin: 20px 0;
+    }
+}

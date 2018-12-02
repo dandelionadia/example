@@ -1,0 +1,8 @@
+{% macro card(logo, text, avtor, position, borderColor) %}
+    <div class="card-carousel" style="border-color:{{borderColor}}">
+        <img src="{{logo}}"></img>
+        <p class="card-carousel__text">{{text}}</p>
+        <div>{{avtor}}</div>
+        <div>{{position}}</div>
+    </div>
+{% endmacro %}

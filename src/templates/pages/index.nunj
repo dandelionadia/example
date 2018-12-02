@@ -1,6 +1,7 @@
 {% extends "layouts/default.nunj" %}
 {% import "atoms/button.nunj" as buttons %}
 {% import "atoms/card.nunj" as cards %}
+{% import "atoms/card-carousel.nunj" as cardCarousels %}
 
 
 {% block content %}
@@ -58,4 +59,20 @@ It is a long normal distribution of letters, as opposed to using 'Content here, 
 
 </div>
 
+{% endblock %}
+
+{% block carousel %}
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      {{cardCarousels.card('https://images.vexels.com/media/users/3/129266/isolated/preview/6df2dfc6d40daa8858fabe519272a0f0--cone-do-c-rculo-de-abacate-by-vexels.png', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum had scrambled it to make a type specimen book.', 'avtor avtor', 'no work', 'yellow')}}
+    </div>
+    <div class="col-4">
+      {{cardCarousels.card('https://images-eu.ssl-images-amazon.com/images/I/710TxQS6WqL.png', 'Lorem Ipsum is simply dummy 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', 'avtor avtor', 'no work', '#1EABD5')}}
+    </div>
+    <div class="col-4">
+      {{cardCarousels.card('https://image.flaticon.com/icons/png/512/196/196160.png', 'Lorem Ipsum is simply dummy text of when an unknown printer took a galley of type and scrambled it to make a type specimen book.', 'avtor avtor', 'no work', 'blue')}}
+    </div>
+  </div>
+</div>
 {% endblock %}
