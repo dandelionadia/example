@@ -1,0 +1,18 @@
+{% macro post(avatar, content, img, title, text, color) %}
+
+<div class="post">
+    <div class="post__imgs">
+        <div class="post__meta">
+            <img class="post__meta--avatar" src="{{avatar}}"></img>
+            <p>{{content}}</p>
+        </div>
+
+        <img class="post__img" src="{{img}}"></img>
+    </div>
+
+    <div class="post__wrap" style="background-color:{{color}}">
+        <div class="post__title">{{title}}</div>
+        <div class="post__text">{{text}}</div>
+    </div>
+</div>
+{% endmacro %}
