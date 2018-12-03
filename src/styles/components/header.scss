@@ -1,6 +1,6 @@
 @mixin easeOut {
     transition: all 1s ease-out;
-  }
+}
 
 .header-box {
     background-color: yellow;
@@ -14,8 +14,3 @@
         border-radius: 50%;
     }
 }
-
-
-// @media (max-width: 576px) {
-
-// }
