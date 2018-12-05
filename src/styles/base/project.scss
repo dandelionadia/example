@@ -1,0 +1,14 @@
+.project {
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:40px;
+    text-align: center;
+
+    &__img {
+        width: 30px;
+        margin-top: 15px;
+    }
+}

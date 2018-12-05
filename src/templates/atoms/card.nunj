@@ -9,3 +9,13 @@
         </div>
       </div>
 {% endmacro %}
+
+{% macro project(text, img) %}
+  <div class="project">
+    <img class="project__img" src="{{img}}"></img>
+    <div>
+      <div>{{text}}</div>
+      <img class="project__img" src="{{img}}"></img>
+    </div>
+  </div>
+{% endmacro %}
