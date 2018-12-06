@@ -1,13 +1,114 @@
 {% extends "layouts/default.nunj" %}
 {% import "atoms/button.nunj" as buttons %}
+{% import "atoms/card.nunj" as cards %}
+{% import "atoms/carousel-slide.nunj" as slideCarousels %}
+{% import "atoms/post.nunj" as posts %}
 
 {% block content %}
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+
+      <div class="header-box">
+        <img class="header-box__logo" src="./assets/img/logo.jpg"></img>
+
+        <div class="menu-btn">
+          <div class="menu-btn__line"></div>
+          <div class="menu-btn__line"></div>
+          <div class="menu-btn__line"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
 <div class="container">
   <div class="row">
     <div class="col-12">
-      <h1>Index page</h1>
-      <p>Edit <code>src/templates/pages/index.nunj</code> to see the changes.</p>
+
+      <h1>h1 Why do we use it?
+It is a long established fact that.</h1>
+      <h2>h2 Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years</h2>
+      <h3>h3 Why do we use it?
+The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years</h3>
+      <span>text Why do we use it?
+It is a long normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</span>
       {{ buttons.button('Foo') }}
+
+    </div>
+
+  </div>
+  <div class="row">
+
+    <div class="col-4">
+      {{cards.card('1 title h3', 'content text conten text content text', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9JCmwLK1X-B4aoRT7mETb4ABZdiICueWOdcj50sRI2NQ5D4bk', 'btn 1')}}
+    </div>
+
+    <div class="col-4">
+      {{cards.card('2 title h3', 'content text conten text content text', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9JCmwLK1X-B4aoRT7mETb4ABZdiICueWOdcj50sRI2NQ5D4bk', 'btn 2')}}
+    </div>
+
+    <div class="col-4">
+      {{cards.card('3 title h3', 'content text conten text content text', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9JCmwLK1X-B4aoRT7mETb4ABZdiICueWOdcj50sRI2NQ5D4bk', 'btn 3')}}
+    </div>
+
+  </div>
+
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      {{slideCarousels.slide('https://images.vexels.com/media/users/3/129266/isolated/preview/6df2dfc6d40daa8858fabe519272a0f0--cone-do-c-rculo-de-abacate-by-vexels.png', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum had scrambled it to make a type specimen book.', 'avtor avtor', 'no work', 'yellow')}}
+    </div>
+    <div class="col-4">
+      {{slideCarousels.slide('https://images-eu.ssl-images-amazon.com/images/I/710TxQS6WqL.png', 'Lorem Ipsum is simply dummy 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', 'avtor avtor', 'no work', '#1EABD5')}}
+    </div>
+    <div class="col-4">
+      {{slideCarousels.slide('https://image.flaticon.com/icons/png/512/196/196160.png', 'Lorem Ipsum is simply dummy text of when an unknown printer took a galley of type and scrambled it to make a type specimen book.', 'avtor avtor', 'no work', 'blue')}}
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <p>left</p>
+    </div>
+    <div class="col-6">
+      <div class="row">
+        <div class="col-6">
+          {{posts.post('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAOVBMVEWy5vv////P7/yv5fu15/vF7Pz5/f/t+f73/P/j9v3J7fze9P205vvx+v/L7vzW8f286fzo9/3a8v3Dwi6gAAAC/ElEQVR4nO3b23abMBCFYfAA5mAw5v0fthCSlNYcxoaUGfX/rryyfKEdyTorigAAAAAAAAAAAAAAAAAAAAAAAAAA4RKJouSWjB/CI9JeijrP4iyvi0sbXEiJmms8dW2ioDJKWsd/q9OQIhZP+QbF2cU6irT5bMC+GpMgqlHahXy9rA0hYrIcsI+YnF28Ayw10VHuvhLlsRqw726cR5TLRsA4dj5oJNlmwvrsMu4i3WbAOL54rkRFFfadzdml3EHxK3ReiXLdjte7+k24MpuZ8jvsKxup4wFD5pcUzzqvCaPnReG8h9eEN81YMXA76Cs7mr6ruZ1d1DepE8ZOO1NJSeg9YRR+wvB7mtUdmim/qwvteOh26q1cWsRx5TZhpUzYuE2o7Uzbs0v6NtUmhuNpqXr5dPfaSNXN1G8j7SOub+mP3I4VA9U+hts9jA+KSnRdhX3CMuhf4WDz7MntfObbxphYuw+4NWJ4b6OD1f7Udz/6ZSViGUTA5Q41jJsYH+Zv1FzDuE0zkujpMDhzfGo4S9pqOmzkXUgV+EmSsrrWeZbXjy4N62LiNxGJkiQJ9AItAOAd8umYr5kj0jZdVRTVvUyWiy/DI4yu+PraPy3hPn9O0bKqnKmk4S9NkbmcyM0+rqjS7/Y4Nsqyev7Ww8VySpKlrfy66C5NmpbNvXosbTJ2Zxd/m6TaY9GFf4P1alRf1luU2d66kfvegLHt89JDAlregHvhitA6s5uo6tslW6w+pBHtddJtNg8z9nejEybb6e3AgCYPbNSXZ3QM7verrzzr2KvEg4bC38wNigd2pCNz7xL1d7qVrD2kUT3De42xvubwRmqumSrv6L3C1n2+w+bcE5mpec2hM7Yv6dmppg6e0IxMHRJv3nx6h6k3e+o766+w1ZkeP1j8DwltvbskIQlJeDr1u/RX2HqG8QPzUmP7bT+wPjQ1aYuGfZpj10+5vfMZScrLcdKbuYBR9Ocp9l5nhwEAAAAAAAAAAAAAAAAAAAAAAAAAAACAPX4BUvgeDOrqfkMAAAAASUVORK5CYII=', 'content', 'http://revistaip.com.pt/wp-content/uploads/sites/391/2016/05/482536036.jpg', 'Tips to make your workforce a security front line', 'text')}}   
+        </div>
+        <div class="col-6">
+          {{posts.post('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAOVBMVEWy5vv////P7/yv5fu15/vF7Pz5/f/t+f73/P/j9v3J7fze9P205vvx+v/L7vzW8f286fzo9/3a8v3Dwi6gAAAC/ElEQVR4nO3b23abMBCFYfAA5mAw5v0fthCSlNYcxoaUGfX/rryyfKEdyTorigAAAAAAAAAAAAAAAAAAAAAAAAAA4RKJouSWjB/CI9JeijrP4iyvi0sbXEiJmms8dW2ioDJKWsd/q9OQIhZP+QbF2cU6irT5bMC+GpMgqlHahXy9rA0hYrIcsI+YnF28Ayw10VHuvhLlsRqw726cR5TLRsA4dj5oJNlmwvrsMu4i3WbAOL54rkRFFfadzdml3EHxK3ReiXLdjte7+k24MpuZ8jvsKxup4wFD5pcUzzqvCaPnReG8h9eEN81YMXA76Cs7mr6ruZ1d1DepE8ZOO1NJSeg9YRR+wvB7mtUdmim/qwvteOh26q1cWsRx5TZhpUzYuE2o7Uzbs0v6NtUmhuNpqXr5dPfaSNXN1G8j7SOub+mP3I4VA9U+hts9jA+KSnRdhX3CMuhf4WDz7MntfObbxphYuw+4NWJ4b6OD1f7Udz/6ZSViGUTA5Q41jJsYH+Zv1FzDuE0zkujpMDhzfGo4S9pqOmzkXUgV+EmSsrrWeZbXjy4N62LiNxGJkiQJ9AItAOAd8umYr5kj0jZdVRTVvUyWiy/DI4yu+PraPy3hPn9O0bKqnKmk4S9NkbmcyM0+rqjS7/Y4Nsqyev7Ww8VySpKlrfy66C5NmpbNvXosbTJ2Zxd/m6TaY9GFf4P1alRf1luU2d66kfvegLHt89JDAlregHvhitA6s5uo6tslW6w+pBHtddJtNg8z9nejEybb6e3AgCYPbNSXZ3QM7verrzzr2KvEg4bC38wNigd2pCNz7xL1d7qVrD2kUT3De42xvubwRmqumSrv6L3C1n2+w+bcE5mpec2hM7Yv6dmppg6e0IxMHRJv3nx6h6k3e+o766+w1ZkeP1j8DwltvbskIQlJeDr1u/RX2HqG8QPzUmP7bT+wPjQ1aYuGfZpj10+5vfMZScrLcdKbuYBR9Ocp9l5nhwEAAAAAAAAAAAAAAAAAAAAAAAAAAACAPX4BUvgeDOrqfkMAAAAASUVORK5CYII=', 'content', 'http://revistaip.com.pt/wp-content/uploads/sites/391/2016/05/482536036.jpg', 'Tips to make your workforce a security front line', 'text')}} 
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          {{posts.post('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAOVBMVEWy5vv////P7/yv5fu15/vF7Pz5/f/t+f73/P/j9v3J7fze9P205vvx+v/L7vzW8f286fzo9/3a8v3Dwi6gAAAC/ElEQVR4nO3b23abMBCFYfAA5mAw5v0fthCSlNYcxoaUGfX/rryyfKEdyTorigAAAAAAAAAAAAAAAAAAAAAAAAAA4RKJouSWjB/CI9JeijrP4iyvi0sbXEiJmms8dW2ioDJKWsd/q9OQIhZP+QbF2cU6irT5bMC+GpMgqlHahXy9rA0hYrIcsI+YnF28Ayw10VHuvhLlsRqw726cR5TLRsA4dj5oJNlmwvrsMu4i3WbAOL54rkRFFfadzdml3EHxK3ReiXLdjte7+k24MpuZ8jvsKxup4wFD5pcUzzqvCaPnReG8h9eEN81YMXA76Cs7mr6ruZ1d1DepE8ZOO1NJSeg9YRR+wvB7mtUdmim/qwvteOh26q1cWsRx5TZhpUzYuE2o7Uzbs0v6NtUmhuNpqXr5dPfaSNXN1G8j7SOub+mP3I4VA9U+hts9jA+KSnRdhX3CMuhf4WDz7MntfObbxphYuw+4NWJ4b6OD1f7Udz/6ZSViGUTA5Q41jJsYH+Zv1FzDuE0zkujpMDhzfGo4S9pqOmzkXUgV+EmSsrrWeZbXjy4N62LiNxGJkiQJ9AItAOAd8umYr5kj0jZdVRTVvUyWiy/DI4yu+PraPy3hPn9O0bKqnKmk4S9NkbmcyM0+rqjS7/Y4Nsqyev7Ww8VySpKlrfy66C5NmpbNvXosbTJ2Zxd/m6TaY9GFf4P1alRf1luU2d66kfvegLHt89JDAlregHvhitA6s5uo6tslW6w+pBHtddJtNg8z9nejEybb6e3AgCYPbNSXZ3QM7verrzzr2KvEg4bC38wNigd2pCNz7xL1d7qVrD2kUT3De42xvubwRmqumSrv6L3C1n2+w+bcE5mpec2hM7Yv6dmppg6e0IxMHRJv3nx6h6k3e+o766+w1ZkeP1j8DwltvbskIQlJeDr1u/RX2HqG8QPzUmP7bT+wPjQ1aYuGfZpj10+5vfMZScrLcdKbuYBR9Ocp9l5nhwEAAAAAAAAAAAAAAAAAAAAAAAAAAACAPX4BUvgeDOrqfkMAAAAASUVORK5CYII=', 'content', 'http://revistaip.com.pt/wp-content/uploads/sites/391/2016/05/482536036.jpg', 'Tips to make your workforce a security front line', 'text')}} 
+        </div>
+        <div class="col-6">
+          {{posts.post('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAOVBMVEWy5vv////P7/yv5fu15/vF7Pz5/f/t+f73/P/j9v3J7fze9P205vvx+v/L7vzW8f286fzo9/3a8v3Dwi6gAAAC/ElEQVR4nO3b23abMBCFYfAA5mAw5v0fthCSlNYcxoaUGfX/rryyfKEdyTorigAAAAAAAAAAAAAAAAAAAAAAAAAA4RKJouSWjB/CI9JeijrP4iyvi0sbXEiJmms8dW2ioDJKWsd/q9OQIhZP+QbF2cU6irT5bMC+GpMgqlHahXy9rA0hYrIcsI+YnF28Ayw10VHuvhLlsRqw726cR5TLRsA4dj5oJNlmwvrsMu4i3WbAOL54rkRFFfadzdml3EHxK3ReiXLdjte7+k24MpuZ8jvsKxup4wFD5pcUzzqvCaPnReG8h9eEN81YMXA76Cs7mr6ruZ1d1DepE8ZOO1NJSeg9YRR+wvB7mtUdmim/qwvteOh26q1cWsRx5TZhpUzYuE2o7Uzbs0v6NtUmhuNpqXr5dPfaSNXN1G8j7SOub+mP3I4VA9U+hts9jA+KSnRdhX3CMuhf4WDz7MntfObbxphYuw+4NWJ4b6OD1f7Udz/6ZSViGUTA5Q41jJsYH+Zv1FzDuE0zkujpMDhzfGo4S9pqOmzkXUgV+EmSsrrWeZbXjy4N62LiNxGJkiQJ9AItAOAd8umYr5kj0jZdVRTVvUyWiy/DI4yu+PraPy3hPn9O0bKqnKmk4S9NkbmcyM0+rqjS7/Y4Nsqyev7Ww8VySpKlrfy66C5NmpbNvXosbTJ2Zxd/m6TaY9GFf4P1alRf1luU2d66kfvegLHt89JDAlregHvhitA6s5uo6tslW6w+pBHtddJtNg8z9nejEybb6e3AgCYPbNSXZ3QM7verrzzr2KvEg4bC38wNigd2pCNz7xL1d7qVrD2kUT3De42xvubwRmqumSrv6L3C1n2+w+bcE5mpec2hM7Yv6dmppg6e0IxMHRJv3nx6h6k3e+o766+w1ZkeP1j8DwltvbskIQlJeDr1u/RX2HqG8QPzUmP7bT+wPjQ1aYuGfZpj10+5vfMZScrLcdKbuYBR9Ocp9l5nhwEAAAAAAAAAAAAAAAAAAAAAAAAAAACAPX4BUvgeDOrqfkMAAAAASUVORK5CYII=', 'content', 'http://revistaip.com.pt/wp-content/uploads/sites/391/2016/05/482536036.jpg', 'Tips to make your workforce a security front line', 'text')}}   
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      {{cards.project('https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&h=350', 'Subscription licensing unlocks spike in IT orders', 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/2000px-Airbnb_Logo_B%C3%A9lo.svg.png')}}
+    </div>
+    <div class="col-4">
+      {{cards.project('https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&h=350', 'Subscription licensing unlocks spike in IT orders', 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/2000px-Airbnb_Logo_B%C3%A9lo.svg.png')}}
+    </div>
+    <div class="col-4">
+      {{cards.project('https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&h=350', 'Subscription licensing unlocks spike in IT orders', 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/2000px-Airbnb_Logo_B%C3%A9lo.svg.png')}}
     </div>
   </div>
 </div>

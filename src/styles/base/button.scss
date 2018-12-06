@@ -1,0 +1,20 @@
+@mixin easeOut {
+    transition: all 1s ease-out;
+}
+
+.menu-btn {
+    position: absolute;
+    z-index: 3;
+    right: 25px;
+    top: 20px;
+    margin-left: 20px;
+    @include easeOut;
+
+    &__line {
+        background-color: $color-black;
+        width: 20px;
+        height: 2px;
+        margin: 0 0 5px 0;
+        @include easeOut;
+    }
+}

@@ -1,0 +1,8 @@
+{% macro slide(logo, text, avtor, position, borderColor) %}
+    <div class="carousel-slide" style="border-color:{{borderColor}}">
+        <img src="{{logo}}"></img>
+        <p class="carousel-slide__text">{{text}}</p>
+        <div>{{avtor}}</div>
+        <div>{{position}}</div>
+    </div>
+{% endmacro %}

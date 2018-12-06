@@ -1,0 +1,20 @@
+{% macro card(title, content, img, text) %}
+    <div class="card">
+        <h3>{{title}}</h3>
+        <p>{{content}}</p>
+        <img class="card__img" src="{{img}}"></img>
+        <div class="card__btn">
+          <p>{{text}}</p>
+          <i data-feather="arrow-right"></i>
+        </div>
+      </div>
+{% endmacro %}
+
+{% macro project( img, text, logo) %}
+  <div class="project" style="background-image: url({{img}})">
+    <div class="project__content">
+      <p class="project__title">{{text}}</p>
+      <img class="project__logo" src="{{logo}}"></img>
+    </div>
+  </div>
+{% endmacro %}

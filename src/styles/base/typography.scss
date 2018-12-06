@@ -1,6 +1,16 @@
+html {
+    /* Antialiased text rendering */
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Enable OpenType kerning */
+    font-feature-settings: 'kern' 1;
+    text-size-adjust: 100%;
+  }
+
 body {
-    background-color: $color-gray-light;
-    color: $color-gray;
+    // color: $color-gray;
     font-size: $font-size-base;
     font-family: $font-family, Ubuntu, Helvetica, Arial, sans-serif;
 }
@@ -11,10 +21,22 @@ h3,
 h4 {
     color: $color-black;
 }
-
-h2, h4 {
-    font-family: $font-family-serif;
-    text-transform: capitalize;
+h1 {
+    font-size: 4.5rem;
+    font-weight: bold;
 }
 
+h2 {
+    margin-bottom: 30px;
+    font-weight: bold;
+}
 
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    // font-weight: bold;
+}
+
+p {
+    margin: 0;
+}
