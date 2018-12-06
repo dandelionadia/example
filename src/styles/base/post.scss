@@ -23,11 +23,14 @@
         position: absolute;
         z-index: 3;
         bottom: 0;
+        padding: 5% 10%;
+        display: flex;
 
         &--avatar {
             width: 28px;
             height: 28px;
             border-radius: 50%;
+            margin-right: 10px;
         }
     }
 

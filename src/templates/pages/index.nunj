@@ -102,13 +102,13 @@ It is a long normal distribution of letters, as opposed to using 'Content here, 
 <div class="container">
   <div class="row">
     <div class="col-4">
-      {{cards.project('Subscription licensing unlocks spike in IT orders', 'https://blog.macsales.com/wp-content/uploads/2015/02/rocketyard_icon.png')}}
+      {{cards.project('https://intereconomia.com/wp-content/uploads/2017/10/matrix-1024x463.jpg', 'Subscription licensing unlocks spike in IT orders', 'https://blog.macsales.com/wp-content/uploads/2015/02/rocketyard_icon.png')}}
     </div>
     <div class="col-4">
-      {{cards.project('Subscription licensing unlocks spike in IT orders', 'https://blog.macsales.com/wp-content/uploads/2015/02/rocketyard_icon.png')}}
+      {{cards.project('https://intereconomia.com/wp-content/uploads/2017/10/matrix-1024x463.jpg', 'Subscription licensing unlocks spike in IT orders', 'https://blog.macsales.com/wp-content/uploads/2015/02/rocketyard_icon.png')}}
     </div>
     <div class="col-4">
-      {{cards.project('Subscription licensing unlocks spike in IT orders', 'https://blog.macsales.com/wp-content/uploads/2015/02/rocketyard_icon.png')}}
+      {{cards.project('https://intereconomia.com/wp-content/uploads/2017/10/matrix-1024x463.jpg', 'Subscription licensing unlocks spike in IT orders', 'https://blog.macsales.com/wp-content/uploads/2015/02/rocketyard_icon.png')}}
     </div>
 
 {% endblock %}
