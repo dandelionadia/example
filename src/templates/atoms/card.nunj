@@ -10,12 +10,11 @@
       </div>
 {% endmacro %}
 
-{% macro project( fon, text, img) %}
-  <div class="project">
-    <img class="project__fon" src="{{fon}}"></img>
-    <div class="project__box-text">
-      <div>{{text}}</div>
-      <img class="project__img" src="{{img}}"></img>
+{% macro project( img, text, logo) %}
+  <div class="project" style="background-image: url({{img}})">
+    <div class="project__content">
+      <p class="project__title">{{text}}</p>
+      <img class="project__logo" src="{{logo}}"></img>
     </div>
   </div>
 {% endmacro %}
