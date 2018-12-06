@@ -10,7 +10,7 @@
       </div>
 {% endmacro %}
 
-{% macro project(fon, text, img) %}
+{% macro project( fon, text, img) %}
   <div class="project">
     <img class="project__fon" src="{{fon}}"></img>
     <div class="project__box-text">
