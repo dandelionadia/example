@@ -1,7 +1,7 @@
 {% macro post(avatar, content, img, title, text, color) %}
 
 <div class="post">
-    <div class="post__imgs">
+    <div class="post__image">
         <div class="post__meta">
             <img class="post__meta--avatar" src="{{avatar}}"></img>
             <p>{{content}}</p>
