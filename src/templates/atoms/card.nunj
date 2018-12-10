@@ -18,3 +18,22 @@
     </div>
   </div>
 {% endmacro %}
+
+
+{% macro serve(logo, title, text) %}
+  <div class="serve">
+    <img src="{{logo}}" class="serve__logo"></img>
+    <h3 class="serve__title">{{title}}</h3>
+    <p class="serve__text">{{text}}</p>
+  </div>
+{% endmacro %}
+
+{% macro support(img, title, text) %}
+  <div class="support">
+    <img src="{{img}}" class="support__img"></img>
+    <div class="support__box">
+      <p class="support__title">{{title}}</p>
+      <p class="support__text">{{text}}</p>
+    </div>
+  </div>
+{% endmacro %}

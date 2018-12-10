@@ -1,0 +1,11 @@
+.support {
+    position: relative;
+    
+    &__img {
+        width: 100%;
+    }
+
+    &__box {
+        position: absolute;
+    }
+}
