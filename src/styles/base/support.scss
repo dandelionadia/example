@@ -1,15 +1,26 @@
 .support {
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     
     &__img {
-        position: absolute;
-        z-index: 0;
         width: 100%;
     }
 
     &__box {
-        position: absolute;
+        background-color: $color-white;
         z-index: 1;
-        bottom: 0;
+        bottom: -20;
+        padding: 10px 20px;
+        box-shadow: 0px 3px 15px #CFD2D1;
+        position: absolute;
+        text-align: center;
+    }
+
+    &__title {
+        color: $color-blue;
+        font-size: 12px;
     }
 
 }

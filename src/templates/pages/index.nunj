@@ -133,10 +133,16 @@ It is a long normal distribution of letters, as opposed to using 'Content here, 
   </div>
 </div>
 
-<div class="container-fluid">
+<div class="container">
   <div class="row">
     <div class="col-4">
-      {{cards.support('https://ohmiglob.files.wordpress.com/2014/04/at1.jpg', 'title title', 'text text text text')}}
+      {{cards.support('https://ohmiglob.files.wordpress.com/2014/04/at1.jpg', 'Oitle title', 'Pext text text text')}}
+    </div>
+    <div class="col-4">
+      {{cards.support('https://ohmiglob.files.wordpress.com/2014/04/at1.jpg', 'Oitle title', 'Pext text text text')}}
+    </div>
+    <div class="col-4">
+      {{cards.support('https://ohmiglob.files.wordpress.com/2014/04/at1.jpg', 'Oitle title', 'Pext text text text')}}
     </div>
   </div>
 </div>
