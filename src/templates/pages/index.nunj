@@ -112,4 +112,13 @@ It is a long normal distribution of letters, as opposed to using 'Content here, 
     </div>
   </div>
 </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+
+    </div>
+  </div>
+</div>
+
 {% endblock %}
