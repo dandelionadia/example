@@ -28,12 +28,17 @@
   </div>
 {% endmacro %}
 
-{% macro support(img, title, text) %}
+{% macro support(img, category, title, text) %}
   <div class="support">
     <img src="{{img}}" class="support__img"></img>
-    <div class="support__box">
+    <div class="support__content">   
+      <div class="support__header">
+        <p class="support__category">{{category}}</p>
+      </div>
       <p class="support__title">{{title}}</p>
-      <p class="support__text">{{text}}</p>
+      <div class="support__footer">
+        <a class="support__link" href="#">{{text}}</a>
+      </div>
     </div>
   </div>
 {% endmacro %}
