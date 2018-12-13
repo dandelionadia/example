@@ -13,7 +13,7 @@
         }
 
         .support__footer {
-            height: 20px;
+            height: $item-height
         }
     }
 
@@ -25,12 +25,11 @@
     }
     
     &__header {
-        height: 20px;
+        height: $item-height;
     }
 
     &__img {
         max-width: 100%;
-        // display: block;
     }
 
     &__content {
@@ -51,8 +50,8 @@
     }
       
     &__title {
-    margin: 0;
-    padding: 5px 0;
+        margin: 0;
+        padding: 5px 0;
     }
 
     &__footer {
@@ -61,7 +60,7 @@
     }
     
     &__link {
-    margin: 0;
+        margin: 0;
     }
 
 }
