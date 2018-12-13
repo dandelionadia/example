@@ -3,13 +3,15 @@
 
 {% block content %}
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-12">
+<div class="header">
+  <div class="container-fluid">
+    <div class="row">
 
-      <div class="header-box">
-        <img class="header-box__logo" src="./assets/img/logo.jpg"></img>
+      <div class="col-6 d-flex align-items-center">
+          <img class="header__logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/2000px-Airbnb_Logo_B%C3%A9lo.svg.png"></img>
+      </div>
 
+      <div class="col-6">
         <div class="menu-btn">
           <div class="menu-btn__line"></div>
           <div class="menu-btn__line"></div>
