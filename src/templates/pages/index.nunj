@@ -7,8 +7,15 @@
   <div class="container-fluid">
     <div class="row d-flex align-items-center">
 
-      <div class="col d-flex align-items-center">
-          <img class="header__logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/2000px-Airbnb_Logo_B%C3%A9lo.svg.png"></img>
+      <div class="col col-md-auto">
+          <img class="header__logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/2000px-Airbnb_Logo_B%C3%A9lo.svg.png"/>
+      </div>
+
+      <div class="col d-none d-md-block">
+        <div class="box__info">
+            <a class="box__link" href="#">Now Hiring: </a>
+             Are you a driven and motivated 1st Line IT Support Engineer?
+        </div>
       </div>
 
       <div class="col-auto d-none d-sm-block">
