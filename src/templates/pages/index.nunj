@@ -24,7 +24,7 @@
           <div class="box__text">
             <p>Have any questions?</p>
             <p>Free:
-            <a class="box__link" href="#"> 123 456 789</a>
+            <a class="box__link box__link--br" href="#"> 123 456 789</a>
             </p>
           </div>
         </div>
