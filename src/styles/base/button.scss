@@ -3,11 +3,6 @@
 }
 
 .menu-btn {
-    position: absolute;
-    z-index: 3;
-    right: 25px;
-    top: 10px;
-    margin-left: 20px;
     @include easeOut;
 
     &__line {
