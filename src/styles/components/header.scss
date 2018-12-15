@@ -12,13 +12,17 @@
     &__logo {
         width: 100px;
     }
+
+    &__icon {
+        margin-right: 10px;
+        
+        @media (min-width: 992px) {
+            display: none;
+        }
+    }
 }
 
 .box {
-    // background-color: red;
-
-    &__text {
-    }
 
     &__link {
         color: #0e2b5c;
@@ -30,5 +34,17 @@
 
     &__info {
         text-align: center;
+    }
+}
+
+.menu {
+    list-style: none;
+    border-top: 1px solid #dadbdc;
+    margin: 15px 0;
+
+    &__item {
+        display: inline-block;
+        padding: 15px 0;
+        margin-right: 20px;
     }
 }
