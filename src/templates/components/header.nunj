@@ -1,0 +1,31 @@
+{% set menuItems = [
+  {
+    title: "Homepage"
+  },
+  {
+    title: "About us"
+  },
+  {
+    title: "Career",
+    items: [
+      {
+        title: "Child 1"
+      },
+      {
+        title: "Child 2"
+      }
+    ]
+  }
+] %}
+
+<ul>
+    {% for menuItem in menuItems %}
+        <li  class="menu__item">{{ menuItem.title }}</li>
+    {% endfor %}
+</ul>
+
+{% if {{ menuItem.items }} %}
+    {{ menuItem.items.title }}
+{% else %}
+    {{ menuItem.title }}
+{% endif %}

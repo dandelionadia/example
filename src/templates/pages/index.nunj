@@ -21,15 +21,7 @@
           </div>
           <div class="col-12 d-none d-lg-block">
             <ul class="menu">
-              <li class="menu__item">
-                one
-              </li>
-              <li class="menu__item">
-                two
-              </li>
-              <li class="menu__item">
-                three
-              </li>
+              {% include "components/header.nunj" %}
             </ul>
           </div>
         </div>
