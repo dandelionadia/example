@@ -1,0 +1,67 @@
+{% import "atoms/card.nunj" as cards %}
+
+{% set articles = [
+    {
+        title: "Article 1",
+        imageUrl: "http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/05/imgix-391813-unsplash1-1190x558.jpg",
+        date: "May 8, 2018",
+        author: {
+            name: "John Maverick",
+            imageUrl: "http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/05/imgix-391813-unsplash1-1190x558.jpg"
+        },
+        description: "Lorem ipsum",
+        readmoteUrl: "https://google.com"
+    },
+    {
+        title: "Article 2",
+        imageUrl: "http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/05/imgix-391813-unsplash1-1190x558.jpg",
+        date: "May 8, 2018",
+        author: {
+            name: "John Maverick",
+            imageUrl: "http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/05/imgix-391813-unsplash1-1190x558.jpg"
+        },
+        description: "Lorem ipsum",
+        readmoteUrl: "https://google.com"
+    },
+    {
+        title: "Article 3",
+        imageUrl: "http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/05/imgix-391813-unsplash1-1190x558.jpg",
+        date: "May 8, 2018",
+        author: {
+            name: "John Maverick",
+            imageUrl: "http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/05/imgix-391813-unsplash1-1190x558.jpg"
+        },
+        description: "Lorem ipsum",
+        readmoteUrl: "https://google.com"
+    },
+    {
+        title: "Article 3",
+        imageUrl: "http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/05/imgix-391813-unsplash1-1190x558.jpg",
+        date: "May 8, 2018",
+        author: {
+            name: "John Maverick",
+            imageUrl: "http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/05/imgix-391813-unsplash1-1190x558.jpg"
+        },
+        description: "Lorem ipsum",
+        readmoteUrl: "https://google.com"
+    }
+] %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            {% set firstArticle = articles[0] %}
+            {{cards.post(firstArticle.imageUrl, firstArticle.author.name, firstArticle.author.imageUrl, firstArticle.title, firstArticle.description, firstArticle.date)}}   
+        </div>
+
+        <div class="col-6">
+            <div class="row">
+                {% for article in articles %}
+                    <div class="col-6">
+                        {{cards.post(article.imageUrl, article.author.name, article.author.imageUrl, article.title, article.description, article.date, true)}}   
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

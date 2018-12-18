@@ -20,9 +20,7 @@
             </div>
           </div>
           <div class="col-12 d-none d-lg-block">
-            <ul class="menu">
-              {% include "components/header.nunj" %}
-            </ul>
+            {% include "components/header.nunj" %}
           </div>
         </div>
       </div>
@@ -53,6 +51,8 @@
     </div>
   </div>
 </div>
+
+{% include "components/articles.nunj" %}
 
 {# 
 <div class="container">
