@@ -23,9 +23,9 @@
         <li  class="menu__item">{{ menuItem.title }}</li>
     {% endfor %}
 </ul>
-
+{# 
 {% if {{ menuItem.items }} %}
     {{ menuItem.items.title }}
 {% else %}
     {{ menuItem.title }}
-{% endif %}
+{% endif %} #}

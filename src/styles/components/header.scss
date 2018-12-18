@@ -19,6 +19,18 @@
         @media (min-width: 992px) {
             display: none;
         }
+
+        @media (min-width: 1200px) {
+            display: block;
+        }
+        
+    }
+
+    &__search {
+
+        @media (min-width: 1200px) {
+            margin-left: -10px;
+        }
     }
 }
 
@@ -35,16 +47,22 @@
     &__info {
         text-align: center;
     }
+
+    @media (min-width: 1200px) {
+        border-right: 1px solid $color-gray-br;
+        padding-right: 20px;
+    }
 }
 
 .menu {
     list-style: none;
-    border-top: 1px solid #dadbdc;
-    margin: 15px 0;
+    border-top: 1px solid $color-gray-br;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-top: 10px;
 
     &__item {
         display: inline-block;
-        padding: 15px 0;
         margin-right: 20px;
     }
 }

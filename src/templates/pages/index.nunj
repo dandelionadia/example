@@ -29,11 +29,11 @@
 
       <div class="col-auto d-none d-sm-block">
         <div class="box d-flex">
-          <i class="header__icon" class="mr-2 mt-1" data-feather="message-circle"></i>
+          <i class="header__icon mr-2 mt-1" data-feather="message-circle"></i>
           <div class="box__text">
             <p>Have any questions?</p>
             <p>Free:
-            <a class="box__link box__link--br" href="#"> 123 456 789</a>
+              <a class="box__link box__link--br" href="#"> 123 456 789</a>
             </p>
           </div>
         </div>
@@ -48,7 +48,7 @@
       </div>
 
       <div class="col-auto d-none d-lg-block">
-        <i class="mr-2 mt-1" data-feather="search"></i>
+        <i class="header__search mr-2 mt-1" data-feather="search"></i>
       </div>
     </div>
   </div>
