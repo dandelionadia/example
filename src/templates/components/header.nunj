@@ -18,14 +18,19 @@
   }
 ] %}
 
-<ul>
+<ul class="menu">
     {% for menuItem in menuItems %}
-        <li  class="menu__item">{{ menuItem.title }}</li>
+        <li  class="menu__item">
+          <a href="#">{{ menuItem.title }}</a>
+
+          {% if menuItem.items %}
+            <ul>
+              {% for item in menuItem.items  %}
+                <li>{{item.title}}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+
+        </li>
     {% endfor %}
 </ul>
-{# 
-{% if {{ menuItem.items }} %}
-    {{ menuItem.items.title }}
-{% else %}
-    {{ menuItem.title }}
-{% endif %} #}
