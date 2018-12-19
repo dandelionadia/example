@@ -24,7 +24,7 @@
           <a href="#">{{ menuItem.title }}</a>
 
           {% if menuItem.items %}
-            <ul>
+            <ul class="menu__submenu">
               {% for item in menuItem.items  %}
                 <li>{{item.title}}</li>
               {% endfor %}

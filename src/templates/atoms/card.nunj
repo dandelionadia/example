@@ -19,11 +19,12 @@
     </div>
 {% endmacro %}
 
-{% macro post(avatar, authorName, img, title, text, date, isSmall) %}
+{% macro post(iconName, authorName, img, title, text, date, isSmall) %}
 <div class="post">
     <div class="post__image">
         <div class="post__meta">
-            <img class="post__meta--avatar" src="{{avatar}}"/>
+            {# <img class="post__meta--avatar" src="{{avatar}}"/> #}
+            <i class="post__meta--avatar" data-feather="{{iconName}}"></i>
             <p>{{authorName}}</p>
         </div>
 

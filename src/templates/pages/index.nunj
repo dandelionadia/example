@@ -54,7 +54,6 @@
 
 {% include "components/articles.nunj" %}
 
-{# 
 <div class="container">
   <div class="row">
     <div class="col-12">
@@ -66,6 +65,7 @@ It is a long.</h1>
       <span>text Wow use Lorem Ipsum as their default model text, and a searcweb sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</span>
 
     </div>
+{# 
 
   </div>
   <div class="row">

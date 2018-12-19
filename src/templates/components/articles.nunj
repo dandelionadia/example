@@ -58,7 +58,7 @@
             <div class="row">
                 {% for article in articles %}
                     <div class="col-6">
-                        {{cards.post(article.imageUrl, article.author.name, article.author.imageUrl, article.title, article.description, article.date, true)}}   
+                        {{cards.post('user', article.author.name, article.author.imageUrl, article.title, article.description, article.date, true)}}   
                     </div>
                 {% endfor %}
             </div>
