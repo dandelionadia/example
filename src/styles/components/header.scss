@@ -69,13 +69,26 @@
             & .menu__submenu {
                 display: block;
                 transform: translateY(0);
+                opacity: 1;
               }
         }
     }
     
     &__submenu {
-        display: none;
-        transition: transform .3s;
+        background-color: $color-white;
+        opacity: 0;
+        box-shadow: 0px 0px 2px 1px rgba(0, 0, 255, .2);
+        color: $color-gray-text;
+        position: absolute;
+        z-index: 4;
+        padding: 10px 10px;
+        // display: none;
+        transition: transform 0.6s;
         transform: translateY(10px);
+        list-style: none;
+
+        & li {
+            margin: 5px 0;
+        }
     }
 }
