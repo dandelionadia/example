@@ -1,20 +1,94 @@
 {% set menuItems = [
   {
-    title: "Homepage"
-  },
-  {
-    title: "About us"
-  },
-  {
-    title: "Career",
+    title: "Home",
     items: [
       {
-        title: "Child 1"
+        title: "Homepage 1"
       },
       {
-        title: "Child 2"
+        title: "Homepage 2"
+      },
+      {
+        title: "Homepage 3"
       }
     ]
+  },
+  {
+    title: "Company",
+    items: [
+      {
+        title: "About"
+      },
+      {
+        title: "Mission, Vision and Values"
+      },
+      {
+        title: "Leadership Team"
+      },
+      {
+        title: "Why Choose Us"
+      },
+      {
+        title: "Locations"
+      },
+      {
+        title: "FAQ"
+      },
+      {
+        title: "Careers"
+      }, 
+      {
+        title: "Pricing and plans"
+      }
+    ]
+  },
+  {
+    title: "IT Solutions",
+    items: [
+      {
+        title: "1"
+      },
+      {
+        title: "2"
+      },
+      {
+        title: "3"
+      }
+    ]
+  },
+  {
+    title: "Case Studies",
+    items: [
+      {
+        title: "Layout Style 01"
+      },
+      {
+        title: "Layout Style 02"
+      },
+      {
+        title: "Layout Style 03"
+      }
+    ]
+  },
+  {
+    title: "IT Blog",
+    items: [
+      {
+        title: "Grid Layout"
+      },
+      {
+        title: "Masonry Layout"
+      },
+      {
+        title: "Medium Image"
+      },
+      {
+        title: "Large Image"
+      }
+    ]
+  },
+  {
+    title: "Contact Us"
   }
 ] %}
 

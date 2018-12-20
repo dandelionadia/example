@@ -60,6 +60,8 @@
     margin-top: 10px;
     margin-bottom: 0;
     padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
     
     &__item {
         display: inline-block;
@@ -68,31 +70,27 @@
         &--open {
             & .menu__submenu {
                 display: block;
-                // transform: translateY(0);
-                // opacity: 1;
-                animation: muv 1s;
-              }
+                animation: muv 0.6s;
+            }
         }
     }
 
     @keyframes muv {
-        0% {display: block; opacity: 0; margin-top: 10px;}
-        100% {display: block; opacity: 1; margin-top: 0;}
+        0% {display: block; opacity: 0;  transform: translateY(20px);}
+        100% {display: block; opacity: 1; transform: translateY(0);}
     }
     
     &__submenu {
         background-color: $color-white;
-        // opacity: 0;
         box-shadow: 0px 0px 2px 1px rgba(0, 0, 255, .2);
         color: $color-gray-text;
         position: absolute;
         z-index: 4;
         padding: 10px 10px;
         display: none;
-        // margin-top: 20px;
-        // transition: transform 0.6s, opacity 0.2s;
-        // transform: translateY(10px);
+        transition:  opacity 0.9s;
         list-style: none;
+        // opacity: 0;
 
         & li {
             margin: 5px 0;
