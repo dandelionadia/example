@@ -96,11 +96,12 @@
     {% for menuItem in menuItems %}
         <li  class="menu__item">
           <a href="#">{{ menuItem.title }}</a>
+          {# <span>{{ menuItem.title }}</span> #}
 
           {% if menuItem.items %}
             <ul class="menu__submenu">
               {% for item in menuItem.items  %}
-                <li>{{item.title}}</li>
+                <li class="menu__item">>{{item.title}}</li>
               {% endfor %}
             </ul>
           {% endif %}
