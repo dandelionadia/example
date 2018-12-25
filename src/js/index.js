@@ -1,7 +1,3 @@
-// var submenu = document.getElementsByClassName('menu__submenu');
-// submenu.addEventListener('click', function () {
-//   submenu.classList.toggle('open');
-// })
 var menuItems = document.querySelectorAll('.menu__item')
 
 menuItems.forEach(function (menuItem) {
