@@ -1,19 +1,33 @@
 var menuItems = document.querySelectorAll('.menu__item')
+var menuOpenClass = 'menu__item--open';
 
 menuItems.forEach(function (menuItem) {
   menuItem.addEventListener('click', function (event) {
+    // по замовчуванню всі події ідуть вгору
+    // запобігаємо тому щоб боді реагував при кліку на лі
+    event.stopPropagation();
+    
+    // змінна зберігає елемент лі на який нажали
     var clickedItem = event.currentTarget;
-    var isOpen = clickedItem.classList.contains('menu__item--open');
+
+    // змінна перевіряж чи елемент лі на який надажали має цей клас
+    var isOpen = clickedItem.classList.contains(menuOpenClass);
+
+    // видаляємо клас у всіх лі
     resetMenuClasses(menuItems);
+
     if (!isOpen) {
-      clickedItem.classList.add('menu__item--open');
-    } 
-    // debugger
+      clickedItem.classList.add(menuOpenClass);
+    }
   })
 })
 
 function resetMenuClasses(items) {
   items.forEach(function(item) {
-    item.classList.remove('menu__item--open');
+    item.classList.remove(menuOpenClass);
   })
 }
+
+document.body.addEventListener('click', function() {
+  resetMenuClasses(menuItems);
+}) 

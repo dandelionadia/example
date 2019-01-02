@@ -94,10 +94,12 @@
 
 <ul class="menu">
     {% for menuItem in menuItems %}
-        <li  class="menu__item">
+        <li class="menu__item">
           <a href="#">{{ menuItem.title }}</a>
 
           {% if menuItem.items %}
+            <span class="menu__icon menu__icon--chevron" data-feather="chevron-down"></span>
+            <span class="menu__icon menu__icon--x" data-feather="x"></span>
             <ul class="menu__submenu">
               {% for item in menuItem.items  %}
                 <li class="menu__item">{{item.title}}</li>
