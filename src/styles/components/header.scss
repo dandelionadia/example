@@ -104,6 +104,16 @@
             transform: scaleY(1);
         }
     }
+
+    &__iconArrow {
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        left: 15px;
+        opacity: 0;
+        transform: translateX(-10px);
+        transition: transform 0.3s , opacity 0.3s;
+    }
     
     &__submenu {
         $bg-color: $color-white;
@@ -145,8 +155,18 @@
             border-top: 1px solid $border-color;
             border-left: 1px solid $border-color;
 
-            transform: translate3d(-50%, -58%, 0) rotate(45deg);
+            // makes submenu blurry
+            transform: translate3d(-50%, -60%, 0) rotate(45deg);
             top: 0;
+        }
+    }
+}
+
+.submenu {
+    &__item:hover {
+        & .menu__iconArrow {
+            opacity: 1;
+            transform: translateX(0);
         }
     }
 }

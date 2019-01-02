@@ -9,7 +9,7 @@
         title: "Homepage 2"
       },
       {
-        title: "Homepage 3"
+        title: "Mission, Vision and Values"
       }
     ]
   },
@@ -102,7 +102,10 @@
             <span class="menu__icon menu__icon--x" data-feather="x"></span>
             <ul class="menu__submenu">
               {% for item in menuItem.items  %}
-                <li class="menu__item">{{item.title}}</li>
+                <li class="menu__item submenu__item">
+                  <span class="menu__iconArrow" data-feather="arrow-right"></span>
+                  <span>{{item.title}}</span>
+                </li>
               {% endfor %}
             </ul>
           {% endif %}
