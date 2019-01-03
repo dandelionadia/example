@@ -72,20 +72,19 @@
   },
   {
     title: "IT Blog",
-    items: [
-      {
-        title: "Grid Layout"
-      },
-      {
-        title: "Masonry Layout"
-      },
-      {
-        title: "Medium Image"
-      },
-      {
-        title: "Large Image"
-      }
-    ]
+    items: {
+      "IT something": [
+        {
+          title: "foo"
+        },
+        {
+          title: "bar"
+        }
+      ],
+      "Industries": [{
+        title: "One"
+      }]
+    }
   },
   {
     title: "Contact Us"
@@ -101,12 +100,32 @@
             <span class="menu__icon menu__icon--chevron" data-feather="chevron-down"></span>
             <span class="menu__icon menu__icon--x" data-feather="x"></span>
             <ul class="menu__submenu">
-              {% for item in menuItem.items  %}
+
+              {# Render categorized submenu #}
+              {% for categoryName, categoryItems in menuItem.items %}
+                {% if categoryItems.length > 0 %}
+                <li>
+                  <p>{{categoryName}}</p>
+                  <ul>
+                    {% for item in categoryItems %}
+                      <li class="menu__item submenu__item">
+                        <span class="menu__iconArrow" data-feather="arrow-right"></span>
+                        <span>{{item.title}}</span>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                </li>
+                {% endif %}
+              {% endfor %}
+
+              {# Render simple submenu list #}
+              {% for item in menuItem.items %}
                 <li class="menu__item submenu__item">
                   <span class="menu__iconArrow" data-feather="arrow-right"></span>
                   <span>{{item.title}}</span>
                 </li>
               {% endfor %}
+
             </ul>
           {% endif %}
 
