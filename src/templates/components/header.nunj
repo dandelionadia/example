@@ -128,7 +128,7 @@
 
 <ul class="menu">
     {% for menuItem in menuItems %}
-        <li class="menu__item">
+        <li class="menu__item menu__item--root">
           <a href="#">{{ menuItem.title }}</a>
 
           {% if menuItem.items %}

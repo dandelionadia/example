@@ -67,6 +67,7 @@ $submenu-padding: 20px;
         margin-right: 20px;
         position: relative;
         padding: 15px 0;
+        margin: 0;
         display: flex;
         align-items: center;
         
@@ -75,6 +76,23 @@ $submenu-padding: 20px;
                 visibility: visible;
                 opacity: 1;
                 transform: translate3d(-50%, 0, 0);
+            }
+        }
+
+        &--root {
+            &::before {
+                content: "";
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 0;
+                border-bottom: 3px solid $color-gray-text;
+                position: absolute;
+            }
+            
+            &:hover::before {
+                transition: width .3s;
+                width: 100%;
             }
         }
     }
