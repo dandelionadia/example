@@ -44,17 +44,51 @@
   },
   {
     title: "IT Solutions",
-    items: [
-      {
-        title: "1"
+    items: {
+      "IT Services": [
+        {
+        title: "Managed IT"
       },
       {
-        title: "2"
+        title: "IT Support"
       },
       {
-        title: "3"
+        title: "IT Consultancy"
+      },
+      {
+        title: "Cloud Computing"
+      }, 
+      {
+        title: "Cyber Security"
+      },
+      {
+        title: "Custom Software"
       }
-    ]
+      ],
+      "Industries": [
+        {
+          title: "Banking"
+        },
+        {
+          title: "Capital Markets"
+        },
+        {
+          title: "Enterprise Technology"
+        },
+        {
+          title: "Manufacturing"
+        }, 
+        {
+          title: "Healthcare"
+        }, 
+        {
+          title: "Higher Education"
+        }, 
+        {
+          title: "Logistics"
+        }
+      ]
+    }
   },
   {
     title: "Case Studies",
@@ -72,19 +106,20 @@
   },
   {
     title: "IT Blog",
-    items: {
-      "IT something": [
-        {
-          title: "foo"
-        },
-        {
-          title: "bar"
-        }
-      ],
-      "Industries": [{
-        title: "One"
-      }]
-    }
+    items: [
+      {
+        title: "Grid Layout"
+      },
+      {
+        title: "Masonry Layout"
+      },
+      {
+        title: "Medium Image "
+      },
+      {
+        title: "Large Image "
+      }
+    ]
   },
   {
     title: "Contact Us"
@@ -101,28 +136,30 @@
             <span class="menu__icon menu__icon--x" data-feather="x"></span>
             <ul class="menu__submenu">
 
-              {# Render categorized submenu #}
-              {% for categoryName, categoryItems in menuItem.items %}
-                {% if categoryItems.length > 0 %}
-                <li>
-                  <p>{{categoryName}}</p>
-                  <ul>
-                    {% for item in categoryItems %}
-                      <li class="menu__item submenu__item">
-                        <span class="menu__iconArrow" data-feather="arrow-right"></span>
-                        <span>{{item.title}}</span>
-                      </li>
-                    {% endfor %}
-                  </ul>
-                </li>
-                {% endif %}
-              {% endfor %}
+              <div class="cont">
+                {# Render categorized submenu #}
+                {% for categoryName, categoryItems in menuItem.items %}
+                  {% if categoryItems.length > 0 %}
+                  <li>
+                    <p>{{categoryName}}</p>
+                    <ul>
+                      {% for item in categoryItems %}
+                        <li class="menu__item submenu__item">
+                          <span class="menu__iconArrow" data-feather="arrow-right"></span>
+                          <a href="#">{{item.title}}</a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </li>
+                  {% endif %}
+                {% endfor %}
+              </div>
 
               {# Render simple submenu list #}
               {% for item in menuItem.items %}
                 <li class="menu__item submenu__item">
                   <span class="menu__iconArrow" data-feather="arrow-right"></span>
-                  <span>{{item.title}}</span>
+                  <a href="#">{{item.title}}</a>
                 </li>
               {% endfor %}
 

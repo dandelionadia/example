@@ -2,6 +2,8 @@
     transition: all 1s ease-out;
 }
 
+$submenu-padding: 20px;
+
 .header {
     padding: 0 0 30px;
     font-size: 12px;
@@ -124,7 +126,7 @@
         color: $color-gray-text;
         position: absolute;
         z-index: 4;
-        padding: 20px 0;
+        padding: $submenu-padding 5px;
         list-style: none;
         border-radius: 5px;
         border: 1px solid $border-color; 
@@ -140,8 +142,17 @@
         left: 50%;
         top: 100%;
 
-        & li {
+        & a {
             padding: 5px 40px;
+            margin: 0;
+            width: 100%;
+            color: $color-gray-text;
+            font-weight: unset;
+            font-size: 13.8px;
+        }
+
+        & li {
+            padding: 0;
             margin: 0;
         }
 
@@ -163,10 +174,42 @@
 }
 
 .submenu {
+
     &__item:hover {
         & .menu__iconArrow {
             opacity: 1;
             transform: translateX(0);
         }
     }
+}
+
+
+.cont {
+    display: flex;
+
+    & ul {
+        padding: 0;
+        min-width: 240px;
+        
+    }
+
+    & > li:not(:first-child) {
+        &::after {
+            content: "";
+            top: $submenu-padding + 10px;
+            bottom: $submenu-padding + 10px;
+            width: 1px;
+            background-color: $color-gray-br;
+            position: absolute;
+        }
+        // border-left: 1px solid black;
+    }
+
+    & p {
+        padding: 5px 40px;
+        font-weight: bold;
+        font-size: 15px;
+        color: $color-gray-text;
+    }
+
 }
