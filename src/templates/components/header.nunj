@@ -136,7 +136,7 @@
             <span class="menu__icon menu__icon--x" data-feather="x"></span>
             <ul class="menu__submenu">
 
-              <div class="cont">
+              <div class="submenu-container">
                 {# Render categorized submenu #}
                 {% for categoryName, categoryItems in menuItem.items %}
                   {% if categoryItems.length > 0 %}
@@ -146,7 +146,7 @@
                       {% for item in categoryItems %}
                         <li class="menu__item submenu__item">
                           <span class="menu__iconArrow" data-feather="arrow-right"></span>
-                          <a href="#">{{item.title}}</a>
+                          <a href="{{item.url}}">{{item.title}}</a>
                         </li>
                       {% endfor %}
                     </ul>
@@ -159,7 +159,7 @@
               {% for item in menuItem.items %}
                 <li class="menu__item submenu__item">
                   <span class="menu__iconArrow" data-feather="arrow-right"></span>
-                  <a href="#">{{item.title}}</a>
+                  <a href="{{item.url}}">{{item.title}}</a>
                 </li>
               {% endfor %}
 
