@@ -161,7 +161,7 @@
 <ul class="menu">
     {% for menuItem in menuItems %}
         <li class="menu__item menu__item--root">
-          <a href="{{menuItem.url}}">{{ menuItem.title }}</a>
+          <a href="{% if menuItem.items %}#{% else %}{{menuItem.url}}{% endif %}">{{ menuItem.title }}</a>
 
           {% if menuItem.items %}
             <span class="menu__icon menu__icon--chevron" data-feather="chevron-down"></span>
