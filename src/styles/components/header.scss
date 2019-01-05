@@ -88,6 +88,7 @@ $submenu-padding: 20px;
                 height: 0;
                 border-bottom: 3px solid $color-gray-text;
                 position: absolute;
+                transition: width .3s;
             }
             
             &:hover::before {
@@ -212,6 +213,7 @@ $submenu-padding: 20px;
     }
 
     & > li:not(:first-child) {
+        
         &::after {
             content: "";
             top: $submenu-padding + 10px;
@@ -220,7 +222,6 @@ $submenu-padding: 20px;
             background-color: $color-gray-br;
             position: absolute;
         }
-        // border-left: 1px solid black;
     }
 
     & p {
