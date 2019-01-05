@@ -3,13 +3,16 @@
     title: "Home",
     items: [
       {
-        title: "Homepage 1"
+        title: "Homepage 1",
+        url: "http://www.trex-game.skipser.com/"
       },
       {
-        title: "Homepage 2"
+        title: "Homepage 2",
+        url: "http://www.trex-game.skipser.com/"
       },
       {
-        title: "Mission, Vision and Values"
+        title: "Mission, Vision and Values",
+        url: "http://www.trex-game.skipser.com/"
       }
     ]
   },
@@ -17,28 +20,36 @@
     title: "Company",
     items: [
       {
-        title: "About"
+        title: "About",
+        url: "http://www.trex-game.skipser.com/"
       },
       {
-        title: "Mission, Vision and Values"
+        title: "Mission, Vision and Values",
+        url: "http://www.trex-game.skipser.com/"
       },
       {
-        title: "Leadership Team"
+        title: "Leadership Team",
+        url: "http://www.trex-game.skipser.com/"
       },
       {
-        title: "Why Choose Us"
+        title: "Why Choose Us",
+        url: "http://www.trex-game.skipser.com/"
       },
       {
-        title: "Locations"
+        title: "Locations",
+        url: "http://www.trex-game.skipser.com/"
       },
       {
-        title: "FAQ"
+        title: "FAQ",
+        url: "http://www.trex-game.skipser.com/"
       },
       {
-        title: "Careers"
+        title: "Careers",
+        url: "http://www.trex-game.skipser.com/"
       }, 
       {
-        title: "Pricing and plans"
+        title: "Pricing and plans",
+        url: "http://www.trex-game.skipser.com/"
       }
     ]
   },
@@ -47,45 +58,58 @@
     items: {
       "IT Services": [
         {
-        title: "Managed IT"
+        title: "Managed IT",
+        url: "http://www.trex-game.skipser.com/"
       },
       {
-        title: "IT Support"
+        title: "IT Support",
+        url: "http://www.trex-game.skipser.com/"
       },
       {
-        title: "IT Consultancy"
+        title: "IT Consultancy",
+        url: "http://www.trex-game.skipser.com/"
       },
       {
-        title: "Cloud Computing"
+        title: "Cloud Computing",
+        url: "http://www.trex-game.skipser.com/"
       }, 
       {
-        title: "Cyber Security"
+        title: "Cyber Security",
+        url: "http://www.trex-game.skipser.com/"
       },
       {
-        title: "Custom Software"
+        title: "Custom Software",
+        url: "http://www.trex-game.skipser.com/"
       }
       ],
       "Industries": [
         {
-          title: "Banking"
+          title: "Banking",
+          url: "http://www.trex-game.skipser.com/"
         },
         {
-          title: "Capital Markets"
+          title: "Capital Markets",
+          url: "http://www.trex-game.skipser.com/"
         },
         {
-          title: "Enterprise Technology"
+          title: "Enterprise Technology",
+          url: "http://www.trex-game.skipser.com/"
         },
         {
-          title: "Manufacturing"
+          title: "Manufacturing",
+          url: "http://www.trex-game.skipser.com/"
         }, 
         {
-          title: "Healthcare"
+          title: "Healthcare",
+          url: "http://www.trex-game.skipser.com/"
         }, 
         {
-          title: "Higher Education"
+          title: "Higher Education",
+          url: "http://www.trex-game.skipser.com/"
         }, 
         {
-          title: "Logistics"
+          title: "Logistics",
+          url: "http://www.trex-game.skipser.com/"
         }
       ]
     }
@@ -94,13 +118,16 @@
     title: "Case Studies",
     items: [
       {
-        title: "Layout Style 01"
+        title: "Layout Style 01",
+        url: "http://www.trex-game.skipser.com/"
       },
       {
-        title: "Layout Style 02"
+        title: "Layout Style 02",
+        url: "http://www.trex-game.skipser.com/"
       },
       {
-        title: "Layout Style 03"
+        title: "Layout Style 03",
+        url: "http://www.trex-game.skipser.com/"
       }
     ]
   },
@@ -108,21 +135,26 @@
     title: "IT Blog",
     items: [
       {
-        title: "Grid Layout"
+        title: "Grid Layout",
+        url: "http://www.trex-game.skipser.com/"
       },
       {
-        title: "Masonry Layout"
+        title: "Masonry Layout",
+        url: "http://www.trex-game.skipser.com/"
       },
       {
-        title: "Medium Image "
+        title: "Medium Image ",
+        url: "http://www.trex-game.skipser.com/"
       },
       {
-        title: "Large Image "
+        title: "Large Image ",
+        url: "http://www.trex-game.skipser.com/"
       }
     ]
   },
   {
-    title: "Contact Us"
+    title: "Contact Us",
+    url: "http://www.trex-game.skipser.com/"
   }
 ] %}
 
