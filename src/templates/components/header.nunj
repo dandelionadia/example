@@ -21,27 +21,27 @@
     items: [
       {
         title: "About",
-        url: "http://www.trex-game.skipser.com/"
+        url: "https://github.com/kettanaito/atomic-layout"
       },
       {
         title: "Mission, Vision and Values",
-        url: "http://www.trex-game.skipser.com/"
+        url: "https://github.com/kettanaito/atomic-layout"
       },
       {
         title: "Leadership Team",
-        url: "http://www.trex-game.skipser.com/"
+        url: "https://github.com/kettanaito/atomic-layout"
       },
       {
         title: "Why Choose Us",
-        url: "http://www.trex-game.skipser.com/"
+        url: "https://github.com/kettanaito/atomic-layout"
       },
       {
         title: "Locations",
-        url: "http://www.trex-game.skipser.com/"
+        url: "https://github.com/kettanaito/atomic-layout"
       },
       {
         title: "FAQ",
-        url: "http://www.trex-game.skipser.com/"
+        url: "https://github.com/kettanaito/atomic-layout"
       },
       {
         title: "Careers",
@@ -59,27 +59,27 @@
       "IT Services": [
         {
         title: "Managed IT",
-        url: "http://www.trex-game.skipser.com/"
+        url: "http://adventuretime.cn-fan.ru/"
       },
       {
         title: "IT Support",
-        url: "http://www.trex-game.skipser.com/"
+        url: "http://adventuretime.cn-fan.ru/"
       },
       {
         title: "IT Consultancy",
-        url: "http://www.trex-game.skipser.com/"
+        url: "http://adventuretime.cn-fan.ru/"
       },
       {
         title: "Cloud Computing",
-        url: "http://www.trex-game.skipser.com/"
+        url: "http://adventuretime.cn-fan.ru/"
       }, 
       {
         title: "Cyber Security",
-        url: "http://www.trex-game.skipser.com/"
+        url: "http://adventuretime.cn-fan.ru/"
       },
       {
         title: "Custom Software",
-        url: "http://www.trex-game.skipser.com/"
+        url: "http://adventuretime.cn-fan.ru/"
       }
       ],
       "Industries": [
@@ -119,15 +119,15 @@
     items: [
       {
         title: "Layout Style 01",
-        url: "http://www.trex-game.skipser.com/"
+        url: "https://www.youtube.com/playlist?list=PLYWA50pehJOkhFjqOYeOl7vWeogS5O-81"
       },
       {
         title: "Layout Style 02",
-        url: "http://www.trex-game.skipser.com/"
+        url: "https://www.youtube.com/playlist?list=PLYWA50pehJOkhFjqOYeOl7vWeogS5O-81"
       },
       {
         title: "Layout Style 03",
-        url: "http://www.trex-game.skipser.com/"
+        url: "https://www.youtube.com/playlist?list=PLYWA50pehJOkhFjqOYeOl7vWeogS5O-81"
       }
     ]
   },
@@ -136,32 +136,32 @@
     items: [
       {
         title: "Grid Layout",
-        url: "http://www.trex-game.skipser.com/"
+        url: "https://medium.com/@kettanaito/the-art-of-code-review-b671d901e356"
       },
       {
         title: "Masonry Layout",
-        url: "http://www.trex-game.skipser.com/"
+        url: "https://medium.com/@kettanaito/the-art-of-code-review-b671d901e356"
       },
       {
         title: "Medium Image ",
-        url: "http://www.trex-game.skipser.com/"
+        url: "https://medium.com/@kettanaito/the-art-of-code-review-b671d901e356"
       },
       {
         title: "Large Image ",
-        url: "http://www.trex-game.skipser.com/"
+        url: "https://medium.com/@kettanaito/the-art-of-code-review-b671d901e356"
       }
     ]
   },
   {
     title: "Contact Us",
-    url: "http://www.trex-game.skipser.com/"
+    url: "https://playhearthstone.com/ru-ru/"
   }
 ] %}
 
 <ul class="menu">
     {% for menuItem in menuItems %}
         <li class="menu__item menu__item--root">
-          <a href="#">{{ menuItem.title }}</a>
+          <a href="{{menuItem.url}}">{{ menuItem.title }}</a>
 
           {% if menuItem.items %}
             <span class="menu__icon menu__icon--chevron" data-feather="chevron-down"></span>

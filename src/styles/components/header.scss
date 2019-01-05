@@ -62,6 +62,10 @@ $submenu-padding: 20px;
     padding: 0;
     display: flex;
     justify-content: space-around;
+
+    a {
+        text-decoration: none;
+    }
     
     &__item {
         margin-right: 20px;
