@@ -2,7 +2,7 @@
     <div class="card">
         <h3>{{title}}</h3>
         <p>{{content}}</p>
-        <img class="card__img" src="{{img}}"></img>
+        <img class="card__img" src="{{img}}"/>
         <div class="card__btn">
           <p>{{text}}</p>
           <i data-feather="arrow-right"></i>
@@ -10,11 +10,69 @@
       </div>
 {% endmacro %}
 
+{% macro slide(logo, text, author, position, borderColor) %}
+    <div class="carousel-slide" style="border-color:{{borderColor}}">
+        <img src="{{logo}}"/>
+        <p class="carousel-slide__text">{{text}}</p>
+        <div>{{author}}</div>
+        <div>{{position}}</div>
+    </div>
+{% endmacro %}
+
+{% macro post(iconName, authorName, img, title, text, date, isSmall) %}
+<div class="post">
+    <div class="post__image">
+        <div class="post__meta">
+            {# <img class="post__meta--avatar" src="{{avatar}}"/> #}
+            <i class="post__meta--avatar" data-feather="{{iconName}}"></i>
+            <p>{{authorName}}</p>
+        </div>
+
+        <img class="post__img" src="{{img}}"/>
+    </div>
+
+    <div class="post__wrap">
+      {% if isSmall %}
+        <div class="post__title">{{title}}</div>
+        <div class="post__date">{{date}}</div>
+      {% else %}
+        <div class="post__date">{{date}}</div>
+        <div class="post__title">{{title}}</div>
+        <div class="post__text">{{text}}</div>
+      {% endif %}
+    </div>
+</div>
+{% endmacro %}
+
 {% macro project( img, text, logo) %}
   <div class="project" style="background-image: url({{img}})">
     <div class="project__content">
       <p class="project__title">{{text}}</p>
-      <img class="project__logo" src="{{logo}}"></img>
+      <img class="project__logo" src="{{logo}}"/>
+    </div>
+  </div>
+{% endmacro %}
+
+
+{% macro serve(logo, title, text) %}
+  <div class="serve">
+    <img src="{{logo}}" class="serve__logo"/>
+    <h3 class="serve__title">{{title}}</h3>
+    <p class="serve__text">{{text}}</p>
+  </div>
+{% endmacro %}
+
+{% macro support(img, category, title, text) %}
+  <div class="support">
+    <img src="{{img}}" class="support__img"/>
+    <div class="support__content">   
+      <div class="support__header">
+        <p class="support__category">{{category}}</p>
+      </div>
+      <p class="support__title">{{title}}</p>
+      <div class="support__footer">
+        <a class="support__link" href="#">{{text}}</a>
+      </div>
     </div>
   </div>
 {% endmacro %}

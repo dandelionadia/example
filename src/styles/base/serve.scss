@@ -1,0 +1,21 @@
+.serve {
+    background-color: $color-dark-blue;
+    border: 1px solid $color-gray;
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+
+    &__logo {
+        width: 100%;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        color: $color-white;
+    }
+
+    &__text {
+        color: $color-gray;
+    }
+}

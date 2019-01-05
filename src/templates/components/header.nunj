@@ -1,0 +1,203 @@
+{% set menuItems = [
+  {
+    title: "Home",
+    items: [
+      {
+        title: "Homepage 1",
+        url: "http://www.trex-game.skipser.com/"
+      },
+      {
+        title: "Homepage 2",
+        url: "http://www.trex-game.skipser.com/"
+      },
+      {
+        title: "Mission, Vision and Values",
+        url: "http://www.trex-game.skipser.com/"
+      }
+    ]
+  },
+  {
+    title: "Company",
+    items: [
+      {
+        title: "About",
+        url: "https://github.com/kettanaito/atomic-layout"
+      },
+      {
+        title: "Mission, Vision and Values",
+        url: "https://github.com/kettanaito/atomic-layout"
+      },
+      {
+        title: "Leadership Team",
+        url: "https://github.com/kettanaito/atomic-layout"
+      },
+      {
+        title: "Why Choose Us",
+        url: "https://github.com/kettanaito/atomic-layout"
+      },
+      {
+        title: "Locations",
+        url: "https://github.com/kettanaito/atomic-layout"
+      },
+      {
+        title: "FAQ",
+        url: "https://github.com/kettanaito/atomic-layout"
+      },
+      {
+        title: "Careers",
+        url: "http://www.trex-game.skipser.com/"
+      }, 
+      {
+        title: "Pricing and plans",
+        url: "http://www.trex-game.skipser.com/"
+      }
+    ]
+  },
+  {
+    title: "IT Solutions",
+    items: {
+      "IT Services": [
+        {
+        title: "Managed IT",
+        url: "http://adventuretime.cn-fan.ru/"
+      },
+      {
+        title: "IT Support",
+        url: "http://adventuretime.cn-fan.ru/"
+      },
+      {
+        title: "IT Consultancy",
+        url: "http://adventuretime.cn-fan.ru/"
+      },
+      {
+        title: "Cloud Computing",
+        url: "http://adventuretime.cn-fan.ru/"
+      }, 
+      {
+        title: "Cyber Security",
+        url: "http://adventuretime.cn-fan.ru/"
+      },
+      {
+        title: "Custom Software",
+        url: "http://adventuretime.cn-fan.ru/"
+      }
+      ],
+      "Industries": [
+        {
+          title: "Banking",
+          url: "http://www.trex-game.skipser.com/"
+        },
+        {
+          title: "Capital Markets",
+          url: "http://www.trex-game.skipser.com/"
+        },
+        {
+          title: "Enterprise Technology",
+          url: "http://www.trex-game.skipser.com/"
+        },
+        {
+          title: "Manufacturing",
+          url: "http://www.trex-game.skipser.com/"
+        }, 
+        {
+          title: "Healthcare",
+          url: "http://www.trex-game.skipser.com/"
+        }, 
+        {
+          title: "Higher Education",
+          url: "http://www.trex-game.skipser.com/"
+        }, 
+        {
+          title: "Logistics",
+          url: "http://www.trex-game.skipser.com/"
+        }
+      ]
+    }
+  },
+  {
+    title: "Case Studies",
+    items: [
+      {
+        title: "Layout Style 01",
+        url: "https://www.youtube.com/playlist?list=PLYWA50pehJOkhFjqOYeOl7vWeogS5O-81"
+      },
+      {
+        title: "Layout Style 02",
+        url: "https://www.youtube.com/playlist?list=PLYWA50pehJOkhFjqOYeOl7vWeogS5O-81"
+      },
+      {
+        title: "Layout Style 03",
+        url: "https://www.youtube.com/playlist?list=PLYWA50pehJOkhFjqOYeOl7vWeogS5O-81"
+      }
+    ]
+  },
+  {
+    title: "IT Blog",
+    items: [
+      {
+        title: "Grid Layout",
+        url: "https://medium.com/@kettanaito/the-art-of-code-review-b671d901e356"
+      },
+      {
+        title: "Masonry Layout",
+        url: "https://medium.com/@kettanaito/the-art-of-code-review-b671d901e356"
+      },
+      {
+        title: "Medium Image ",
+        url: "https://medium.com/@kettanaito/the-art-of-code-review-b671d901e356"
+      },
+      {
+        title: "Large Image ",
+        url: "https://medium.com/@kettanaito/the-art-of-code-review-b671d901e356"
+      }
+    ]
+  },
+  {
+    title: "Contact Us",
+    url: "https://playhearthstone.com/ru-ru/"
+  }
+] %}
+
+<ul class="menu">
+    {% for menuItem in menuItems %}
+        <li class="menu__item menu__item--root">
+          <a href="{% if menuItem.items %}#{% else %}{{menuItem.url}}{% endif %}">{{ menuItem.title }}</a>
+
+          {% if menuItem.items %}
+            <span class="menu__icon menu__icon--chevron" data-feather="chevron-down"></span>
+            <span class="menu__icon menu__icon--x" data-feather="x"></span>
+            <ul class="menu__submenu">
+
+              <div class="submenu-container">
+                {# Render categorized submenu #}
+                {% for categoryName, categoryItems in menuItem.items %}
+                  {% if categoryItems.length > 0 %}
+                  <li>
+                    <p>{{categoryName}}</p>
+                    <ul>
+                      {% for item in categoryItems %}
+                        <li class="menu__item submenu__item">
+                          <span class="menu__iconArrow" data-feather="arrow-right"></span>
+                          <a href="{{item.url}}">{{item.title}}</a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </li>
+                  {% endif %}
+                {% endfor %}
+              </div>
+
+              {# Render simple submenu list #}
+              {% for item in menuItem.items %}
+                <li class="menu__item submenu__item">
+                  <span class="menu__iconArrow" data-feather="arrow-right"></span>
+                  <a href="{{item.url}}">{{item.title}}</a>
+                </li>
+              {% endfor %}
+
+            </ul>
+          {% endif %}
+
+        </li>
+    {% endfor %}
+</ul>
