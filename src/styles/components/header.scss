@@ -266,6 +266,8 @@ $submenu-padding: 20px;
     left: 0;
     z-index: 4;
     display: none;
+    transition: transform 3s ease-out;
+    transform: scaleX(0);
 
     @media (max-width: 768px) {
         top: 80px;
@@ -273,5 +275,7 @@ $submenu-padding: 20px;
 
     &__open {
         display: block;
+        // transform: translate3d(0, 100%);
+        transform: scaleX(1);
     }
 }
