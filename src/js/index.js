@@ -31,3 +31,10 @@ function resetMenuClasses(items) {
 document.body.addEventListener('click', function() {
   resetMenuClasses(menuItems);
 }) 
+
+var menuMobile = document.querySelector('.menu-mobile');
+var menuBtn = document.querySelector('.menu-btn');
+
+menuBtn.addEventListener('click', function() {
+  menuMobile.classList.toggle('menu-mobile__open');
+})

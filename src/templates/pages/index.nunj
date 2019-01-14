@@ -49,11 +49,11 @@
         <i class="header__search mr-2 mt-1" data-feather="search"></i>
       </div>
 
-      {# <div class="col-12 d-block d-lg-none">
+      <div class="col-12 d-block d-lg-none">
         <div class="menu-mobile">
           <p>Test Test Test Test Test Test Test Test<p>
         </div>
-      </div> #}
+      </div>
     </div>
   </div>
 </div>
