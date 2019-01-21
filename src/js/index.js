@@ -1,5 +1,7 @@
 var menuItems = document.querySelectorAll('.menu__item')
+var menuMobItems = document.querySelectorAll('.menu-mobile__item')
 var menuOpenClass = 'menu__item--open';
+var menuMobOpenClass = 'menu-mobile__item--open';
 
 menuItems.forEach(function (menuItem) {
   menuItem.addEventListener('click', function (event) {
@@ -28,6 +30,27 @@ function resetMenuClasses(items) {
   })
 }
 
+// change icon menu mob list
+menuMobItems.forEach(function(menuMobItem){
+  menuMobItem.addEventListener('click', function(event) {
+      event.stopPropagation();
+      var clickedItemMob = event.currentTarget;
+      var isOpenMob = clickedItemMob.classList.contains(menuMobOpenClass);
+      resetMenuMobClasses(menuMobItems);
+
+      if (!isOpenMob) {
+          clickedItemMob.classList.add(menuMobOpenClass);
+      }
+  })
+})
+
+function resetMenuMobClasses(items) {
+  items.forEach(function(item) {
+    item.classList.remove(menuMobOpenClass);
+  })
+}
+
+// click on the bottom menu-mob and opet window
 document.body.addEventListener('click', function() {
   resetMenuClasses(menuItems);
 }) 
