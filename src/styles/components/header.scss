@@ -61,14 +61,7 @@ $submenu-padding: 20px;
     
     &__info {
         text-align: center;
-        // padding: 15px 0;
     }
-
-    // &__text {
-    //     white-space: nowrap; 
-    //     overflow: hidden;
-    //     text-overflow: ellipsis;
-    // }
     
     @media (min-width: 1200px) {
         border-right: 1px solid $color-gray-br;
@@ -265,7 +258,6 @@ $submenu-padding: 20px;
     top: 100px;
     left: 0;
     z-index: 4;
-    // display: none;
     transition: transform 1s ease-out;
     transform: scaleX(0);
     transform: translate(0, -150%);
@@ -275,7 +267,6 @@ $submenu-padding: 20px;
     }
 
     &__open {
-        // display: block;
         transform: translate(0, 100%);
         transform: scaleX(1);
     }
