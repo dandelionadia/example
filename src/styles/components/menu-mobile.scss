@@ -45,7 +45,6 @@
         transition: transform $transition-duration;
 
         &--right {
-            color: red;
             transition-delay: $transition-duration / 2.5; 
         }
 
@@ -55,12 +54,12 @@
             transition-delay: 0s;
         }
 
-        .menu-mobile__item--open &--chevron {
+        .menu-mobile__item--open &--right {
             transition-delay: 0s;
             transform: scaleY(0);
         }
         
-        .menu-mobile__item--open &--x {
+        .menu-mobile__item--open &--down {
             transition-delay: $transition-duration / 2.5;
             transform: scaleY(1);
         }

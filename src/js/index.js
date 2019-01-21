@@ -1,6 +1,6 @@
 var menuItems = document.querySelectorAll('.menu__item')
-var menuMobItems = document.querySelectorAll('.menu-mobile__item')
 var menuOpenClass = 'menu__item--open';
+var menuMobItems = document.querySelectorAll('.menu-mobile__item')
 var menuMobOpenClass = 'menu-mobile__item--open';
 
 menuItems.forEach(function (menuItem) {
