@@ -160,11 +160,21 @@
 
 <ul class="menu-mobile__list">
     {% for menuItem in menuItems %}
-        <li class="menu-mobile__item">
+        <li class="menu-mobile__item menu-mobile__item--root">
             <a href="{% if menuItem.items %}#{% else %}{{menuItem.url}}{% endif %}">{{menuItem.title}}</a>
             {% if menuItem.items %}
                 <span class="menu-mobile__icon menu-mobile__icon--right" data-feather="chevron-right"></span>
                 <span class="menu-mobile__icon menu-mobile__icon--down" data-feather="chevron-down"></span>
+                <ul class="menu-mobile__submenu">
+
+                  {% for item in menuItem.items %}
+                    <li class="menu-mobile__item submenu-mob__item">
+                      <span class="menu-mobile__iconArrow" data-feather="arrow-right"></span>
+                      <a href="{{item.url}}">{{item.title}}</a>
+                    </li>
+                  {% endfor %}
+
+                </ul>
             {% endif %}
         </li>
     {% endfor %}
