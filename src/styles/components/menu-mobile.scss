@@ -34,14 +34,13 @@
     &__item { 
         border-bottom: 1px solid black;
         padding: 10px 0 10px 20px;
-        display: flex;
         align-items: center;
 
         &--open {
             & .menu-mobile__submenu {
+                height: auto;
                 visibility: visible;
                 opacity: 1;
-                transform: translate3d(-50%, 0, 0);
             }
         }
     }
@@ -79,27 +78,17 @@
         height: 14px;
         left: 15px;
         opacity: 0;
-        transform: translateX(-10px);
-        transition: transform 0.3s , opacity 0.3s;
-    }
-
-    &__submenu {
-        opacity: 0;
-        visibility: hidden;
-        position: absolute;
-        z-index: 4;
-        top: 0;
-        left: 50%;
-        transform: translate3d(-50%, 16px, 0);
-        transition:
-            transform .3s ease-in-out,
-            visibility .3s,
-            opacity .3s;
     }
 }
 
-.submenu-mob {
+.menu-mobile__submenu {
+    padding: 0;
+    list-style: none;
+    visibility: hidden;
+    height: 0;
+}
 
+.submenu-mobile {
     &__item {
         border: none;
     }

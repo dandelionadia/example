@@ -58,7 +58,9 @@
   </div>
 </div>
 
-{% include "components/articles.nunj" %}
+{% include "components/carrousel.nunj" %}
+
+{# {% include "components/articles.nunj" %} #}
 
 {# <div class="container">
   <div class="row">

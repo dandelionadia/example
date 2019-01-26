@@ -168,7 +168,7 @@
                 <ul class="menu-mobile__submenu">
 
                   {% for item in menuItem.items %}
-                    <li class="menu-mobile__item submenu-mob__item">
+                    <li class="menu-mobile__item submenu-mobile__item">
                       <span class="menu-mobile__iconArrow" data-feather="arrow-right"></span>
                       <a href="{{item.url}}">{{item.title}}</a>
                     </li>
