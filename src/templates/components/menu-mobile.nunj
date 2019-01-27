@@ -167,6 +167,24 @@
                 <span class="menu-mobile__icon menu-mobile__icon--down" data-feather="chevron-down"></span>
                 <ul class="menu-mobile__submenu">
 
+                  <div class="submenu-mobile__container">
+                    {% for categoryName, categoryItems in menuItem.items %}
+                      {%if categoryItems.length > 0 %}
+                        <li>
+                          <p>{{categoryName}}</p>
+                          <ul>
+                            {% for item in categoryItems %}
+                              <li class="menu-mobile__item submenu-mobile__item">
+                                <span class="menu-mobile__iconArrow" data-feather="arrow-right"></span>
+                                <a href="{{item.url}}">{{item.title}}</a>
+                              </li>
+                            {% endfor %}
+                          </ul>
+                        </li>
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+
                   {% for item in menuItem.items %}
                     <li class="menu-mobile__item submenu-mobile__item">
                       <span class="menu-mobile__iconArrow" data-feather="arrow-right"></span>
