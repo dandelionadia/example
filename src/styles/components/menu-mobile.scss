@@ -38,7 +38,7 @@
 
         &--open {
             & .menu-mobile__submenu {
-                height: auto;
+                max-height: 100%;
                 visibility: visible;
                 opacity: 1;
             }
@@ -85,7 +85,10 @@
     padding: 0;
     list-style: none;
     visibility: hidden;
-    height: 0;
+    max-height: 0;
+    opacity: 0;
+    transition-property: max-height, opacity, visibility;
+    transition-duration: .25s;
 }
 
 .submenu-mobile {
@@ -94,7 +97,14 @@
     }
 
     &__container {
-        display: flex;
-        justify-content: space-around;
+
+        @media (min-width: 576px) {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+    &__title {
+        padding-top: 8px;
     }
 }
