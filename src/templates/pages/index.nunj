@@ -60,20 +60,9 @@
 
 {% include "components/carrousel.nunj" %}
 
-{# {% include "components/articles.nunj" %} #}
+{% include "components/articles.nunj" %}
 
-{# <div class="container">
-  <div class="row">
-    <div class="col-12">
 
-      <h1>h1 Why do we use it?
-It is a long.</h1>
-      <h2>h2 Many desktop publishing pamodel text, and a arious versions have evolved over the years</h2>
-      <h3>h3 Whytters, a Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years</h3>
-      <span>text Wow use Lorem Ipsum as their default model text, and a searcweb sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</span>
-
-    </div> #}
-{# 
 
   </div>
   <div class="row">
@@ -180,6 +169,6 @@ It is a long.</h1>
       {{cards.support('https://ohmiglob.files.wordpress.com/2014/04/at1.jpg', 'category', 'title', 'text')}}
     </div>
   </div>
-</div> #}
+</div>
 
 {% endblock %}
