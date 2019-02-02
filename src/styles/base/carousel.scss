@@ -1,14 +1,38 @@
 .slick-arrow {
-    width: 20px;
-    height: 20px;
-    background-color: red;
+    // background-color: red;
+    width: 60px;
+    height: 60px;
     position: absolute;
-    z-index: 4;
+    z-index: 3;
 }
 
 .slick-next {
+    border-radius: 100px 0 0  100px;
     right: 0;
 }
 .slick-prev {
+    border-radius: 0 100px 100px 0;
     left: 0;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 30px;
+    display: none;
+}
+
+.carousel:hover {
+
+    .slick-arrow {
+        background-color: red;
+        width: 60px;
+        height: 60px;
+
+        &:hover {
+            background-color: black;
+        }
+    }
+
+    .slick-prev:before, .slick-next:before {
+        display: block;
+    }
 }
