@@ -59,22 +59,32 @@
 </div>
 
 <div class="carousel">
-  <div class="slide">
-    <div class="carousel__img" style="background-image: url(./assets/img/foto-1.jpg)"></div>
-    <div class="carousel__slideOne">
-      <p class="carousel__slideOne--sub">sub title</p>
-      <p class="carousel__slideOne--title">lorem is lorem.</p>
+  <div>
+    <div class="carousel__slide">
+      <div class="carousel__img" style="background-image: url(./assets/img/foto-1.jpg)"></div>
+      <div class="slide__content">
+        <p class="slide__subtitle">sub title</p>
+        <p class="slide__title">mor sis morem.</p>
+      </div>
     </div>
   </div>
-  <div class="slide">
-    <div class="carousel__img" style="background-image: url(./assets/img/foto-4.jpg)"></div>
-    <div class="carousel__slideTwo">
-      <p class="carousel__slideTwo--title">lorem is lorem.</p>
-      <p class="carousel__slideTwo--sub">sub title sub titlesub title</p>
+  <div>
+    <div class="carousel__slide slide--center">
+      <div class="carousel__img" style="background-image: url(./assets/img/foto-4.jpg)"></div>
+      <div class="slide__content">
+        <p class="slide__title">lorem is lorem.</p>
+        <p class="slide__subtitle">sub title sub titlesub title</p>
+      </div>
     </div>
   </div>
-  <div class="slide">
-    <div class="carousel__img" style="background-image: url(./assets/img/foto-5.jpg)"></div>
+  <div>
+    <div class="carousel__slide slide--right">
+      <div class="carousel__img" style="background-image: url(./assets/img/foto-5.jpg)"></div>
+      <div class="slide__content">
+        <p class="slide__subtitle">sub title</p>
+        <p class="slide__title">foo it is foo</p>
+      </div>
+    </div>
   </div>
 </div>
 
