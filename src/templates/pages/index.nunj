@@ -61,11 +61,21 @@
 <div class="carousel">
   <div class="slide">
     <div class="carousel__img" style="background-image: url(./assets/img/foto-1.jpg)"></div>
+    <div class="carousel__slideOne">
+      <p class="carousel__slideOne--sub">sub title</p>
+      <p class="carousel__slideOne--title">lorem is lorem.</p>
+    </div>
   </div>
   <div class="slide">
-    <div class="carousel__img" style="background-image: url(./assets/img/foto-2.jpg)"></div>
+    <div class="carousel__img" style="background-image: url(./assets/img/foto-4.jpg)"></div>
+    <div class="carousel__slideTwo">
+      <p class="carousel__slideTwo--title">lorem is lorem.</p>
+      <p class="carousel__slideTwo--sub">sub title sub titlesub title</p>
+    </div>
   </div>
-  <div>your content</div>
+  <div class="slide">
+    <div class="carousel__img" style="background-image: url(./assets/img/foto-5.jpg)"></div>
+  </div>
 </div>
 
 {% include "components/carrousel.nunj" %}
