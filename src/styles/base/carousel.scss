@@ -36,6 +36,9 @@
         box-sizing: content-box;
         z-index: 1;
         font-size: 4vw;
+        color: $color-white;
+        opacity: 0;
+        margin-top: -150px;
 
         @media (min-width: 900px) {
             font-size: 2rem;
@@ -52,7 +55,7 @@
             content: "";
             height: 4px;
             width: 60px;
-            background-color: #fff;
+            background-color: rgba(255,255,255,0);
             margin: 10px 0;
         }
 
@@ -71,7 +74,11 @@
     }
 
     &__sub-title {
-        font-size: 2rem;
+        font-size: 4vw;
+
+        @media (min-width: 900px) {
+            font-size: 2rem;
+        }
     }
 
     &__btn {
@@ -146,5 +153,18 @@
     .slick-prev::before, .slick-next::before {
         display: block;
         height: 24px;
+    }
+}
+
+.slick-active {
+    .slide__content {
+        opacity: 1;
+        margin-top: 0;
+        transition: opacity 2s, margin-top 1s;
+    }
+
+    .slide__title::after {
+        background-color: $color-white;
+        transition: background-color 3s;
     }
 }
