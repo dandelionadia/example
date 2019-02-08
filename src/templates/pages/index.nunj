@@ -65,6 +65,7 @@
       <div class="slide__content">
         <p class="slide__subtitle">sub title</p>
         <p class="slide__title">mor sis morem.</p>
+        <p>Some text</p>
       </div>
     </div>
   </div>
