@@ -61,3 +61,13 @@ var menuBtn = document.querySelector('.menu-btn');
 menuBtn.addEventListener('click', function() {
   menuMobile.classList.toggle('menu-mobile__open');
 })
+
+$(document).ready(function(){
+  $('.carousel').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    adaptiveHeight: true
+  });
+});
