@@ -1,9 +1,13 @@
 .carousel {
-    height: 500px;
+    height: 50vh;;
+
+    @media (min-width: 900px) {
+        height: 500px;
+    }
 
     &__slide {
         position: relative;
-        height: 500px;
+        height: 100%;
         overflow: hidden;
         color: $color-white;
         display: flex;
@@ -113,6 +117,10 @@
 .slide--right{
     justify-content: flex-end;
     text-align: right;
+}
+
+.slick-list {
+    height: 100% !important;
 }
 
 .slick-arrow {
