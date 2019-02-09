@@ -1,5 +1,6 @@
 .carousel {
-    height: 50vh;;
+    height: 50vh;
+    min-height: 300px;
 
     @media (min-width: 900px) {
         height: 500px;
@@ -151,7 +152,7 @@
 .carousel:hover {
 
     .slick-arrow {
-        background-color: $color-red;
+        background-color: $color-white;
 
         &:hover {
             background-color: $color-black;
@@ -161,6 +162,8 @@
     .slick-prev::before, .slick-next::before {
         display: block;
         height: 24px;
+        position: absolute;
+        color: $color-red;
     }
 }
 
