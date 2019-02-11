@@ -103,10 +103,41 @@
   </div>
 </div>
 
+<div class="our-company">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div>
+          <div class="our-company__info">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <h6 class="our-company__subtitle">content left</h6>
+                <h3 class="our-company__title">NanoSoft is your trusted source in IT services and support</h3>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <div class="our-company__text">NanoSoft is a privately owned IT Support and IT Services business formed in 1988. Today we’re proud to boast a strong team of IT engineers who thrive on rolling up their sleeves and solving your IT problems and meeting your business needs.</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+              content
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="container">
   <div class="row">
     <div class="col-12">
-      <div>content content</div>
+      <div class="explore-company">
+        <p class="explore-company__text">Stop wasting time and money on technology.
+          <a href="https://corp.lingualeo.com/ru/?s=%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%BD%D0%BE%D1%88%D0%B5%D0%BD%D0%B8%D0%B5&lang=en"><span class="explore-company__link">Explore our company</span></a>
+        </p>
+      </div>
     </div>
   </div>
 </div>
