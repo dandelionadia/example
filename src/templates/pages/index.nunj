@@ -132,6 +132,21 @@
 
 <div class="container">
   <div class="row">
+    <div class="col-sm-12 col-md-4">
+      {{cards.support('https://ohmiglob.files.wordpress.com/2014/04/at1.jpg', 'category', 'title', 'text')}}
+    </div>
+    <div class="col-sm-12 col-md-4">
+      {{cards.support('https://ohmiglob.files.wordpress.com/2014/04/at1.jpg', 'category', 'title', 'text')}}
+    </div>
+    <div class="col-sm-12 col-md-4">
+      {{cards.support('https://ohmiglob.files.wordpress.com/2014/04/at1.jpg', 'category', 'title', 'text')}}
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
     <div class="col-12">
       <div class="explore-company">
         <p class="explore-company__text">Stop wasting time and money on technology.
