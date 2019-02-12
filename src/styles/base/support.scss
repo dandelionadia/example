@@ -31,7 +31,15 @@
     }
 
     &__img {
-        max-width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+
+        @media (min-width: 992px) {
+            height: 220px;
+        }
+
     }
 
     &__content {

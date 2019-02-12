@@ -64,7 +64,7 @@
 
 {% macro support(img, category, title, text,icon) %}
   <div class="support">
-    <img src="{{img}}" class="support__img"/>
+    <div class="support__img" style="background-image:url('{{img}}')"></div>
     <div class="support__content">   
       <div class="support__header">
         <p class="support__category">{{category}}</p>
