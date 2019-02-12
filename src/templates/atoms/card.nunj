@@ -62,7 +62,7 @@
   </div>
 {% endmacro %}
 
-{% macro support(img, category, title, text) %}
+{% macro support(img, category, title, text,icon) %}
   <div class="support">
     <img src="{{img}}" class="support__img"/>
     <div class="support__content">   
@@ -72,6 +72,7 @@
       <p class="support__title">{{title}}</p>
       <div class="support__footer">
         <a class="support__link" href="#">{{text}}</a>
+        <i class="support__icon" data-feather="{{icon}}"></i>
       </div>
     </div>
   </div>

@@ -2,6 +2,7 @@
     box-sizing: border-box;
     position: relative;
     margin-top: 60px;
+    padding-bottom: 30px;
     
     &:hover {
 
@@ -47,21 +48,47 @@
     }
 
     &__category {
+        color: $color-blue;
         margin: 0;
+        font-weight: 600;
     }
       
     &__title {
+        color: $color-dark-blue;
         margin: 0;
         padding: 5px 0;
+        font-size: 1.25rem;
+        font-weight: 600;
+
+        @media (min-width: 992px) and (max-width: 1200px) {
+            font-size: 1rem;
+        }
     }
 
     &__footer {
         height: 0;
         overflow: hidden;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     &__link {
+        color: $color-blue;
+        font-weight: 600;
         margin: 0;
+        
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &__icon {
+        width: 15px;
+        height: 15px;
+        margin-left: 5px;
+        color: $color-blue;
     }
 
 }
