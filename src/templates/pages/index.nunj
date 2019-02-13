@@ -159,4 +159,36 @@
   </div>
 </div>
 
+<div class="services">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="row">
+          <div class="col-12">
+            <div class="services__box-titles">
+              <h6 class="services__subtitle">Our Services</h6>
+              <h3 class="services__title">Stay Up, Stay Running, Stay Protected</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-lg-4">
+            {{cards.card('Managed IT services', '24/7 maintenance and monitoring that keeps your computers, servers, and systems up and running.', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9JCmwLK1X-B4aoRT7mETb4ABZdiICueWOdcj50sRI2NQ5D4bk', 'Stay up and running')}}
+          </div>
+
+          <div class="col-xs-12 col-lg-4">
+            {{cards.card('Managed IT services', '24/7 maintenance and monitoring that keeps your computers, servers, and systems up and running.', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9JCmwLK1X-B4aoRT7mETb4ABZdiICueWOdcj50sRI2NQ5D4bk', 'Stay up and running')}}
+          </div>
+
+          <div class="col-xs-12 col-lg-4">
+            {{cards.card('Managed IT services', '24/7 maintenance and monitoring that keeps your computers, servers, and systems up and running.', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9JCmwLK1X-B4aoRT7mETb4ABZdiICueWOdcj50sRI2NQ5D4bk', 'Stay up and running')}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 {% endblock %}
+

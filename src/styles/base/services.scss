@@ -1,0 +1,17 @@
+.services {
+    background-color: $color-white;
+    padding: 80px 0 40px 0 ;
+
+    &__box-titles {
+        text-align: center;
+    }
+
+    &__subtitle {
+        color: $color-gray-text;
+    }
+
+    &__title {
+        color: $color-dark-blue;
+        margin-bottom: 30px;
+    }
+}

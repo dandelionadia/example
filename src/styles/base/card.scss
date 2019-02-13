@@ -1,17 +1,40 @@
 .card {
     background-color: $color-gray-light;
-    padding: 30px;
+    padding: 10%;
     border-radius: 5px;
     text-align: center;
+    margin-top: 30px;
+    border: none;
 
     &__img {
-        width: 100%;
+        width: 40%;
         border-radius: 50%;
-        margin: 20px 0;
+        margin: auto;
+        margin-top: 40px;
     }
 
     &__btn {
         display: flex;
         justify-content: center;
+        margin-top: 40px;
+
+        &--text {
+            color: $color-blue;
+            font-weight: 600;
+        }
+
+        &--icon {
+            color: $color-blue;
+            margin-left: 5px;
+        }
+    }
+
+    &__title {
+        color: $color-blue-text;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        color: $color-gray-text;
     }
 }
