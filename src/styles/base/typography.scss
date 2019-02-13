@@ -15,12 +15,6 @@ body {
     font-family: $font-family, Ubuntu, Helvetica, Arial, sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4 {
-    color: $color-black;
-}
 h1 {
     font-size: 4.5rem;
     font-weight: bold;
@@ -35,6 +29,12 @@ h3 {
     font-size: 1.2rem;
     margin-bottom: 10px;
     // font-weight: bold;
+}
+
+h6 {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 
 p {

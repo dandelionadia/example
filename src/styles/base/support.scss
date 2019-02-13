@@ -1,6 +1,8 @@
 .support {
     box-sizing: border-box;
     position: relative;
+    margin-top: 60px;
+    padding-bottom: 30px;
     
     &:hover {
 
@@ -29,12 +31,24 @@
     }
 
     &__img {
-        max-width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 200px;
+
+        @media (min-width: 576px) and (max-width: 991px) {
+            height: 300px;
+        }
+
+        @media (min-width: 992px) {
+            height: 220px;
+        }
+
     }
 
     &__content {
         background-color: $color-white;
-        padding: 20px;
+        padding: 10px;
         box-shadow: 0 5px 20px rgba(0,0,0, .2);
         text-align: center;
         max-width: 85%;
@@ -46,21 +60,47 @@
     }
 
     &__category {
+        color: $color-blue;
         margin: 0;
+        font-weight: 600;
     }
       
     &__title {
+        color: $color-dark-blue;
         margin: 0;
         padding: 5px 0;
+        font-size: 1.25rem;
+        font-weight: 600;
+
+        @media (min-width: 992px) and (max-width: 1200px) {
+            font-size: 1rem;
+        }
     }
 
     &__footer {
         height: 0;
         overflow: hidden;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     &__link {
+        color: $color-blue;
+        font-weight: 600;
         margin: 0;
+        
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &__icon {
+        width: 15px;
+        height: 15px;
+        margin-left: 5px;
+        color: $color-blue;
     }
 
 }
