@@ -37,15 +37,11 @@
         border-bottom: 1px dotted #0e2b5c;
         color: $color-dark-blue;
         font-weight: 500;
-    }
-
-    a {
-        text-decoration: none;
 
         &:hover {
-            border: none;
+            text-decoration: none;
         }
-    }
+    }      
 }
 
 .cards {
