@@ -1,17 +1,70 @@
 .card {
     background-color: $color-gray-light;
-    padding: 30px;
+    padding: 10%;
     border-radius: 5px;
     text-align: center;
+    margin-top: 30px;
+    border: none;
 
-    &__img {
-        width: 100%;
-        border-radius: 50%;
-        margin: 20px 0;
+    &:hover {
+        .card__box-img::after {
+            width: 45px;
+        }
+
+        .card__img {
+            transform: rotate(0.03turn) translate(1px, -30%);
+        }
     }
+    
 
-    &__btn {
+    &__box-img {
+        position: relative;
         display: flex;
         justify-content: center;
+
+        &::after {
+            content: '';
+            position: absolute;
+            height: 8px;
+            width: 66px;
+            top: 100%;
+            background: rgba(0, 0, 0, 0.06);
+            border-radius: 100%;
+            transition: width 0.4s;
+        }
+    }
+
+    &__img {
+        width: 40%;
+        height: 80px;
+        margin: auto;
+        margin-top: 40px;
+        transition: transform 0.4s;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        color: $color-blue;
+        font-weight: bold;
+
+        &:hover {
+            text-decoration: none;
+        }
+
+    }
+
+    &__icon {
+        margin-left: 5px;
+    }
+
+    &__title {
+        color: $color-blue-text;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        color: $color-gray-text;
     }
 }

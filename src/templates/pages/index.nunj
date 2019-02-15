@@ -79,7 +79,6 @@
       <div class="slide__content">
         <p class="slide__title slide__title--center">lorem is lorem.</p>
         <p class="slide__sub-title">sub title sub titlesub title</p>
-        <div class="slide__line"></div>
         <div class="slide__btn slide--center">
           <p>same text</p>
           <i class="slide__btn--icon" data-feather="arrow-right"></i>
@@ -118,11 +117,6 @@
                 <div class="our-company__text">NanoSoft is a privately owned IT Support and IT Services business formed in 1988. Today we’re proud to boast a strong team of IT engineers who thrive on rolling up their sleeves and solving your IT problems and meeting your business needs.</div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-12">
-              content
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -152,11 +146,85 @@
     <div class="col-12">
       <div class="explore-company">
         <p class="explore-company__text">Stop wasting time and money on technology.
-          <a href="https://corp.lingualeo.com/ru/?s=%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%BD%D0%BE%D1%88%D0%B5%D0%BD%D0%B8%D0%B5&lang=en"><span class="explore-company__link">Explore our company</span></a>
+          <a class="explore-company__link" href="https://corp.lingualeo.com/ru/?s=%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%BD%D0%BE%D1%88%D0%B5%D0%BD%D0%B8%D0%B5&lang=en">Explore our company</a>
         </p>
       </div>
     </div>
   </div>
 </div>
 
+<div class="services">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="row">
+          <div class="col-12">
+            <div class="services__box-titles">
+              <h6 class="services__subtitle">Our Services</h6>
+              <h3 class="services__title">Stay Up, Stay Running, Stay Protected</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            {{cards.card('Managed IT services', '24/7 maintenance and monitoring that keeps your computers, servers, and systems up and running.', 'http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/08/syncing-document-4157_bf6a2cf1-26c8-4688-ab14-85836d2a0562.svg', 'title', 'https://feathericons.com/', 'Stay up and running')}}
+          </div>
+
+          <div class="col-12 col-lg-4">
+            {{cards.card('Managed IT services', '24/7 maintenance and monitoring that keeps your computers, servers, and systems up and running.', 'http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/08/ssd-storage-1951_0cd86b60-9df8-4053-9198-84f76027d5de.svg', 'title', 'https://feathericons.com/', 'Stay up and running')}}
+          </div>
+
+          <div class="col-12 col-lg-4">
+            {{cards.card('Managed IT services', '24/7 maintenance and monitoring that keeps your computers, servers, and systems up and running.', 'http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/08/private-folder-4136_9a670d06-eeb7-4508-8533-143953499f9e.svg', 'title', 'https://feathericons.com/', 'Stay up and running')}}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="solution__box solution__box--border">
+              <p class="solution__text">Stop wasting time and money on technology.
+                <a class="solution__link" href="https://corp.lingualeo.com/ru/?s=%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%BD%D0%BE%D1%88%D0%B5%D0%BD%D0%B8%D0%B5&lang=en">Explore our company</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4 col-sm-2">
+            <div class="box-img">
+              <img class="box-img__image" src="http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/09/n-g.svg"></img>
+            </div>
+          </div>
+          <div class="col-4 col-sm-2">
+            <div class="box-img">
+              <img class="box-img__image" src="http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/09/k-g.svg"></img>
+            </div>
+          </div>
+          <div class="col-4 col-sm-2">
+            <div class="box-img">
+              <img class="box-img__image" src="http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/09/fu-g.svg"></img>
+            </div>
+          </div>
+          <div class="col-4 col-sm-2">
+            <div class="box-img">
+              <img class="box-img__image" src="http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/09/box-g.svg"></img>
+            </div>
+          </div>
+          <div class="col-4 col-sm-2">
+            <div class="box-img">
+              <img class="box-img__image" src="http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/09/j-g.svg"></img>
+            </div>
+          </div>
+          <div class="col-4 col-sm-2">
+            <div class="box-img">
+              <img class="box-img__image" src="http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/09/uni-g.svg"></img>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
 {% endblock %}
+
