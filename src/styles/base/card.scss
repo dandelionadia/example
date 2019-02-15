@@ -13,20 +13,21 @@
         margin-top: 40px;
     }
 
-    &__btn {
+    &__link {
         display: flex;
         justify-content: center;
         margin-top: 40px;
+        color: $color-blue;
+        font-weight: bold;
 
-        &--text {
-            color: $color-blue;
-            font-weight: 600;
+        &:hover {
+            text-decoration: none;
         }
 
-        &--icon {
-            color: $color-blue;
-            margin-left: 5px;
-        }
+    }
+
+    &__icon {
+        margin-left: 5px;
     }
 
     &__title {

@@ -49,13 +49,13 @@
 
 }
 
-.image {
-    margin: 10px 0;
-    height: auto;
-    max-width: 100%;
-
-}
-
 .box-img {
     padding: 40px 0 0;
+
+    &__image {
+        margin: 10px 0;
+        height: auto;
+        max-width: 100%;
+    
+    }
 }

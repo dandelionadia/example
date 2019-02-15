@@ -3,10 +3,9 @@
         <h4 class="card__title">{{title}}</h4>
         <p class="card__text">{{content}}</p>
         <img class="card__img" src="{{img}}"/>
-        <div class="card__btn">
-          <p class="card__btn--text">{{text}}</p>
-          <i class="card__btn--icon" data-feather="arrow-right"></i>
-        </div>
+        <a class="card__link" href="#">{{text}}
+          <i class="card__icon" data-feather="arrow-right"></i>
+        </a>
       </div>
 {% endmacro %}
 

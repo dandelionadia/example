@@ -167,15 +167,15 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-12 col-lg-4">
+          <div class="col-12 col-lg-4">
             {{cards.card('Managed IT services', '24/7 maintenance and monitoring that keeps your computers, servers, and systems up and running.', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9JCmwLK1X-B4aoRT7mETb4ABZdiICueWOdcj50sRI2NQ5D4bk', 'Stay up and running')}}
           </div>
 
-          <div class="col-xs-12 col-lg-4">
+          <div class="col-12 col-lg-4">
             {{cards.card('Managed IT services', '24/7 maintenance and monitoring that keeps your computers, servers, and systems up and running.', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9JCmwLK1X-B4aoRT7mETb4ABZdiICueWOdcj50sRI2NQ5D4bk', 'Stay up and running')}}
           </div>
 
-          <div class="col-xs-12 col-lg-4">
+          <div class="col-12 col-lg-4">
             {{cards.card('Managed IT services', '24/7 maintenance and monitoring that keeps your computers, servers, and systems up and running.', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9JCmwLK1X-B4aoRT7mETb4ABZdiICueWOdcj50sRI2NQ5D4bk', 'Stay up and running')}}
           </div>
         </div>
@@ -191,32 +191,32 @@
         <div class="row">
           <div class="col-4 col-sm-2">
             <div class="box-img">
-              <img class="image" src="http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/09/n-g.svg"></img>
+              <img class="box-img__image" src="http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/09/n-g.svg"></img>
             </div>
           </div>
           <div class="col-4 col-sm-2">
             <div class="box-img">
-              <img class="image" src="http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/09/k-g.svg"></img>
+              <img class="box-img__image" src="http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/09/k-g.svg"></img>
             </div>
           </div>
           <div class="col-4 col-sm-2">
             <div class="box-img">
-              <img class="image" src="http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/09/fu-g.svg"></img>
+              <img class="box-img__image" src="http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/09/fu-g.svg"></img>
             </div>
           </div>
           <div class="col-4 col-sm-2">
             <div class="box-img">
-              <img class="image" src="http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/09/box-g.svg"></img>
+              <img class="box-img__image" src="http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/09/box-g.svg"></img>
             </div>
           </div>
           <div class="col-4 col-sm-2">
             <div class="box-img">
-              <img class="image" src="http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/09/j-g.svg"></img>
+              <img class="box-img__image" src="http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/09/j-g.svg"></img>
             </div>
           </div>
           <div class="col-4 col-sm-2">
             <div class="box-img">
-              <img class="image" src="http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/09/uni-g.svg"></img>
+              <img class="box-img__image" src="http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/09/uni-g.svg"></img>
             </div>
           </div>
         </div>
