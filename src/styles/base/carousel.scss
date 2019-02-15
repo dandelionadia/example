@@ -62,7 +62,12 @@
             width: 60px;
             background-color: rgba(255,255,255,0);
             margin: 10px 0;
+            
+            @media (max-width: 576px) {
+                    height: 2px;
+            }
         }
+
 
         &--center {
             align-items: center;

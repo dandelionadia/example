@@ -79,7 +79,6 @@
       <div class="slide__content">
         <p class="slide__title slide__title--center">lorem is lorem.</p>
         <p class="slide__sub-title">sub title sub titlesub title</p>
-        <div class="slide__line"></div>
         <div class="slide__btn slide--center">
           <p>same text</p>
           <i class="slide__btn--icon" data-feather="arrow-right"></i>
