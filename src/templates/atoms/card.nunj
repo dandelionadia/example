@@ -1,11 +1,11 @@
-{% macro card(title, content, img, title, text) %}
+{% macro card(title, content, img, title, link, text) %}
     <div class="card">
         <h4 class="card__title">{{title}}</h4>
         <p class="card__text">{{content}}</p>
         <div class="card__box-img">
           <img class="card__img" src="{{img}}" alt="{{title}}"/>
         </div>
-        <a class="card__link" href="#">{{text}}
+        <a class="card__link" href="{{link}}">{{text}}
           <i class="card__icon" data-feather="arrow-right"></i>
         </a>
       </div>
@@ -24,7 +24,6 @@
 <div class="post">
     <div class="post__image">
         <div class="post__meta">
-            {# <img class="post__meta--avatar" src="{{avatar}}"/> #}
             <i class="post__meta--avatar" data-feather="{{iconName}}"></i>
             <p>{{authorName}}</p>
         </div>

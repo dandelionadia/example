@@ -167,15 +167,15 @@
         </div>
         <div class="row">
           <div class="col-12 col-lg-4">
-            {{cards.card('Managed IT services', '24/7 maintenance and monitoring that keeps your computers, servers, and systems up and running.', 'http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/08/syncing-document-4157_bf6a2cf1-26c8-4688-ab14-85836d2a0562.svg', 'title', 'Stay up and running')}}
+            {{cards.card('Managed IT services', '24/7 maintenance and monitoring that keeps your computers, servers, and systems up and running.', 'http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/08/syncing-document-4157_bf6a2cf1-26c8-4688-ab14-85836d2a0562.svg', 'title', 'https://feathericons.com/', 'Stay up and running')}}
           </div>
 
           <div class="col-12 col-lg-4">
-            {{cards.card('Managed IT services', '24/7 maintenance and monitoring that keeps your computers, servers, and systems up and running.', 'http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/08/ssd-storage-1951_0cd86b60-9df8-4053-9198-84f76027d5de.svg', 'title', 'Stay up and running')}}
+            {{cards.card('Managed IT services', '24/7 maintenance and monitoring that keeps your computers, servers, and systems up and running.', 'http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/08/ssd-storage-1951_0cd86b60-9df8-4053-9198-84f76027d5de.svg', 'title', 'https://feathericons.com/', 'Stay up and running')}}
           </div>
 
           <div class="col-12 col-lg-4">
-            {{cards.card('Managed IT services', '24/7 maintenance and monitoring that keeps your computers, servers, and systems up and running.', 'http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/08/private-folder-4136_9a670d06-eeb7-4508-8533-143953499f9e.svg', 'title', 'Stay up and running')}}
+            {{cards.card('Managed IT services', '24/7 maintenance and monitoring that keeps your computers, servers, and systems up and running.', 'http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/08/private-folder-4136_9a670d06-eeb7-4508-8533-143953499f9e.svg', 'title', 'https://feathericons.com/', 'Stay up and running')}}
           </div>
         </div>
         <div class="row">
