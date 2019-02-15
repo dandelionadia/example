@@ -1,8 +1,8 @@
-{% macro card(title, content, img, text) %}
+{% macro card(title, content, img, title, text) %}
     <div class="card">
         <h4 class="card__title">{{title}}</h4>
         <p class="card__text">{{content}}</p>
-        <img class="card__img" src="{{img}}"/>
+        <img class="card__img" src="{{img}}" alt="{{title}}"/>
         <a class="card__link" href="#">{{text}}
           <i class="card__icon" data-feather="arrow-right"></i>
         </a>

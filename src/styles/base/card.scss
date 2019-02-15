@@ -8,9 +8,22 @@
 
     &__img {
         width: 40%;
-        border-radius: 50%;
+        height: 80px;
         margin: auto;
         margin-top: 40px;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            height: 8px;
+            width: 66px;
+            top: 100%;
+            left: 50%;
+            background: rgba(0, 0, 0, 0.06);
+            // z-index: -1;
+            border-radius: 100%;
+        }
     }
 
     &__link {
