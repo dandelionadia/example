@@ -6,12 +6,22 @@
     margin-top: 30px;
     border: none;
 
-    &__img {
-        width: 40%;
-        height: 80px;
-        margin: auto;
-        margin-top: 40px;
+    &:hover {
+        .card__box-img::after {
+            width: 45px;
+        }
+
+        .card__img {
+            transform: rotate(0.03turn) translate(1px, -30%);
+            // transform: translate(1px, -30%);
+        }
+    }
+    
+
+    &__box-img {
         position: relative;
+        display: flex;
+        justify-content: center;
 
         &::after {
             content: '';
@@ -19,11 +29,18 @@
             height: 8px;
             width: 66px;
             top: 100%;
-            left: 50%;
             background: rgba(0, 0, 0, 0.06);
-            // z-index: -1;
             border-radius: 100%;
+            transition: width 0.4s;
         }
+    }
+
+    &__img {
+        width: 40%;
+        height: 80px;
+        margin: auto;
+        margin-top: 40px;
+        transition: transform 0.4s;
     }
 
     &__link {
