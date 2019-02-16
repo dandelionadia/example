@@ -1,0 +1,7 @@
+{% macro info(text, link, namelink ) %}
+    <div class="info">
+        <p class="info__text">{{text}}
+            <a class="info__link" href="{{link}}">{{namelink}}</a>
+        </p>
+    </div>
+{% endmacro %}

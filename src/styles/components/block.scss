@@ -1,0 +1,31 @@
+.block {
+    padding: 80px 0 40px;
+    background-color: $color-white;
+
+    &__title,
+    &__subtitle {
+        text-align: center;
+    }
+
+    &--blue {
+        background-color: $color-dark-blue;
+        color: $color-text-gray;
+        padding-bottom: 200px;
+        box-sizing: border-box;
+        position: relative;
+
+        .block__title {
+            color: #fff;
+            text-align: left;
+        }
+
+        .block__subtitle {
+            color: $color-blue;
+            text-align: left;
+        }
+
+        .block__text {
+            color: $color-text-gray;
+        }
+    }
+}
