@@ -118,7 +118,7 @@
   </div>
 {% endcall %}
 
-<div class="cards">
+<div class="cards bg--gray">
   <div class="container">
     <div class="row">
       <div class="col-sm-12 col-lg-4">
@@ -131,25 +131,24 @@
         {{cards.support('https://cdn.vox-cdn.com/thumbor/mVB2L6UnsN4qqymP-rhaYckmfCg=/0x0:1280x720/1200x800/filters:focal(538x258:742x462)/cdn.vox-cdn.com/uploads/chorus_image/image/47718349/adventuretimestakes.0.jpg', 'Our services', 'How we can help', 'Discover now', 'arrow-right')}}
       </div>
     </div>
+    <div class="row">
+      <div class="col-12">
+        {{info.info('Stop wasting time and money on technology.', 'https://corp.lingualeo.com/ru/?s=%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%BD%D0%BE%D1%88%D0%B5%D0%BD%D0%B8%D0%B5&lang=en', 'Explore our company')}}
+      </div>
+    </div>
   </div>
 </div>
 
 <div class="container">
-  <div class="row">
-    <div class="col-12">
-      {{info.info('Stop wasting time and money on technology.', 'https://corp.lingualeo.com/ru/?s=%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%BD%D0%BE%D1%88%D0%B5%D0%BD%D0%B8%D0%B5&lang=en', 'Explore our company')}}
-    </div>
-  </div>
 </div>
 {#  #}
-<div class="services">
+
+{% call block.container() %}
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        <div class="services__box-titles">
-          <h6 class="services__subtitle">Our Services</h6>
-          <h3 class="services__title">Stay Up, Stay Running, Stay Protected</h3>
-        </div>
+      <div class="col">
+        {{block.subtitle('Our services')}}
+        {{block.title('Stay Up, Stay Running, Stay Protected')}}
       </div>
     </div>
     <div class="row">
@@ -207,22 +206,7 @@
       </div>
     </div>
   </div>
-</div>
-
-{# {% call block.container() %}
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        {{block.subtitle('Our services')}}
-        {{block.title('Stay Up, Stay Running, Stay Protected')}}
-        <p>Three cards here</p>
-
-        {{cards.card('Managed IT services', '24/7 maintenance and monitoring that keeps your computers, servers, and systems up and running.', 'http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/08/ssd-storage-1951_0cd86b60-9df8-4053-9198-84f76027d5de.svg', 'title', 'https://feathericons.com/', 'Stay up and running')}}
-        {{cards.card('Managed IT services', '24/7 maintenance and monitoring that keeps your computers, servers, and systems up and running.', 'http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/08/ssd-storage-1951_0cd86b60-9df8-4053-9198-84f76027d5de.svg', 'title', 'https://feathericons.com/', 'Stay up and running')}}
-      </div>
-    </div>
-  </div>
-{% endcall %} #}
+{% endcall %}
 
 {% call block.container('blue') %}
   <div class="container">
@@ -252,8 +236,22 @@
         {{cards.serve('http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/10/dollar-badge-2239_40628e9a-63f1-4ed8-bcfd-8d6db221db0e.svg', 'Lorem', 'text text lorem lorem txtd')}}
       </div>
     </div>
+      <div class="row pt-5">
+        <div class="col">
+          {{block.subtitle('Industries we serve', 'text-center')}}
+          {{block.title('Managed IT services customized for your industry', 'text-center')}}
+        </div>
+      </div>
   </div>
 {% endcall %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      {{info.info('Stop wasting time and money on technology.', 'https://corp.lingualeo.com/ru/?s=%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%BD%D0%BE%D1%88%D0%B5%D0%BD%D0%B8%D0%B5&lang=en', 'Explore our company')}}
+    </div>
+  </div>
+</div>
 
 
 {% endblock %}

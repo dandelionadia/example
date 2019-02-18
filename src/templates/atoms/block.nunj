@@ -1,15 +1,15 @@
 {% macro container(variant) %}
-    <div class="block {% if variant %}block--{{variant}}{% endif %}">
+    <div class="block{% if variant %} block--{{variant}}{% endif %}">
         {{caller()}}
     </div>
 {% endmacro %}
 
-{% macro title(title) %}
-     <h3 class="block__title">{{title}}</h3>
+{% macro title(title, class) %}
+     <h3 class="block__title{% if class %} {{class}}{% endif %}">{{title}}</h3>
 {% endmacro %}
 
-{% macro subtitle(subtitle) %}
-    <h6 class="block__subtitle">{{subtitle}}</h6>
+{% macro subtitle(subtitle, class) %}
+    <h6 class="block__subtitle{% if class %} {{class}}{% endif %}">{{subtitle}}</h6>
 {% endmacro %}
 
 {% macro text(text) %}
