@@ -9,8 +9,20 @@
     z-index: 0;
     display: flex;
     align-items: center;
-  justify-content: center;
+    justify-content: center;
     text-align: center;
+        
+    &:hover {
+        // animation: moveTop .8s;
+        transition: transform .3s ease-in-out .1s;
+
+        // @keyframes moveTop {
+        //     50% {transform: translateY(-6px);}
+            
+        // }
+
+        transform: translateY(-6px);
+    }
 
     &::after {
         background-color: hsla(150, 40%, 40%, .6);
