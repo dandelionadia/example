@@ -19,4 +19,24 @@
     &__text {
         color: $color-text-gray;
     }
+
+    &:hover {
+        background-color: #241D2E;
+        
+        .serve__logo {
+            animation: muv 1s infinite;
+            @keyframes muv {
+                0% {transform: rotate(0turn) scale(1);};
+                15% {transform: rotate(0.04turn) scale(1.2);};
+                25% {transform: rotate(0turn) scale(1.2);};
+                35% {transform: rotate(0.04turn) scale(1.2);};
+                45% {transform: rotate(0turn) scale(1.2);};
+                55% {transform: rotate(0.04turn) scale(1.2);};
+                65% {transform: rotate(0turn) scale(1.2);};
+                75% {transform: rotate(0.04turn) scale(1.2);};
+                85% {transform: rotate(0turn) scale(1.2);};
+                100% {transform: rotate(0.04turn) scale(1);};
+            }
+        }
+    }
 }
