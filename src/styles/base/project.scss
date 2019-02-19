@@ -1,8 +1,8 @@
 .project {
+    color: $color-white;
     padding: 40px;
     height: 200px;
-    margin-top: 30px;
-    color: $color-white;
+    margin-top: 40px;
     border-radius: 4px;
     position: relative;
     background-size: cover;
@@ -13,13 +13,13 @@
     text-align: center;
 
     &::after {
+        background-color: hsla(150, 40%, 40%, .6);
         content: '';
         position: absolute;
         top: 0;
         left: 0;
         height: 100%;
         width: 100%;
-        background-color: hsla(150, 40%, 40%, .8);
         z-index: -1;
         border-radius: 4px; 
     }
