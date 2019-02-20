@@ -57,7 +57,7 @@
 {% macro serve(logo, title, text) %}
   <div class="serve">
     <img src="{{logo}}" class="serve__logo"/>
-    <p class="serve__title">{{title}}</p>
+    <h5 class="serve__title">{{title}}</h5>
     <p class="serve__text">{{text}}</p>
   </div>
 {% endmacro %}

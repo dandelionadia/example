@@ -13,14 +13,7 @@
     text-align: center;
         
     &:hover {
-        // animation: moveTop .8s;
         transition: transform .3s ease-in-out .1s;
-
-        // @keyframes moveTop {
-        //     50% {transform: translateY(-6px);}
-            
-        // }
-
         transform: translateY(-6px);
     }
 

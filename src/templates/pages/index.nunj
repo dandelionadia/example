@@ -16,9 +16,9 @@
       <div class="col d-none d-md-block">
         <div class="row">
           <div class="col-12">
-            <div class="heade-info-text__info">
-                <a class="heade-info-text__link" href="#">Now Hiring: </a>
-                <span class="heade-info-text__text">Are you a driven and motivated 1st Line IT Support Engineer?</span>
+            <div class="header-info-text__info">
+                <a class="header-info-text__link" href="#">Now Hiring: </a>
+                <span class="header-info-text__text">Are you a driven and motivated 1st Line IT Support Engineer?</span>
             </div>
           </div>
           <div class="col-12 d-none d-lg-block">
@@ -28,12 +28,12 @@
       </div>
 
       <div class="col-auto d-none d-sm-block">
-        <div class="heade-info-text d-flex">
+        <div class="header-info-text d-flex">
           <i class="header__icon mr-2 mt-1" data-feather="message-circle"></i>
-          <div class="heade-info-text__text">
+          <div class="header-info-text__text">
             <p>Have any questions?</p>
             <p>Free:
-              <a class="heade-info-text__link heade-info-text__link--br" href="#"> 123 456 789</a>
+              <a class="header-info-text__link heade-info-text__link--br" href="#"> 123 456 789</a>
             </p>
           </div>
         </div>
@@ -103,7 +103,7 @@
     </div>
   </div>
 </div>
-{#  #}
+
 {% call block.container('blue') %}
   <div class="container">
     <div class="row">
