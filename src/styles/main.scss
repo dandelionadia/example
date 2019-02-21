@@ -17,10 +17,16 @@
 @import 'base/services';
 
 /* Components */
+@import 'components/block';
 @import 'components/header';
 @import 'components/menu-mobile';
+@import 'components/info';
 
 
 body {
+    background-color: #fff;
+}
+
+.bg--gray {
     background-color: #ccc;
 }

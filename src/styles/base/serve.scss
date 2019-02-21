@@ -1,14 +1,37 @@
 .serve {
-    background-color: $color-dark-blue;
-    border: 1px solid $color-gray;
-    border-radius: 4px;
-    padding: 20px;
+    border-radius: 3px;
+    margin-top: 40px;
+    border: 1px solid $color-black-light;
+    padding: 40px 20px;
     text-align: center;
+    position: relative;
+    z-index: 0;
+
+    &::before {
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: $color-black-light;
+        z-index: -1;
+        transform: scale(1.2);
+        transition: transform 0.5s, opacity 0.5s;
+        visibility: hidden;
+        opacity: 0;
+        border-radius: 3px;
+    }
+
+    &:hover::before {
+        visibility: visible;
+        transform: scale(1);
+        opacity: 1;
+    }
 
     &__logo {
-        width: 100%;
-        border-radius: 50%;
-        margin-bottom: 10px;
+        width: 40%;
+        height: auto;
     }
 
     &__title {
@@ -16,6 +39,25 @@
     }
 
     &__text {
-        color: $color-gray;
+        color: $color-text-gray;
+    }
+
+    &:hover {
+        .serve__logo {
+            animation: move 1s infinite;
+
+            @keyframes move {
+                0% {transform: rotate(0turn) scale(1);};
+                15% {transform: rotate(0.04turn) scale(1.2);};
+                25% {transform: rotate(0turn) scale(1.2);};
+                35% {transform: rotate(0.04turn) scale(1.2);};
+                45% {transform: rotate(0turn) scale(1.2);};
+                55% {transform: rotate(0.04turn) scale(1.2);};
+                65% {transform: rotate(0turn) scale(1.2);};
+                75% {transform: rotate(0.04turn) scale(1.2);};
+                85% {transform: rotate(0turn) scale(1.2);};
+                100% {transform: rotate(0.04turn) scale(1);};
+            }
+        }
     }
 }

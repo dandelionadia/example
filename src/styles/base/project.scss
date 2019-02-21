@@ -1,24 +1,30 @@
 .project {
+    color: $color-white;
     padding: 40px;
     height: 200px;
-    color: $color-white;
+    margin-top: 40px;
     border-radius: 4px;
     position: relative;
     background-size: cover;
     z-index: 0;
     display: flex;
     align-items: center;
-  justify-content: center;
+    justify-content: center;
     text-align: center;
+        
+    &:hover {
+        transition: transform .3s ease-in-out .1s;
+        transform: translateY(-6px);
+    }
 
     &::after {
+        background-color: hsla(150, 40%, 40%, .6);
         content: '';
         position: absolute;
         top: 0;
         left: 0;
         height: 100%;
         width: 100%;
-        background-color: hsla(150, 40%, 40%, .8);
         z-index: -1;
         border-radius: 4px; 
     }
@@ -34,4 +40,8 @@
         max-width: 50%;
     }
 
+}
+
+.box {
+    margin-top: -180px;
 }
