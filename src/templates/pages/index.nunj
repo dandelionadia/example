@@ -266,12 +266,18 @@
   </div>
 </div>
 
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-      <p>blog</p>
+{% call block.container() %}
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {{block.subtitle('Our services')}}
+        {{block.title('Stay Up, Stay Running, Stay Protected')}}
+      </div>
+    </div>
+    <div class="row">
+      {% include "components/articles.nunj" %}
     </div>
   </div>
-</div>
+{% endcall %}
 
 {% endblock %}
