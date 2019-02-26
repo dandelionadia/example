@@ -2,8 +2,23 @@
     background-color: $color-gray-light;
     margin-bottom: 20px;
 
+    &__date {
+        color: $color-gray-text;
+        font-size: 14px;
+    }
+
+    &__text {
+        color: $color-gray-text;
+    }
+
+    &__title {
+        color: $color-blue-text;
+        font-weight: 600;
+    }
+
     &__image {
         position: relative;
+        overflow: hidden;
 
         &::before {
             content: '';
@@ -31,6 +46,7 @@
             height: 28px;
             border-radius: 50%;
             margin-right: 10px;
+            background-color: $color-gray-light;
         }
     }
 
@@ -38,9 +54,26 @@
         width: 100%;
         height: auto;
         position: relative;
+        transition: transform 0.4s;
     }
 
     &__wrap {
         padding: 20px;
+    }
+
+    &:hover {
+        .post {
+            &__img {
+                transform: scale(1.2);
+            }
+            
+            &__image{
+                
+
+                &::before {
+                    opacity: 0;
+                }
+            }
+        }
     }
 }

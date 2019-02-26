@@ -9,7 +9,7 @@
             name: "John Maverick",
             imageUrl: "http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/05/imgix-391813-unsplash1-1190x558.jpg"
         },
-        description: "Lorem ipsum",
+        description: "The ‘Lighthouse Projects’ are in the clinical disciplines of the chronic diseases Epilepsy, Haemophilia and Bipolar Disorder. The epilepsy Lighthous...",
         readmoteUrl: "https://google.com"
     },
     {
@@ -20,7 +20,7 @@
             name: "John Maverick",
             imageUrl: "http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/05/imgix-391813-unsplash1-1190x558.jpg"
         },
-        description: "Lorem ipsum",
+        description: "The ‘Lighthouse Projects’ are in the clinical disciplines of the chronic diseases Epilepsy, Haemophilia and Bipolar Disorder. The epilepsy Lighthous...",        
         readmoteUrl: "https://google.com"
     },
     {
@@ -31,7 +31,7 @@
             name: "John Maverick",
             imageUrl: "http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/05/imgix-391813-unsplash1-1190x558.jpg"
         },
-        description: "Lorem ipsum",
+        description: "The ‘Lighthouse Projects’ are in the clinical disciplines of the chronic diseases Epilepsy, Haemophilia and Bipolar Disorder. The epilepsy Lighthous...",        
         readmoteUrl: "https://google.com"
     },
     {
@@ -42,22 +42,22 @@
             name: "John Maverick",
             imageUrl: "http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/05/imgix-391813-unsplash1-1190x558.jpg"
         },
-        description: "Lorem ipsum",
+        description: "The ‘Lighthouse Projects’ are in the clinical disciplines of the chronic diseases Epilepsy, Haemophilia and Bipolar Disorder. The epilepsy Lighthous...",
         readmoteUrl: "https://google.com"
     }
 ] %}
 
 <div class="container">
     <div class="row">
-        <div class="col-6">
+        <div class="col-12 col-md-6">
             {% set firstArticle = articles[0] %}
             {{cards.post(firstArticle.imageUrl, firstArticle.author.name, firstArticle.author.imageUrl, firstArticle.title, firstArticle.description, firstArticle.date)}}   
         </div>
 
-        <div class="col-6">
+        <div class="col-12 col-md-6">
             <div class="row">
                 {% for article in articles %}
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                         {{cards.post('user', article.author.name, article.author.imageUrl, article.title, article.description, article.date, true)}}   
                     </div>
                 {% endfor %}

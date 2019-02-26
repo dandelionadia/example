@@ -220,7 +220,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col">
+      {# <div class="col">
         {{cards.serve('http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/10/catalogue-3486_5154eaae-1092-4b08-83ca-a8a18aa145a2.svg', 'Lorem', 'text text lorem lorem txtd')}}
       </div>
       <div class="col">
@@ -234,7 +234,7 @@
       </div>
       <div class="col">
         {{cards.serve('http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/10/dollar-badge-2239_40628e9a-63f1-4ed8-bcfd-8d6db221db0e.svg', 'Lorem', 'text text lorem lorem txtd')}}
-      </div>
+      </div> #}
     </div>
       <div class="row pt-5">
         <div class="col">
