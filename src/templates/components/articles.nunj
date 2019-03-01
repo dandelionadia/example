@@ -45,6 +45,17 @@
         },
         description: "The ‘Lighthouse Projects’ are in the clinical disciplines of the chronic diseases Epilepsy, Haemophilia and Bipolar Disorder. The epilepsy Lighthous...",
         readmoteUrl: "https://google.com"
+    },
+    {
+        title: "Article 4",
+        imageUrl: "user",
+        date: "May 8, 2018",
+        author: {
+            name: "John Maverick",
+            imageUrl: "http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/05/rawpixel-com-567026-unsplash1-800x400.jpg"
+        },
+        description: "The ‘Lighthouse Projects’ are in the clinical disciplines of the chronic diseases Epilepsy, Haemophilia and Bipolar Disorder. The epilepsy Lighthous...",
+        readmoteUrl: "https://google.com"
     }
 ] %}
 
@@ -52,15 +63,18 @@
     <div class="row">
         <div class="col-12 col-lg-6">
             {% set firstArticle = articles[0] %}
-            {{cards.post(firstArticle.imageUrl, firstArticle.author.name, firstArticle.author.imageUrl, firstArticle.title, firstArticle.description, firstArticle.date, firstArticle.textbtn)}}   
+            {{cards.post(firstArticle.imageUrl, firstArticle.author.name, firstArticle.author.imageUrl, firstArticle.title, firstArticle.description, firstArticle.date, firstArticle.textbtn)}}
         </div>
 
         <div class="col-12 col-lg-6">
             <div class="row">
+                {# @todo Start from index 1 #}
                 {% for article in articles %}
+                    {% if loop.index > 1 %}
                     <div class="col-12 col-md-6">
-                        {{cards.post('user', article.author.name, article.author.imageUrl, article.title, article.date)}}   
+                        {{cards.post(article.imageUrl, article.author.name, article.author.imageUrl, article.title, null, article.date)}}
                     </div>
+                    {% endif %}
                 {% endfor %}
             </div>
         </div>

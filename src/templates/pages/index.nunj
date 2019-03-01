@@ -141,7 +141,6 @@
 
 <div class="container">
 </div>
-{#  #}
 
 {% call block.container() %}
   <div class="container">
@@ -274,7 +273,7 @@
         {{block.title('Stay Up, Stay Running, Stay Protected')}}
       </div>
     </div>
-    <div class="row">
+    <div class="row mt-5">
       {% include "components/articles.nunj" %}
     </div>
   </div>

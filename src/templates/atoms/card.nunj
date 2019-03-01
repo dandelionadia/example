@@ -20,7 +20,7 @@
     </div>
 {% endmacro %}
 
-{% macro post(iconName, authorName, img, title, text, date, btn, isSmall) %}
+{% macro post(iconName, authorName, img, title, text, date, btnText) %}
 <div class="post">
     <div class="post__image">
         <div class="post__meta">
@@ -32,14 +32,14 @@
     </div>
 
     <div class="post__wrap">
-      {% if isSmall %}
-        <div class="post__title">{{title}}</div>
-        <div class="post__date">{{date}}</div>
-      {% else %}
+      {% if btnText %}
         <div class="post__date">{{date}}</div>
         <div class="post__title">{{title}}</div>
         <div class="post__text">{{text}}</div>
-        <button class="post__btn">{{btn}}</button>
+        <button class="post__btn">{{btnText}}</button>
+      {% else %}
+        <div class="post__title">{{title}}</div>
+        <div class="post__date">{{date}}</div>
       {% endif %}
     </div>
 </div>
