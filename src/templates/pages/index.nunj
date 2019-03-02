@@ -118,7 +118,7 @@
   </div>
 {% endcall %}
 
-<div class="cards bg--gray">
+<div class="cards bg--gray pb-4">
   <div class="container">
     <div class="row">
       <div class="col-sm-12 col-lg-4">
@@ -141,7 +141,6 @@
 
 <div class="container">
 </div>
-{#  #}
 
 {% call block.container() %}
   <div class="container">
@@ -220,7 +219,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col">
+      {# <div class="col">
         {{cards.serve('http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/10/catalogue-3486_5154eaae-1092-4b08-83ca-a8a18aa145a2.svg', 'Lorem', 'text text lorem lorem txtd')}}
       </div>
       <div class="col">
@@ -234,7 +233,7 @@
       </div>
       <div class="col">
         {{cards.serve('http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/10/dollar-badge-2239_40628e9a-63f1-4ed8-bcfd-8d6db221db0e.svg', 'Lorem', 'text text lorem lorem txtd')}}
-      </div>
+      </div> #}
     </div>
       <div class="row pt-5">
         <div class="col">
@@ -265,5 +264,24 @@
     </div>
   </div>
 </div>
+
+{% call block.container() %}
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {{block.subtitle('Our services')}}
+        {{block.title('Stay Up, Stay Running, Stay Protected')}}
+      </div>
+    </div>
+    <div class="row mt-5">
+      {% include "components/articles.nunj" %}
+    </div>
+    <div class="row">
+      <div class="col-12">
+        {{info.info('Stop wasting time and money on technology.', 'https://corp.lingualeo.com/ru/?s=%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%BD%D0%BE%D1%88%D0%B5%D0%BD%D0%B8%D0%B5&lang=en', 'Explore our company')}}
+      </div>
+    </div>
+  </div>
+{% endcall %}
 
 {% endblock %}

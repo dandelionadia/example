@@ -1,0 +1,44 @@
+{% macro container(variant) %}
+    <div class="post{% if variant %} post--{{variant}}{% endif %}">
+        {{caller()}}
+    </div>
+{% endmacro %}
+
+{% macro wrap() %}
+    <div class="post__wrap">
+        {{caller()}}
+    </div>
+{% endmacro %}
+
+{% macro image() %}
+    <div class="post__image">
+        {{caller()}}
+    </div>
+{% endmacro %}
+
+{% macro meta(iconName, authorName)%}
+    <div class="post__meta">
+        <i class="post__meta--avatar" data-feather="{{iconName}}"></i>
+        <p>{{authorName}}</p>
+    </div>
+{% endmacro %}
+
+{% macro img(img) %}
+    <img class="post__img" src="{{img}}"/>
+{% endmacro %}
+
+{% macro date(date) %}
+    <div class="post__date">{{date}}</div>
+{% endmacro %}
+
+{% macro title(title) %}
+    <div class="post__title">{{title}}</div>
+{% endmacro %}
+
+{% macro text(text) %}
+    <div class="post__text">{{text}}</div>
+{% endmacro %}
+
+{% macro btn(url, btnText) %}
+    <a href="{{url}}" class="post__btn">{{btnText}}</a>
+{% endmacro %}
