@@ -1,8 +1,8 @@
-{% import "atoms/card.nunj" as cards %}
+{% import "atoms/post.nunj" as post %}
 
 {% set articles = [
     {
-        title: "Article 1",
+        title: "Tips to make your workforce a security front line",
         imageUrl: "user",
         date: "May 8, 2018",
         author: {
@@ -11,10 +11,10 @@
         },
         description: "The ‘Lighthouse Projects’ are in the clinical disciplines of the chronic diseases Epilepsy, Haemophilia and Bipolar Disorder. The epilepsy Lighthous...",
         readmoteUrl: "https://google.com",
-        textbtn: 'aaa'
+        btntext: 'Read more'
     },
     {
-        title: "Article 2",
+        title: "Dynamics 365: a game changer for dairygold operations",
         imageUrl: "user",
         date: "May 8, 2018",
         author: {
@@ -25,7 +25,7 @@
         readmoteUrl: "https://google.com"
     },
     {
-        title: "Article 3",
+        title: "Tips to make your workforce a security front line",
         imageUrl: "user",
         date: "May 8, 2018",
         author: {
@@ -36,7 +36,7 @@
         readmoteUrl: "https://google.com"
     },
     {
-        title: "Article 4",
+        title: "Dynamics 365: a game changer for dairygold operations",
         imageUrl: "user",
         date: "May 8, 2018",
         author: {
@@ -47,7 +47,7 @@
         readmoteUrl: "https://google.com"
     },
     {
-        title: "Article 4",
+        title: "Dynamics 365: a game changer for dairygold operations",
         imageUrl: "user",
         date: "May 8, 2018",
         author: {
@@ -59,7 +59,7 @@
     }
 ] %}
 
-<div class="container">
+{# <div class="container">
     <div class="row">
         <div class="col-12 col-lg-6">
             {% set firstArticle = articles[0] %}
@@ -68,12 +68,53 @@
 
         <div class="col-12 col-lg-6">
             <div class="row">
-                {# @todo Start from index 1 #}
                 {% for article in articles %}
                     {% if loop.index > 1 %}
                     <div class="col-12 col-md-6">
                         {{cards.post(article.imageUrl, article.author.name, article.author.imageUrl, article.title, null, article.date)}}
                     </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div> #}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            {% set firstArticle = articles[0] %}
+
+            {% call post.container('big') %}
+                {% call post.image() %}
+                    {{post.meta(firstArticle.imageUrl, firstArticle.author.name)}}
+                    {{post.img(firstArticle.author.imageUrl)}}
+                {% endcall %}
+                {% call post.wrap() %}
+                    {{post.date(firstArticle.date)}}
+                    {{post.title(firstArticle.title)}}
+                    {{post.text(firstArticle.description)}}
+                    {{post.btn(firstArticle.readmoteUrl, firstArticle.btntext)}}
+                {% endcall %}
+            {% endcall %}
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <div class="row">
+                {% for article in articles %}
+                    {% if loop.index > 1 %}
+                        <div class="col-12 col-md-6">
+                            {% call post.container() %}
+                                {% call post.image() %}
+                                    {{post.meta(article.imageUrl, article.author.name)}}
+                                    {{post.img(article.author.imageUrl)}}
+                                {% endcall %}
+                                {% call post.wrap() %}
+                                    {{post.title(article.title)}}
+                                    {{post.date(article.date)}}
+                                {% endcall %}
+                            {% endcall %}
+                        </div>
                     {% endif %}
                 {% endfor %}
             </div>
