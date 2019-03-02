@@ -45,7 +45,7 @@
             transition: top 0.25s ease-out;
         }
 
-        &:hover{
+        &:hover {
             color: $color-white;
             text-decoration: none;
 
@@ -124,8 +124,6 @@
             }
             
             &__image{
-                
-
                 &::before {
                     opacity: 0;
                 }
