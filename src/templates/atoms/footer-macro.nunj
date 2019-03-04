@@ -1,0 +1,38 @@
+{% macro footer() %}
+    <div class="contact">
+        {{caller()}}
+    </div>
+{% endmacro %}
+
+{% macro menu() %}
+    <ul class="menu">
+        {{caller()}}
+    </ul>
+{% endmacro %}
+
+{% macro social-icons() %}
+    <div class="social-icons">
+        {{caller()}}
+    </div>
+{% endmacro %}
+
+{% macro info(text, number, mail) %}
+    <p>{{text}}</p>
+    <p>P:<span>{{number}}</span> | M:<span>{{mail}}</span></p>
+{% endmacro %}
+
+{% macro img(img) %}
+    <img src="{{img}}" />
+{% endmacro %}
+
+{% macro icon(icon) %}
+    <i data-feather="{{icon}}"></i>
+{% endmacro %}
+
+{% macro item(item) %}
+    <li>{{item}}</li>
+{% endmacro %}
+
+{% macro copyright(company, themes, text, marcet) %}
+    <div>{{company}}<a>{{themes}}</a>{{text}}<a>{{marcet}}</a></div>
+{% endmacro %}
