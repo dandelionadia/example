@@ -1,4 +1,4 @@
-{% macro footer() %}
+{% macro contact() %}
     <div class="contact">
         {{caller()}}
     </div>
@@ -16,13 +16,13 @@
     </div>
 {% endmacro %}
 
-{% macro info(text, number, mail) %}
-    <p>{{text}}</p>
-    <p>P:<span>{{number}}</span> | M:<span>{{mail}}</span></p>
-{% endmacro %}
-
 {% macro img(img) %}
     <img src="{{img}}" />
+{% endmacro %}
+
+{% macro info(text, number, mail) %}
+    <p>{{text}}</p>
+    <p>P:<span><a src="#">{{number}}</a></span> | M:<span><a src="#">{{mail}}</a></span></p>
 {% endmacro %}
 
 {% macro icon(icon) %}
@@ -30,7 +30,13 @@
 {% endmacro %}
 
 {% macro item(item) %}
-    <li>{{item}}</li>
+    <li><a src="#">{{item}}</a></li>
+{% endmacro %}
+
+{% macro title(title) %}
+    <li>
+        <div>{{title}}</div>
+    </li>
 {% endmacro %}
 
 {% macro copyright(company, themes, text, marcet) %}
