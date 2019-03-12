@@ -1,73 +1,162 @@
-{% import "atoms/footer-macro.nunj" as footer-macro %}
+{% import "atoms/footermacro.nunj" as footermacro %}
 
 {% set arr = {
-    contact: {
-        {
-            img: "http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/08/ft-logo-100x100.png",
-            text: "Beverley Rd Brooklyn, New York 1226 US",
-            number: "+ (0712) 819 79 555",
-            mail: "info@example.com",
-            social-icons: {
-                twitter: "twitter",
-                facebook: "facebook",
-                instagram: "instagram",
-                youtube: "youtube",
-                linkedin: "linkedin"
+    contacts: {
+        img: "http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/08/ft-logo-100x100.png",
+        adress: "Beverley Rd Brooklyn, New York 1226 US",
+        number: "+ (0712) 819 79 555",
+        email: "info@example.com",
+        socialIcons: [
+            {
+                name: "twitter",
+                url: "#"
+            },
+            {
+                name: "facebook",
+                url: "#"
+            },
+            {
+                name: "instagram",
+                url: "#"
+            },
+            {
+                name: "youtube",
+                url: "#"
+            },
+            {
+                name: "linkedin",
+                url: "#"
             }
-        }
+        ]
+        
     },
-    menu : {
+    menu: [
         {
             title: "IT Services",
-            item: {
-                1: "Managed IT",
-                2: "IT Support",
-                3: "IT Consultancy",
-                4: "Cloud Computing",
-                5: "Cyber Security",
-                6: "Custom Software"
-            }
+            items: [
+                {
+                    name: "Managed IT",
+                    url: "#"
+                },
+                {
+                    name: "IT Support",
+                    url: "#"
+                },
+                {
+                    name: "IT Consultancy",
+                    url: "#"
+                },
+                {
+                    name: "Cloud Computing",
+                    url: "#"
+                },
+                {
+                    name: "Cyber Security",
+                    url: "#"
+                },
+                {
+                    name: "Custom Software",
+                    url: "#"
+                }
+            ]
         },
         {
             title: "Industries",
-            item: {
-                1: "Banking",
-                2: "Capital Markets",
-                3: "Enterprise Technology",
-                4: "Manufacturing",
-                5: "Healthcare",
-                6: "Higher Education"
-            }
+            items: [
+                {
+                    name: "Banking",
+                    url: "#"
+                },
+                {
+                    name: "Capital Markets",
+                    url: "#"
+                },
+                {
+                    name: "Enterprise Technology",
+                    url: "#"
+                },
+                {
+                    name: "Manufacturing",
+                    url: "#"
+                },
+                {
+                    name: "Healthcare",
+                    url: "#"
+                },
+                {
+                    name: "Higher Education",
+                    url: "#"
+                }
+            ]
         },
         {
             title: "Company",
-            item: {
-                1: "About",
-                2: "Leadership Team",
-                3: "IT Blog",
-                4: "Case Studies",
-                5: "Locations",
-                6: "Careers"
-            }
+            items: [
+                {
+                    name: "About",
+                    url: "#"
+                },
+                {
+                    name: "Leadership Team",
+                    url: "#"
+                },
+                {
+                    name: "IT Blog",
+                    url: "#"
+                },
+                {
+                    name: "Case Studies",
+                    url: "#"
+                }, {
+                    name: "Locations",
+                    url: "#"
+                }, 
+                {
+                    name: "Careers",
+                    url: "#"
+                }
+            ]
         },
         {
             title: "Support",
-            item: {
-                1: "Forum Support",
-                2: "Help & FAQ",
-                3: "Contact Us",
-                4: "Pricing and plans",
-                5: "Cookies Policy",
-                6: "Privacy Policy"
-            }
+            items: [
+                {
+                    name: "Forum Support",
+                    url: "#"
+                },
+                {
+                    name: "Help & FAQ",
+                    url: "#"
+                },
+                {
+                    name: "Contact Us",
+                    url: "#"
+                },
+                {
+                    name: "Pricing and plans",
+                    url: "#"
+                },
+                {
+                    name: "Cookies Policy",
+                    url: "#"
+                },
+                {
+                    name: "Privacy Policy",
+                    url: "#"
+                }
+            ]
         }
-    },
-    {
-        copyright: {
-            company: "© 2018 NanoSoft. Designed and Developed by",
-            themes: "LineThemes",
-            text: "Only on",
-            marcet: " Envato Market."
+    ],
+    copyright: {
+        company: "© 2018 NanoSoft. Designed and Developed by",
+        theme: {
+            name: "LineThemes",
+            src: "#"
+        } 
+        text: "Only on",
+        marcet: {
+            name: " Envato Market.",
+            src: ""
         }
     }
 

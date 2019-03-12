@@ -20,17 +20,17 @@
     <img src="{{img}}" />
 {% endmacro %}
 
-{% macro info(text, number, mail) %}
+{% macro info(text, src, number, mail) %}
     <p>{{text}}</p>
-    <p>P:<span><a src="#">{{number}}</a></span> | M:<span><a src="#">{{mail}}</a></span></p>
+    <p>P:<span><a src="{{src}}">{{number}}</a></span> | M:<span><a src="{{src}}">{{mail}}</a></span></p>
 {% endmacro %}
 
 {% macro icon(icon) %}
     <i data-feather="{{icon}}"></i>
 {% endmacro %}
 
-{% macro item(item) %}
-    <li><a src="#">{{item}}</a></li>
+{% macro item(src, item) %}
+    <li><a src="{{src}}">{{item}}</a></li>
 {% endmacro %}
 
 {% macro title(title) %}
@@ -39,6 +39,6 @@
     </li>
 {% endmacro %}
 
-{% macro copyright(company, themes, text, marcet) %}
-    <div>{{company}}<a>{{themes}}</a>{{text}}<a>{{marcet}}</a></div>
+{% macro copyright(company, src, theme, text, marcet) %}
+    <div>{{company}}<a src="{{src}}">{{themes}}</a>{{text}}<a src="{{src}}">{{marcet}}</a></div>
 {% endmacro %}
