@@ -10,7 +10,7 @@
     </ul>
 {% endmacro %}
 
-{% macro social-icons() %}
+{% macro socialIcons() %}
     <div class="social-icons">
         {{caller()}}
     </div>

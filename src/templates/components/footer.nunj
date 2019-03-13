@@ -152,7 +152,7 @@
         theme: {
             name: "LineThemes",
             src: "#"
-        } 
+        },
         text: "Only on",
         marcet: {
             name: " Envato Market.",
