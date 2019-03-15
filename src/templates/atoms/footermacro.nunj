@@ -1,17 +1,17 @@
 {% macro contact() %}
-    <div class="contact">
+    <div class="footer__contact">
         {{caller()}}
     </div>
 {% endmacro %}
 
 {% macro menu() %}
-    <ul class="menu">
+    <ul class="footer__menu">
         {{caller()}}
     </ul>
 {% endmacro %}
 
 {% macro socialIcons() %}
-    <div class="social-icons">
+    <div class="footer__social-icons">
         {{caller()}}
     </div>
 {% endmacro %}
@@ -25,20 +25,18 @@
     <p>P:<span><a src="{{src}}">{{number}}</a></span> | M:<span><a src="{{src}}">{{mail}}</a></span></p>
 {% endmacro %}
 
-{% macro icon(icon) %}
-    <i data-feather="{{icon}}"></i>
+{% macro icon(src, icon) %}
+    <a src="src"><i data-feather="{{icon}}"></i></a>
 {% endmacro %}
 
 {% macro item(src, item) %}
-    <li><a src="{{src}}">{{item}}</a></li>
+    <li><a href="{{src}}">{{item}}</a></li>
 {% endmacro %}
 
 {% macro title(title) %}
-    <li>
-        <div>{{title}}</div>
-    </li>
+    <h5>{{title}}</h5>
 {% endmacro %}
 
-{% macro copyright(company, src, theme, text, marcet) %}
-    <div>{{company}}<a src="{{src}}">{{themes}}</a>{{text}}<a src="{{src}}">{{marcet}}</a></div>
+{% macro copyright(company, hrefone, themes, text, hreftwo, marcet) %}
+    <div>{{company}}<a href="{{hrefone}}">{{themes}}</a>{{text}}<a href="{{hreftwo}}">{{marcet}}</a></div>
 {% endmacro %}
