@@ -1,14 +1,18 @@
 .footer {
     padding: 40px 0;
 
+    &__link {
+        color: $color-blue-text;
+        font-weight: 500;
+
+        &--light {
+            color: $color-gray-text;
+        }
+    }
+
     &__contact {
         color: $color-gray-text;
         margin-bottom: 30px;
-
-        &--link {
-            color: $color-blue-text !important;
-            font-weight: 500;
-        }
     }
 
     &__logo {
@@ -22,6 +26,10 @@
         margin-bottom: 30px;
     }
 
+    &__icon {
+        margin-right: 5px;
+    }
+
     &__menu {
         padding-left: 0;
         margin-bottom: 30px;
@@ -33,10 +41,6 @@
 
     &__list {
         list-style: none;
-        
-        &--link {
-            color: $color-gray-text; 
-        }
     }
 
     &__copyright {
@@ -44,10 +48,5 @@
         border-top: 1px solid $color-gray-br;
         padding-top: 30px;
         margin-top: 30px;
-
-        &--link {
-            color: $color-blue-text !important;
-            font-weight: 500;
-        }
     }
 }
