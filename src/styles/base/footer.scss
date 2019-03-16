@@ -1,0 +1,53 @@
+.footer {
+    padding: 40px 0;
+
+    &__contact {
+        color: $color-gray-text;
+        margin-bottom: 30px;
+
+        &--link {
+            color: $color-blue-text !important;
+            font-weight: 500;
+        }
+    }
+
+    &__logo {
+        margin-bottom: 30px;
+        width: 60px;
+        height: auto;
+    }
+
+    &__social-icons {
+        color: $color-gray-text;
+        margin-bottom: 30px;
+    }
+
+    &__menu {
+        padding-left: 0;
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        color: $color-blue-text;
+    }
+
+    &__list {
+        list-style: none;
+        
+        &--link {
+            color: $color-gray-text; 
+        }
+    }
+
+    &__copyright {
+        color:  $color-gray-text;
+        border-top: 1px solid $color-gray-br;
+        padding-top: 30px;
+        margin-top: 30px;
+
+        &--link {
+            color: $color-blue-text !important;
+            font-weight: 500;
+        }
+    }
+}

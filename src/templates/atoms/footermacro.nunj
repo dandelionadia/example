@@ -16,13 +16,13 @@
     </div>
 {% endmacro %}
 
-{% macro img(img) %}
-    <img src="{{img}}" />
+{% macro logo(img) %}
+    <img class="footer__logo" src="{{img}}" />
 {% endmacro %}
 
 {% macro info(text, src, number, mail) %}
     <p>{{text}}</p>
-    <p>P:<span><a src="{{src}}">{{number}}</a></span> | M:<span><a src="{{src}}">{{mail}}</a></span></p>
+    <p>P:<span><a class="footer__contact--link" src="{{src}}">{{number}}</a></span> | M:<span><a class="footer__contact--link" src="{{src}}">{{mail}}</a></span></p>
 {% endmacro %}
 
 {% macro icon(src, icon) %}
@@ -30,13 +30,13 @@
 {% endmacro %}
 
 {% macro item(src, item) %}
-    <li><a href="{{src}}">{{item}}</a></li>
+    <li class="footer__list"><a class="footer__list footer__list--link" href="{{src}}">{{item}}</a></li>
 {% endmacro %}
 
 {% macro title(title) %}
-    <h5>{{title}}</h5>
+    <h5 class="footet__title">{{title}}</h5>
 {% endmacro %}
 
 {% macro copyright(company, hrefone, themes, text, hreftwo, marcet) %}
-    <div>{{company}}<a href="{{hrefone}}">{{themes}}</a>{{text}}<a href="{{hreftwo}}">{{marcet}}</a></div>
+    <div class="footer__copyright">{{company}}<a class="footer__copyright--link" href="{{hrefone}}">{{themes}}</a>{{text}}<a class="footer__copyright--link" href="{{hreftwo}}">{{marcet}}</a></div>
 {% endmacro %}
