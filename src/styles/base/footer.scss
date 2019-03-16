@@ -1,5 +1,7 @@
 .footer {
     padding: 40px 0;
+    font-size: 14px;
+    line-height: urset;
 
     &__link {
         color: $color-blue-text;
@@ -7,6 +9,14 @@
 
         &--light {
             color: $color-gray-text;
+
+            &:hover {
+                color: $color-red;
+            }
+        }
+
+        &:hover {
+            color: $color-red;
         }
     }
 
@@ -41,6 +51,7 @@
 
     &__list {
         list-style: none;
+        margin-bottom: 8px;
     }
 
     &__copyright {
@@ -48,5 +59,6 @@
         border-top: 1px solid $color-gray-br;
         padding-top: 30px;
         margin-top: 30px;
+        text-align: center;
     }
 }

@@ -171,7 +171,7 @@
 <div class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 col-lg-4">
                 {{footermacro.logo(arr.contacts.logo)}}
                 {% call footermacro.contact() %}
                     {{footermacro.info(arr.contacts.adress.text, arr.contacts.adress.src, arr.contacts.number, arr.contacts.email.name, arr.contacts.email.src)}}
@@ -184,7 +184,7 @@
                     {{footermacro.icon(arr.contacts.socialIcons[4].src, arr.contacts.socialIcons[4].name)}}
                 {% endcall %}
             </div>
-            <div class="col-12">
+            <div class="col-12 col-md-6 col-lg-4">
                 <div class="row">
                     <div class="col-6">
                         {% call footermacro.menu() %}
@@ -210,28 +210,28 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12">
+            <div class="col-12 col-md-6 col-lg-4">
                 <div class="row">
                     <div class="col-6">
                         {% call footermacro.menu() %}
                             {{footermacro.title(arr.menu[2].title)}}
-                            {{footermacro.item(arr.menu[2].items[0].url, arr.menu[0].items[0].name)}}
-                            {{footermacro.item(arr.menu[2].items[1].url, arr.menu[0].items[1].name)}}
-                            {{footermacro.item(arr.menu[2].items[2].url, arr.menu[0].items[2].name)}}
-                            {{footermacro.item(arr.menu[2].items[3].url, arr.menu[0].items[3].name)}}
-                            {{footermacro.item(arr.menu[2].items[4].url, arr.menu[0].items[4].name)}}
-                            {{footermacro.item(arr.menu[2].items[5].url, arr.menu[0].items[5].name)}}
+                            {{footermacro.item(arr.menu[2].items[0].url, arr.menu[2].items[0].name)}}
+                            {{footermacro.item(arr.menu[2].items[1].url, arr.menu[2].items[1].name)}}
+                            {{footermacro.item(arr.menu[2].items[2].url, arr.menu[2].items[2].name)}}
+                            {{footermacro.item(arr.menu[2].items[3].url, arr.menu[2].items[3].name)}}
+                            {{footermacro.item(arr.menu[2].items[4].url, arr.menu[2].items[4].name)}}
+                            {{footermacro.item(arr.menu[2].items[5].url, arr.menu[2].items[5].name)}}
                         {% endcall %}
                     </div>
                     <div class="col-6">
                         {% call footermacro.menu() %}
                             {{footermacro.title(arr.menu[3].title)}}
-                            {{footermacro.item(arr.menu[3].items[0].url, arr.menu[1].items[0].name)}}
-                            {{footermacro.item(arr.menu[3].items[1].url, arr.menu[1].items[1].name)}}
-                            {{footermacro.item(arr.menu[3].items[2].url, arr.menu[1].items[2].name)}}
-                            {{footermacro.item(arr.menu[3].items[3].url, arr.menu[1].items[3].name)}}
-                            {{footermacro.item(arr.menu[3].items[4].url, arr.menu[1].items[4].name)}}
-                            {{footermacro.item(arr.menu[3].items[5].url, arr.menu[1].items[5].name)}}
+                            {{footermacro.item(arr.menu[3].items[0].url, arr.menu[3].items[0].name)}}
+                            {{footermacro.item(arr.menu[3].items[1].url, arr.menu[3].items[1].name)}}
+                            {{footermacro.item(arr.menu[3].items[2].url, arr.menu[3].items[2].name)}}
+                            {{footermacro.item(arr.menu[3].items[3].url, arr.menu[3].items[3].name)}}
+                            {{footermacro.item(arr.menu[3].items[4].url, arr.menu[3].items[4].name)}}
+                            {{footermacro.item(arr.menu[3].items[5].url, arr.menu[3].items[5].name)}}
                         {% endcall %}
                     </div>
                 </div>
