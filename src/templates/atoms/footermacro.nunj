@@ -1,0 +1,42 @@
+{% macro contact() %}
+    <div class="footer__contact">
+        {{caller()}}
+    </div>
+{% endmacro %}
+
+{% macro menu() %}
+    <ul class="footer__menu">
+        {{caller()}}
+    </ul>
+{% endmacro %}
+
+{% macro socialIcons() %}
+    <div class="footer__social-icons">
+        {{caller()}}
+    </div>
+{% endmacro %}
+
+{% macro logo(img) %}
+    <img class="footer__logo" src="{{img}}" />
+{% endmacro %}
+
+{% macro info(text, src, number, mail) %}
+    <p>{{text}}</p>
+    <p>P:<span><a class="footer__link" href="{{src}}">{{number}}</a></span> | M:<span><a class="footer__link" href="{{src}}">{{mail}}</a></span></p>
+{% endmacro %}
+
+{% macro icon(src, icon) %}
+    <a class="footer__link--light footer__icon" href="{{src}}"><i data-feather="{{icon}}"></i></a>
+{% endmacro %}
+
+{% macro item(src, item) %}
+    <li class="footer__list"><a class="footer__link--light" href="{{src}}">{{item}}</a></li>
+{% endmacro %}
+
+{% macro title(title) %}
+    <h5 class="footet__title">{{title}}</h5>
+{% endmacro %}
+
+{% macro copyright(company, hrefone, themes, text, hreftwo, marcet) %}
+    <div class="footer__copyright">{{company}}<a class="footer__link" href="{{hrefone}}">{{themes}}</a>{{text}}<a class="footer__link" href="{{hreftwo}}">{{marcet}}</a></div>
+{% endmacro %}

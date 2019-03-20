@@ -1,0 +1,64 @@
+.footer {
+    padding: 40px 0;
+    font-size: 14px;
+    line-height: urset;
+
+    &__link {
+        color: $color-blue-text;
+        font-weight: 500;
+
+        &--light {
+            color: $color-gray-text;
+
+            &:hover {
+                color: $color-red;
+            }
+        }
+
+        &:hover {
+            color: $color-red;
+        }
+    }
+
+    &__contact {
+        color: $color-gray-text;
+        margin-bottom: 30px;
+    }
+
+    &__logo {
+        margin-bottom: 30px;
+        width: 60px;
+        height: auto;
+    }
+
+    &__social-icons {
+        color: $color-gray-text;
+        margin-bottom: 30px;
+    }
+
+    &__icon {
+        margin-right: 5px;
+    }
+
+    &__menu {
+        padding-left: 0;
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        color: $color-blue-text;
+    }
+
+    &__list {
+        list-style: none;
+        margin-bottom: 8px;
+    }
+
+    &__copyright {
+        color:  $color-gray-text;
+        border-top: 1px solid $color-gray-br;
+        padding-top: 30px;
+        margin-top: 30px;
+        text-align: center;
+    }
+}

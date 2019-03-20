@@ -1,0 +1,244 @@
+{% import "atoms/footermacro.nunj" as footermacro %}
+
+{% set arr = {
+    contacts: {
+        logo: "http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/08/ft-logo-100x100.png",
+        adress: {
+            text: "Beverley Rd Brooklyn, New York 1226 US",
+            src: "#"
+        },
+        number: " +(0712) 819 79 555",
+        email: {
+            name: " info@example.com",
+            src: "#"
+        },
+        socialIcons: [
+            {
+                name: "twitter",
+                url: "#"
+            },
+            {
+                name: "facebook",
+                url: "#"
+            },
+            {
+                name: "instagram",
+                url: "#"
+            },
+            {
+                name: "youtube",
+                url: "#"
+            },
+            {
+                name: "linkedin",
+                url: "#"
+            }
+        ]
+        
+    },
+    menu: [
+        {
+            title: "IT Services",
+            items: [
+                {
+                    name: "Managed IT",
+                    url: "#"
+                },
+                {
+                    name: "IT Support",
+                    url: "#"
+                },
+                {
+                    name: "IT Consultancy",
+                    url: "#"
+                },
+                {
+                    name: "Cloud Computing",
+                    url: "#"
+                },
+                {
+                    name: "Cyber Security",
+                    url: "#"
+                },
+                {
+                    name: "Custom Software",
+                    url: "#"
+                }
+            ]
+        },
+        {
+            title: "Industries",
+            items: [
+                {
+                    name: "Banking",
+                    url: "#"
+                },
+                {
+                    name: "Capital Markets",
+                    url: "#"
+                },
+                {
+                    name: "Enterprise Technology",
+                    url: "#"
+                },
+                {
+                    name: "Manufacturing",
+                    url: "#"
+                },
+                {
+                    name: "Healthcare",
+                    url: "#"
+                },
+                {
+                    name: "Higher Education",
+                    url: "#"
+                }
+            ]
+        },
+        {
+            title: "Company",
+            items: [
+                {
+                    name: "About",
+                    url: "#"
+                },
+                {
+                    name: "Leadership Team",
+                    url: "#"
+                },
+                {
+                    name: "IT Blog",
+                    url: "#"
+                },
+                {
+                    name: "Case Studies",
+                    url: "#"
+                }, {
+                    name: "Locations",
+                    url: "#"
+                }, 
+                {
+                    name: "Careers",
+                    url: "#"
+                }
+            ]
+        },
+        {
+            title: "Support",
+            items: [
+                {
+                    name: "Forum Support",
+                    url: "#"
+                },
+                {
+                    name: "Help & FAQ",
+                    url: "#"
+                },
+                {
+                    name: "Contact Us",
+                    url: "#"
+                },
+                {
+                    name: "Pricing and plans",
+                    url: "#"
+                },
+                {
+                    name: "Cookies Policy",
+                    url: "#"
+                },
+                {
+                    name: "Privacy Policy",
+                    url: "#"
+                }
+            ]
+        }
+    ],
+    copyright: {
+        company: "© 2018 NanoSoft. Designed and Developed by",
+        theme: {
+            name: " LineThemes",
+            hrefone: "#"
+        },
+        text: " Only on",
+        marcet: {
+            name: " Envato Market.",
+            hreftwo: "#"
+        }
+    }
+
+} %}
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-4">
+                {{footermacro.logo(arr.contacts.logo)}}
+                {% call footermacro.contact() %}
+                    {{footermacro.info(arr.contacts.adress.text, arr.contacts.adress.src, arr.contacts.number, arr.contacts.email.name, arr.contacts.email.src)}}
+                {% endcall %}
+                {% call footermacro.socialIcons() %}
+                    {{footermacro.icon(arr.contacts.socialIcons[0].src, arr.contacts.socialIcons[0].name)}}
+                    {{footermacro.icon(arr.contacts.socialIcons[1].src, arr.contacts.socialIcons[1].name)}}
+                    {{footermacro.icon(arr.contacts.socialIcons[2].src, arr.contacts.socialIcons[2].name)}}
+                    {{footermacro.icon(arr.contacts.socialIcons[3].src, arr.contacts.socialIcons[3].name)}}
+                    {{footermacro.icon(arr.contacts.socialIcons[4].src, arr.contacts.socialIcons[4].name)}}
+                {% endcall %}
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="row">
+                    <div class="col-6">
+                        {% call footermacro.menu() %}
+                            {{footermacro.title(arr.menu[0].title)}}
+                            {{footermacro.item(arr.menu[0].items[0].url, arr.menu[0].items[0].name)}}
+                            {{footermacro.item(arr.menu[0].items[1].url, arr.menu[0].items[1].name)}}
+                            {{footermacro.item(arr.menu[0].items[2].url, arr.menu[0].items[2].name)}}
+                            {{footermacro.item(arr.menu[0].items[3].url, arr.menu[0].items[3].name)}}
+                            {{footermacro.item(arr.menu[0].items[4].url, arr.menu[0].items[4].name)}}
+                            {{footermacro.item(arr.menu[0].items[5].url, arr.menu[0].items[5].name)}}
+                        {% endcall %}
+                    </div>
+                    <div class="col-6">
+                        {% call footermacro.menu() %}
+                            {{footermacro.title(arr.menu[1].title)}}
+                            {{footermacro.item(arr.menu[1].items[0].url, arr.menu[1].items[0].name)}}
+                            {{footermacro.item(arr.menu[1].items[1].url, arr.menu[1].items[1].name)}}
+                            {{footermacro.item(arr.menu[1].items[2].url, arr.menu[1].items[2].name)}}
+                            {{footermacro.item(arr.menu[1].items[3].url, arr.menu[1].items[3].name)}}
+                            {{footermacro.item(arr.menu[1].items[4].url, arr.menu[1].items[4].name)}}
+                            {{footermacro.item(arr.menu[1].items[5].url, arr.menu[1].items[5].name)}}
+                        {% endcall %}
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="row">
+                    <div class="col-6">
+                        {% call footermacro.menu() %}
+                            {{footermacro.title(arr.menu[2].title)}}
+                            {{footermacro.item(arr.menu[2].items[0].url, arr.menu[2].items[0].name)}}
+                            {{footermacro.item(arr.menu[2].items[1].url, arr.menu[2].items[1].name)}}
+                            {{footermacro.item(arr.menu[2].items[2].url, arr.menu[2].items[2].name)}}
+                            {{footermacro.item(arr.menu[2].items[3].url, arr.menu[2].items[3].name)}}
+                            {{footermacro.item(arr.menu[2].items[4].url, arr.menu[2].items[4].name)}}
+                            {{footermacro.item(arr.menu[2].items[5].url, arr.menu[2].items[5].name)}}
+                        {% endcall %}
+                    </div>
+                    <div class="col-6">
+                        {% call footermacro.menu() %}
+                            {{footermacro.title(arr.menu[3].title)}}
+                            {{footermacro.item(arr.menu[3].items[0].url, arr.menu[3].items[0].name)}}
+                            {{footermacro.item(arr.menu[3].items[1].url, arr.menu[3].items[1].name)}}
+                            {{footermacro.item(arr.menu[3].items[2].url, arr.menu[3].items[2].name)}}
+                            {{footermacro.item(arr.menu[3].items[3].url, arr.menu[3].items[3].name)}}
+                            {{footermacro.item(arr.menu[3].items[4].url, arr.menu[3].items[4].name)}}
+                            {{footermacro.item(arr.menu[3].items[5].url, arr.menu[3].items[5].name)}}
+                        {% endcall %}
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                {{footermacro.copyright(arr.copyright.company, arr.copyright.theme.hrefone, arr.copyright.theme.name, arr.copyright.text, arr.copyright.marcet.hreftwo, arr.copyright.marcet.name)}}
+            </div>
+        </div>
+    </div>
+</div>

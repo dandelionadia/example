@@ -284,4 +284,6 @@
   </div>
 {% endcall %}
 
+{% include "components/footer.nunj" %}
+
 {% endblock %}
