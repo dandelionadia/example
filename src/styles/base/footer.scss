@@ -1,3 +1,24 @@
+.border {
+    position: relative;
+    border: none;
+    
+    &::after {
+        content: "";
+        top: 100%;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-bottom: 1px solid $color-red;
+        position: absolute;
+        transition: width .5s;
+    }
+
+    &:hover::after {
+        transition: width .5s;
+        width: 100%;
+    }
+}
+
 .footer {
     padding: 40px 0;
     font-size: 14px;
@@ -9,37 +30,10 @@
 
         &--light {
             color: $color-gray-text;
-            position: relative;
-
-            &::after {
-                content: "";
-                top: 100%;
-                left: 0;
-                width: 0;
-                height: 0;
-                border-bottom: 1px solid $color-red;
-                position: absolute;
-                transition: width .5s;
-            }
-
-            &:hover::after {
-                transition: width .5s;
-                width: 100%;
-            }
 
             &:hover {
                 color: $color-red;
                 text-decoration: none;
-            }
-
-            &--icon {
-                &::after {
-                    transition: none;
-                }
-
-                &:hover::after {
-                    border-bottom: none;
-                }
             }
         }
 
