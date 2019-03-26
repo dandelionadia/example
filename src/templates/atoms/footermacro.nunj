@@ -26,15 +26,15 @@
 {% endmacro %}
 
 {% macro icon(src, icon) %}
-    <a class="footer__link--light footer__icon" href="{{src}}"><i data-feather="{{icon}}"></i></a>
+    <a class="footer__link--light footer__link--light footer__icon" href="{{src}}"><i data-feather="{{icon}}"></i></a>
 {% endmacro %}
 
 {% macro item(src, item) %}
-    <li class="footer__list"><a class="footer__link--light" href="{{src}}">{{item}}</a></li>
+    <li class="footer__list"><a class="footer__link--light border" href="{{src}}">{{item}}</a></li>
 {% endmacro %}
 
 {% macro title(title) %}
-    <h5 class="footet__title">{{title}}</h5>
+    <h5 class="footer__title">{{title}}</h5>
 {% endmacro %}
 
 {% macro copyright(company, hrefone, themes, text, hreftwo, marcet) %}
