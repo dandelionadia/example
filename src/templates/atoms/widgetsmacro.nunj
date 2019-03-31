@@ -1,0 +1,9 @@
+{% macro content() %}
+    <div>
+        {{caller()}}
+    </div>
+{% endmacro %}
+
+{% macro title(title) %}
+    <h2>{{title}}</h2>
+{% endmacro %}
