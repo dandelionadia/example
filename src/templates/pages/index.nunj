@@ -286,4 +286,6 @@
 
 {% include "components/footer.nunj" %}
 
+{% include "components/widgets.nunj" %}
+
 {% endblock %}

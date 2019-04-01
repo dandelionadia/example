@@ -7,3 +7,15 @@
 {% macro title(title) %}
     <h2>{{title}}</h2>
 {% endmacro %}
+
+{% macro subtitle(subtitle) %}
+    <div class="subtitle">{{subtitle}}<div>
+{% endmacro %}
+
+{% macro text(text) %}
+    <p>{{text}}</p>
+{% endmacro %}
+
+{% macro button(link, text) %}
+    <div><a href="{{link}}"> text</a></div>
+{% endmacro %}
