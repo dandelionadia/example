@@ -17,5 +17,5 @@
 {% endmacro %}
 
 {% macro button(link, text) %}
-    <div><a href="{{link}}"> text</a></div>
+    <div><a href="{{link}}">{{text}}</a></div>
 {% endmacro %}
