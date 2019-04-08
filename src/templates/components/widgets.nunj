@@ -1,24 +1,18 @@
 {% import "atoms/widgetsmacro.nunj" as widgetsmacro %}
 
-{% set arr = {
+{% set data = {
     title: "Are you ready for a better, more productive business?",
     subtitle: "Let’s get started",
-    text: "Stop worrying about technology problems. Focus on your business.",
+    text: "Stop worrying about technology problems. Focus on your business. Let us provide the support you deserve.",
     button: {
         link: "#",
         text: "Contact us Now"
     }
 } %}
 
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            {% call widgetsmacro.content() %}
-                {{widgetsmacro.subtitle(arr.content.subtitle)}}
-                {{widgetsmacro.title(arr.title)}}
-                {{widgetsmacro.text(arr.text)}}
-                {{widgetsmacro.button(arr.button.link, arr.button.text)}}
-            {% endcall %}
-        </div>
-    </div>
-</div>
+{% call widgetsmacro.content() %}
+    {{widgetsmacro.subtitle(data.subtitle)}}
+    {{widgetsmacro.title(data.title)}}
+    {{widgetsmacro.text(data.text)}}
+    {{widgetsmacro.button(data.button.link, data.button.text)}}
+{% endcall %}

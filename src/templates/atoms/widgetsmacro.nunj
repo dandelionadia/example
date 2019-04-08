@@ -1,5 +1,5 @@
 {% macro content() %}
-    <div>
+    <div class="widgets">
         {{caller()}}
     </div>
 {% endmacro %}

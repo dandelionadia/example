@@ -1,3 +1,15 @@
+.background {
+    // background-image: url('http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/08/content-bottom-bg.jpg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.widgets {
+    text-align: center;
+}
+
 .subtitle {
     font-size: 1.125rem;
+    color: $color-blue-text;
 }
