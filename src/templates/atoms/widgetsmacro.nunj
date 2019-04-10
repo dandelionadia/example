@@ -5,17 +5,17 @@
 {% endmacro %}
 
 {% macro title(title) %}
-    <h2>{{title}}</h2>
+    <h2 class="widgets__title">{{title}}</h2>
 {% endmacro %}
 
 {% macro subtitle(subtitle) %}
-    <div class="subtitle">{{subtitle}}<div>
+    <div class="subtitle">{{subtitle}}</div>
 {% endmacro %}
 
 {% macro text(text) %}
-    <p>{{text}}</p>
+    <p class="widgets__text">{{text}}</p>
 {% endmacro %}
 
 {% macro button(link, text) %}
-    <div><a href="{{link}}">{{text}}</a></div>
+    <a class="widgets__btn" href="{{link}}">{{text}}</a>
 {% endmacro %}

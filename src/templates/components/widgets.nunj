@@ -9,10 +9,17 @@
         text: "Contact us Now"
     }
 } %}
-
-{% call widgetsmacro.content() %}
-    {{widgetsmacro.subtitle(data.subtitle)}}
-    {{widgetsmacro.title(data.title)}}
-    {{widgetsmacro.text(data.text)}}
-    {{widgetsmacro.button(data.button.link, data.button.text)}}
-{% endcall %}
+<div class="background">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-8 offset-md-2">
+                {% call widgetsmacro.content() %}
+                    {{widgetsmacro.subtitle(data.subtitle)}}
+                    {{widgetsmacro.title(data.title)}}
+                    {{widgetsmacro.text(data.text)}}
+                    {{widgetsmacro.button(data.button.link, data.button.text)}}
+                {% endcall %}
+            </div>
+        </div>
+    </div>
+</div>

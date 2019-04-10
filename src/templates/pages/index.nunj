@@ -284,15 +284,7 @@
   </div>
 {% endcall %}
 
-<div class="background">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-8 offset-md-2">
-              {% include "components/widgets.nunj" %}
-            </div>
-        </div>
-    </div>
-</div>
+{% include "components/widgets.nunj" %}
 
 {% include "components/footer.nunj" %}
 

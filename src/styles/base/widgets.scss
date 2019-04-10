@@ -1,15 +1,37 @@
 .background {
-    // background-image: url('http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/08/content-bottom-bg.jpg');
+    background-image: url('http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/08/content-bottom-bg.jpg');
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: 100% auto;
+    padding-top: 100px;
+    padding-bottom: 20%;
 }
 
 .widgets {
     text-align: center;
+
+    &__text {
+        color: $color-gray-text;
+        margin-bottom: 40px;
+    }
+
+    &__title {
+        color: $color-blue-text;
+    }
+
+    &__btn {
+        background-color: $color-red;
+        color: $color-white;
+        display: block;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 18px;
+
+    }
 }
 
 .subtitle {
     font-size: 1.125rem;
     color: $color-blue-text;
+    margin-bottom: 30px;
 }
