@@ -1,0 +1,68 @@
+.background {
+    background-image: url('http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/08/content-bottom-bg.jpg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding-top: 100px;
+    padding-bottom: 20%;
+}
+
+.widgets {
+    text-align: center;
+
+    &__text {
+        color: $color-gray-text;
+        margin-bottom: 40px;
+    }
+
+    &__title {
+        color: $color-blue-text;
+    }
+
+    &__btn {
+        background-color: $color-red;
+        color: $color-white;
+        display: inline-block;
+        border-radius: 5px;
+        padding: 20px 50px;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0 auto;
+        z-index: 0;
+        position: relative;
+        overflow: hidden;
+
+        @media (max-width: 768px) {
+            padding: 15px 40px;
+        }
+
+        &::before {
+            content: '';
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            position: absolute;
+            background-color: $color-blue-text;
+            transition: top 0.25s ease-out;
+        }
+
+        &:hover {
+            color: $color-white;
+            text-decoration: none;
+
+            &:before {
+                top: 0;
+            }
+        }
+
+    }
+}
+
+.subtitle {
+    color: $color-blue-text;
+    font-size: 1.125rem;
+    margin-bottom: 30px;
+    font-weight: 500;
+}

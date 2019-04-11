@@ -1,6 +1,6 @@
 .border {
     position: relative;
-    border: none;
+    border: none !important;
     
     &::after {
         content: "";
