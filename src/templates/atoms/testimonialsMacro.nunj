@@ -1,0 +1,8 @@
+{% macro content() %}
+    <div>
+        {{caller()}}
+    </div>
+{% endmacro %}
+
+{% macro %}
+{% endmacro %}
