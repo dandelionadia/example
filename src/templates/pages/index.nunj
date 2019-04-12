@@ -284,6 +284,10 @@
   </div>
 {% endcall %}
 
+{% include "components/testimonials.nunj" %}
+
+{# {% include "components/widgets.nunj" %} #}
+
 {% include "components/footer.nunj" %}
 
 {% endblock %}
