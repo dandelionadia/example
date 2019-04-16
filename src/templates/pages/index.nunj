@@ -286,7 +286,7 @@
 
 {% include "components/testimonials.nunj" %}
 
-{# {% include "components/widgets.nunj" %} #}
+{% include "components/widgets.nunj" %}
 
 {% include "components/footer.nunj" %}
 
