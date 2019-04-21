@@ -42,12 +42,14 @@
         </div>
         </div>
         <div class="row">
-            <div class="carousel-slides">
-                {% for slide in data %}
-                    <div class="col-12">
-                    {{cards.slide(slide.logo, slide.text, slide.author, slide.position, slide.borderColor)}}
-                    </div>
-                {% endfor %}
+            <div class="col-12">
+                <div class="carousel-slides">
+                    {% for slide in data %}
+                        <div>
+                        {{cards.slide(slide.logo, slide.text, slide.author, slide.position, slide.borderColor)}}
+                        </div>
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>
