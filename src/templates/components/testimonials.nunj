@@ -31,24 +31,26 @@
     }
  ] %}
 
-<div class="testimonials">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-8 offset-md-2">
-                {% call block.container() %}
-                    {{block.subtitle('Testimonials')}}
-                    {{block.title('What our customers say')}}
-                {% endcall %}
+<div data-aos="fade-up">
+    <div class="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-8 offset-md-2">
+                    {% call block.container() %}
+                        {{block.subtitle('Testimonials')}}
+                        {{block.title('What our customers say')}}
+                    {% endcall %}
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="carousel-slides">
-                    {% for slide in data %}
-                        <div>
-                            {{cards.slide(slide.logo, slide.text, slide.author, slide.position, slide.borderColor)}}
-                        </div>
-                    {% endfor %}
+            <div class="row">
+                <div class="col-12">
+                    <div class="carousel-slides">
+                        {% for slide in data %}
+                            <div>
+                                {{cards.slide(slide.logo, slide.text, slide.author, slide.position, slide.borderColor)}}
+                            </div>
+                        {% endfor %}
+                    </div>
                 </div>
             </div>
         </div>

@@ -60,6 +60,8 @@
   </div>
 </div>
 
+<div class="foo"></div>
+
 <div class="carousel">
   <div>
     <div class="carousel__slide">
@@ -120,15 +122,17 @@
 
 <div class="cards bg--gray pb-4">
   <div class="container">
-    <div class="row">
-      <div class="col-sm-12 col-lg-4">
-        {{cards.support('https://ohmiglob.files.wordpress.com/2014/04/at1.jpg', 'Our customers', 'Client success stories', 'Read more', 'arrow-right')}}
-      </div>
-      <div class="col-sm-12 col-lg-4">
-        {{cards.support('https://cdn.vox-cdn.com/thumbor/ookgWiT_J9wtN6hdnNH7VraaKGA=/0x0:637x355/1200x800/filters:focal(269x128:369x228)/cdn.vox-cdn.com/uploads/chorus_image/image/51105501/adventuretime.0.png', 'Our expertise', 'Why partner with us', 'Learn more', 'arrow-right')}}
-      </div>
-      <div class="col-sm-12 col-lg-4">
-        {{cards.support('https://cdn.vox-cdn.com/thumbor/mVB2L6UnsN4qqymP-rhaYckmfCg=/0x0:1280x720/1200x800/filters:focal(538x258:742x462)/cdn.vox-cdn.com/uploads/chorus_image/image/47718349/adventuretimestakes.0.jpg', 'Our services', 'How we can help', 'Discover now', 'arrow-right')}}
+    <div data-aos="fade-up">
+      <div class="row">
+        <div class="col-sm-12 col-lg-4">
+          {{cards.support('https://ohmiglob.files.wordpress.com/2014/04/at1.jpg', 'Our customers', 'Client success stories', 'Read more', 'arrow-right')}}
+        </div>
+        <div class="col-sm-12 col-lg-4">
+          {{cards.support('https://cdn.vox-cdn.com/thumbor/ookgWiT_J9wtN6hdnNH7VraaKGA=/0x0:637x355/1200x800/filters:focal(269x128:369x228)/cdn.vox-cdn.com/uploads/chorus_image/image/51105501/adventuretime.0.png', 'Our expertise', 'Why partner with us', 'Learn more', 'arrow-right')}}
+        </div>
+        <div class="col-sm-12 col-lg-4">
+          {{cards.support('https://cdn.vox-cdn.com/thumbor/mVB2L6UnsN4qqymP-rhaYckmfCg=/0x0:1280x720/1200x800/filters:focal(538x258:742x462)/cdn.vox-cdn.com/uploads/chorus_image/image/47718349/adventuretimestakes.0.jpg', 'Our services', 'How we can help', 'Discover now', 'arrow-right')}}
+        </div>
       </div>
     </div>
     <div class="row">
@@ -152,15 +156,21 @@
     </div>
     <div class="row">
       <div class="col-12 col-lg-4">
-        {{cards.card('Managed IT services', '24/7 maintenance and monitoring that keeps your computers, servers, and systems up and running.', 'http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/08/syncing-document-4157_bf6a2cf1-26c8-4688-ab14-85836d2a0562.svg', 'title', 'https://feathericons.com/', 'Stay up and running')}}
+        <div data-aos="flip-left">
+          {{cards.card('Managed IT services', '24/7 maintenance and monitoring that keeps your computers, servers, and systems up and running.', 'http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/08/syncing-document-4157_bf6a2cf1-26c8-4688-ab14-85836d2a0562.svg', 'title', 'https://feathericons.com/', 'Stay up and running')}}
+        </div>
       </div>
 
       <div class="col-12 col-lg-4">
-        {{cards.card('Managed IT services', '24/7 maintenance and monitoring that keeps your computers, servers, and systems up and running.', 'http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/08/ssd-storage-1951_0cd86b60-9df8-4053-9198-84f76027d5de.svg', 'title', 'https://feathericons.com/', 'Stay up and running')}}
+        <div data-aos="flip-left">
+          {{cards.card('Managed IT services', '24/7 maintenance and monitoring that keeps your computers, servers, and systems up and running.', 'http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/08/ssd-storage-1951_0cd86b60-9df8-4053-9198-84f76027d5de.svg', 'title', 'https://feathericons.com/', 'Stay up and running')}}
+        </div>
       </div>
 
       <div class="col-12 col-lg-4">
-        {{cards.card('Managed IT services', '24/7 maintenance and monitoring that keeps your computers, servers, and systems up and running.', 'http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/08/private-folder-4136_9a670d06-eeb7-4508-8533-143953499f9e.svg', 'title', 'https://feathericons.com/', 'Stay up and running')}}
+        <div data-aos="flip-left">
+          {{cards.card('Managed IT services', '24/7 maintenance and monitoring that keeps your computers, servers, and systems up and running.', 'http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/08/private-folder-4136_9a670d06-eeb7-4508-8533-143953499f9e.svg', 'title', 'https://feathericons.com/', 'Stay up and running')}}
+        </div>
       </div>
     </div>
     <div class="row">
@@ -172,35 +182,37 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-4 col-sm-2">
-        <div class="box-img">
-          <img class="box-img__image" src="http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/09/n-g.svg"></img>
+    <div data-aos="zoom-in">
+      <div class="row">
+        <div class="col-4 col-sm-2">
+          <div class="box-img">
+            <img class="box-img__image" src="http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/09/n-g.svg"></img>
+          </div>
         </div>
-      </div>
-      <div class="col-4 col-sm-2">
-        <div class="box-img">
-          <img class="box-img__image" src="http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/09/k-g.svg"></img>
+        <div class="col-4 col-sm-2">
+          <div class="box-img">
+            <img class="box-img__image" src="http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/09/k-g.svg"></img>
+          </div>
         </div>
-      </div>
-      <div class="col-4 col-sm-2">
-        <div class="box-img">
-          <img class="box-img__image" src="http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/09/fu-g.svg"></img>
+        <div class="col-4 col-sm-2">
+          <div class="box-img">
+            <img class="box-img__image" src="http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/09/fu-g.svg"></img>
+          </div>
         </div>
-      </div>
-      <div class="col-4 col-sm-2">
-        <div class="box-img">
-          <img class="box-img__image" src="http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/09/box-g.svg"></img>
+        <div class="col-4 col-sm-2">
+          <div class="box-img">
+            <img class="box-img__image" src="http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/09/box-g.svg"></img>
+          </div>
         </div>
-      </div>
-      <div class="col-4 col-sm-2">
-        <div class="box-img">
-          <img class="box-img__image" src="http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/09/j-g.svg"></img>
+        <div class="col-4 col-sm-2">
+          <div class="box-img">
+            <img class="box-img__image" src="http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/09/j-g.svg"></img>
+          </div>
         </div>
-      </div>
-      <div class="col-4 col-sm-2">
-        <div class="box-img">
-          <img class="box-img__image" src="http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/09/uni-g.svg"></img>
+        <div class="col-4 col-sm-2">
+          <div class="box-img">
+            <img class="box-img__image" src="http://demo.linethemes.com/nanosoft/wp-content/uploads/2018/09/uni-g.svg"></img>
+          </div>
         </div>
       </div>
     </div>
@@ -244,22 +256,24 @@
   </div>
 {% endcall %}
 
-<div class="box">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-4">
-        {{cards.project('https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&h=350', 'Subscription licensing unlocks spike in IT orders', 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/2000px-Airbnb_Logo_B%C3%A9lo.svg.png')}}
+<div data-aos="fade-up">
+  <div class="box">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4">
+          {{cards.project('https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&h=350', 'Subscription licensing unlocks spike in IT orders', 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/2000px-Airbnb_Logo_B%C3%A9lo.svg.png')}}
+        </div>
+        <div class="col-12 col-md-4">
+          {{cards.project('https://www.pathwaystogod.org/sites/default/files/styles/top_banner/public/WIFGT---camellia--annie-spratt-565553-unsplash.jpg?itok=lF0Gi1JD', 'Subscription licensing unlocks spike in IT orders', 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/2000px-Airbnb_Logo_B%C3%A9lo.svg.png')}}
+        </div>
+        <div class=" col-12 col-md-4">
+          {{cards.project('http://i0.wp.com/1.bp.blogspot.com/-DuUmOX7ByvE/UaCOO9DGkBI/AAAAAAAAH1g/7u6wntK52_A/s1600/White+Tulip+Flower+07.jpg?strip=all', 'Subscription licensing unlocks spike in IT orders', 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/2000px-Airbnb_Logo_B%C3%A9lo.svg.png')}}
+        </div>
       </div>
-      <div class="col-12 col-md-4">
-        {{cards.project('https://www.pathwaystogod.org/sites/default/files/styles/top_banner/public/WIFGT---camellia--annie-spratt-565553-unsplash.jpg?itok=lF0Gi1JD', 'Subscription licensing unlocks spike in IT orders', 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/2000px-Airbnb_Logo_B%C3%A9lo.svg.png')}}
-      </div>
-      <div class=" col-12 col-md-4">
-        {{cards.project('http://i0.wp.com/1.bp.blogspot.com/-DuUmOX7ByvE/UaCOO9DGkBI/AAAAAAAAH1g/7u6wntK52_A/s1600/White+Tulip+Flower+07.jpg?strip=all', 'Subscription licensing unlocks spike in IT orders', 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/2000px-Airbnb_Logo_B%C3%A9lo.svg.png')}}
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        {{info.info('Stop wasting time and money on technology.', 'https://corp.lingualeo.com/ru/?s=%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%BD%D0%BE%D1%88%D0%B5%D0%BD%D0%B8%D0%B5&lang=en', 'Explore our company')}}
+      <div class="row">
+        <div class="col-12">
+          {{info.info('Stop wasting time and money on technology.', 'https://corp.lingualeo.com/ru/?s=%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%BD%D0%BE%D1%88%D0%B5%D0%BD%D0%B8%D0%B5&lang=en', 'Explore our company')}}
+        </div>
       </div>
     </div>
   </div>
