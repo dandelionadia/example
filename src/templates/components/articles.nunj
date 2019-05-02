@@ -81,11 +81,11 @@
         </div>
 
         <div class="col-12 col-lg-6">
-            <div data-aos="fade-left">
-                <div class="row">
-                    {% for article in articles %}
-                        {% if loop.index > 1 %}
-                            <div class="col-12 col-md-6">
+            <div class="row">
+                {% for article in articles %}
+                    {% if loop.index > 1 %}
+                        <div class="col-12 col-md-6">
+                            <div data-aos="fade-left">
                                 {% call post.container() %}
                                     {% call post.image() %}
                                         {{post.meta(article.imageUrl, article.author.name)}}
@@ -97,9 +97,9 @@
                                     {% endcall %}
                                 {% endcall %}
                             </div>
-                        {% endif %}
-                    {% endfor %}
-                </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
             </div>
         </div>
     </div>
