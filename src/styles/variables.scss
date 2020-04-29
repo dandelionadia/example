@@ -19,3 +19,12 @@ $font-size-base: 16px;
 
 // 
 $item-height: 20px;
+
+.foo {
+    height: 100px;
+    width: 100%;
+
+    @media (max-width: 768px) {
+        height: 80px;
+    }
+}

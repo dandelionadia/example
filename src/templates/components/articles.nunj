@@ -62,20 +62,22 @@
 <div class="container">
     <div class="row">
         <div class="col-12 col-lg-6">
-            {% set firstArticle = articles[0] %}
+            <div data-aos="fade-right">
+                {% set firstArticle = articles[0] %}
 
-            {% call post.container('big') %}
-                {% call post.image() %}
-                    {{post.meta(firstArticle.imageUrl, firstArticle.author.name)}}
-                    {{post.img(firstArticle.author.imageUrl)}}
+                {% call post.container('big') %}
+                    {% call post.image() %}
+                        {{post.meta(firstArticle.imageUrl, firstArticle.author.name)}}
+                        {{post.img(firstArticle.author.imageUrl)}}
+                    {% endcall %}
+                    {% call post.wrap() %}
+                        {{post.date(firstArticle.date)}}
+                        {{post.title(firstArticle.title)}}
+                        {{post.text(firstArticle.description)}}
+                        {{post.btn(firstArticle.readmoteUrl, firstArticle.btntext)}}
+                    {% endcall %}
                 {% endcall %}
-                {% call post.wrap() %}
-                    {{post.date(firstArticle.date)}}
-                    {{post.title(firstArticle.title)}}
-                    {{post.text(firstArticle.description)}}
-                    {{post.btn(firstArticle.readmoteUrl, firstArticle.btntext)}}
-                {% endcall %}
-            {% endcall %}
+            </div>
         </div>
 
         <div class="col-12 col-lg-6">
@@ -83,16 +85,18 @@
                 {% for article in articles %}
                     {% if loop.index > 1 %}
                         <div class="col-12 col-md-6">
-                            {% call post.container() %}
-                                {% call post.image() %}
-                                    {{post.meta(article.imageUrl, article.author.name)}}
-                                    {{post.img(article.author.imageUrl)}}
+                            <div data-aos="fade-left">
+                                {% call post.container() %}
+                                    {% call post.image() %}
+                                        {{post.meta(article.imageUrl, article.author.name)}}
+                                        {{post.img(article.author.imageUrl)}}
+                                    {% endcall %}
+                                    {% call post.wrap() %}
+                                        {{post.title(article.title)}}
+                                        {{post.date(article.date)}}
+                                    {% endcall %}
                                 {% endcall %}
-                                {% call post.wrap() %}
-                                    {{post.title(article.title)}}
-                                    {{post.date(article.date)}}
-                                {% endcall %}
-                            {% endcall %}
+                            </div>
                         </div>
                     {% endif %}
                 {% endfor %}
